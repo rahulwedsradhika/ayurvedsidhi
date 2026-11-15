@@ -6,9 +6,9 @@ let connection = null;
 
 export function previewDb() {
   if (connection) return connection;
-  const file = path.join(process.cwd(), 'api', '_data', 'ayurquest.db');
+  const file = new URL('../api/_data/ayurquest.db', import.meta.url);
   if (!existsSync(file)) {
-    throw new Error('The packaged AyurQuest SQLite database was not found at ' + file);
+    throw new Error('The packaged AyurQuest SQLite database was not found at ' + file.href);
   }
   connection = new DatabaseSync(file, { readOnly: true });
   return connection;
