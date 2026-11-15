@@ -131,10 +131,12 @@ router.get('/samhitas/:id', (req: Request, res: Response) => {
 
 // Real Questions from SQLite Database
 router.get('/questions', (req: Request, res: Response) => {
-  const { sam_id, sth_id, sub_id, tag, limit, offset, search } = req.query;
+  const { sam_id, samhita_name, sam, sth_id, sub_id, subject_name, sub, tag, limit, offset, search } = req.query;
   const dbQs = ayurDB.getQuestions({
     samhita_id: sam_id ? parseInt(sam_id as string) : undefined,
+    samhita_name: (samhita_name || sam) as string | undefined,
     subject_id: sub_id ? parseInt(sub_id as string) : undefined,
+    subject_name: (subject_name || sub) as string | undefined,
     tag: tag as string | undefined,
     search: search as string | undefined,
     limit: limit ? parseInt(limit as string) : 100,
@@ -142,6 +144,15 @@ router.get('/questions', (req: Request, res: Response) => {
   });
 
   res.json(dbQs.map(formatQuestionForFrontend));
+});
+
+// Subject & Samhita Live Database Stats
+router.get('/stats/subjects', (req: Request, res: Response) => {
+  res.json(ayurDB.getSubjectStats());
+});
+
+router.get('/stats/samhitas', (req: Request, res: Response) => {
+  res.json(ayurDB.getSamhitaStats());
 });
 
 router.get('/questions/:id', (req: Request, res: Response) => {

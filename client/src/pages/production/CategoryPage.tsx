@@ -1,151 +1,662 @@
-import React from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useSearchParams, Link, useNavigate } from 'react-router-dom';
 import { PageHeroIllustration } from '../../components/PageHeroIllustration';
+import { QBANK_SUBJECTS, QBANK_SAMHITAS, TOTAL_QBANK_COUNT } from '../../data/qbankCatalog';
+import { api } from '../../api/client';
+import { Question } from '../../types';
 
 export const CategoryPage: React.FC = () => {
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
   const action = searchParams.get('action');
+  const subjectParam = searchParams.get('subject') || searchParams.get('subject_name') || '';
+  const samhitaParam = searchParams.get('samhita') || searchParams.get('samhita_name') || '';
 
+  // Live database stats
+  const [subjectDbStats, setSubjectDbStats] = useState<Record<string, number>>({});
+  const [samhitaDbStats, setSamhitaDbStats] = useState<Record<string, number>>({});
+  const [filterQuery, setFilterQuery] = useState('');
+
+  // Questions viewer state
+  const [questions, setQuestions] = useState<Question[]>([]);
+  const [loadingQuestions, setLoadingQuestions] = useState(false);
+  const [qSearchTerm, setQSearchTerm] = useState('');
+  const [revealAllAnswers, setRevealAllAnswers] = useState(true);
+  const [pageOffset, setPageOffset] = useState(0);
+  const pageSize = 50;
+
+  // Fetch DB stats once
+  useEffect(() => {
+    api.getSubjectStats()
+      .then((stats) => {
+        const map: Record<string, number> = {};
+        stats.forEach((s) => {
+          map[s.subject_name.toLowerCase()] = s.count;
+        });
+        setSubjectDbStats(map);
+      })
+      .catch((err) => console.warn('Could not load subject stats:', err));
+
+    api.getSamhitaStats()
+      .then((stats) => {
+        const map: Record<string, number> = {};
+        stats.forEach((s) => {
+          map[s.samhita_name.toLowerCase()] = s.count;
+        });
+        setSamhitaDbStats(map);
+      })
+      .catch((err) => console.warn('Could not load samhita stats:', err));
+  }, []);
+
+  // Fetch real questions when action === 'questions'
+  useEffect(() => {
+    if (action === 'questions') {
+      setLoadingQuestions(true);
+      api.getQuestions({
+        subject_name: subjectParam || undefined,
+        samhita_name: samhitaParam || undefined,
+        search: qSearchTerm.trim() || undefined,
+        limit: pageSize,
+        offset: pageOffset
+      })
+        .then((data) => {
+          setQuestions(data);
+          setLoadingQuestions(false);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        })
+        .catch((err) => {
+          console.error('Failed to load questions:', err);
+          setLoadingQuestions(false);
+        });
+    }
+  }, [action, subjectParam, samhitaParam, pageOffset, qSearchTerm]);
+
+  // ==========================================
+  // VIEW: REAL QUESTIONS VIEWER (?action=questions)
+  // ==========================================
+  if (action === 'questions') {
+    const title = subjectParam || samhitaParam || 'All Questions';
+    const activeType = subjectParam ? 'Subject' : 'Samhita';
+
+    return (
+      <div style={{ backgroundColor: '#f8fafc', minHeight: 'calc(100vh - 50px)', paddingBottom: 60 }}>
+        {/* Header Banner */}
+        <div style={{
+          backgroundColor: '#1b3a57',
+          color: '#fff',
+          padding: '24px 20px',
+          boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
+        }}>
+          <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
+              <div>
+                <button
+                  onClick={() => navigate(subjectParam ? '/app1.5/category.php?action=subjects' : '/app1.5/category.php?action=samhitas')}
+                  style={{
+                    backgroundColor: 'rgba(255,255,255,0.15)',
+                    color: '#fff',
+                    border: '1px solid rgba(255,255,255,0.3)',
+                    padding: '6px 14px',
+                    borderRadius: 6,
+                    cursor: 'pointer',
+                    fontSize: 13,
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: 6,
+                    marginBottom: 8
+                  }}
+                >
+                  <i className="fa fa-arrow-left"></i> Back to {activeType}s
+                </button>
+                <h2 style={{ margin: 0, fontSize: 22, fontWeight: 700 }}>
+                  <i className="fa fa-book-open" style={{ marginRight: 10, color: '#00c0ef' }}></i>
+                  {title}
+                </h2>
+                <div style={{ fontSize: 13, opacity: 0.85, marginTop: 4 }}>
+                  Displaying Real Bilingual Questions with Answer Keys & Classical Commentary
+                </div>
+              </div>
+
+              {/* Controls */}
+              <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
+                <button
+                  onClick={() => setRevealAllAnswers(!revealAllAnswers)}
+                  style={{
+                    backgroundColor: revealAllAnswers ? '#00a65a' : '#f39c12',
+                    color: '#fff',
+                    border: 'none',
+                    padding: '8px 16px',
+                    borderRadius: 6,
+                    fontWeight: 600,
+                    fontSize: 13,
+                    cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 6
+                  }}
+                >
+                  <i className={`fa ${revealAllAnswers ? 'fa-eye' : 'fa-eye-slash'}`}></i>
+                  {revealAllAnswers ? 'Answers Revealed' : 'Answers Hidden'}
+                </button>
+              </div>
+            </div>
+
+            {/* Search within questions */}
+            <div style={{ marginTop: 16 }}>
+              <input
+                type="text"
+                placeholder="Search question stem, Sanskrit/Hindi text, options, or classical reference..."
+                value={qSearchTerm}
+                onChange={(e) => {
+                  setQSearchTerm(e.target.value);
+                  setPageOffset(0);
+                }}
+                style={{
+                  width: '100%',
+                  padding: '10px 16px',
+                  borderRadius: 6,
+                  border: '1px solid #ced4da',
+                  fontSize: 14,
+                  backgroundColor: '#fff',
+                  color: '#333'
+                }}
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Question Deck Container */}
+        <div style={{ maxWidth: 1100, margin: '24px auto', padding: '0 15px' }}>
+          {loadingQuestions ? (
+            <div style={{ textAlign: 'center', padding: '60px 0' }}>
+              <i className="fa fa-spinner fa-spin fa-3x" style={{ color: '#00c0ef' }}></i>
+              <div style={{ marginTop: 12, fontSize: 16, fontWeight: 600, color: '#555' }}>
+                Loading questions from SQLite database...
+              </div>
+            </div>
+          ) : questions.length === 0 ? (
+            <div style={{
+              backgroundColor: '#fff',
+              borderRadius: 8,
+              padding: '50px 20px',
+              textAlign: 'center',
+              boxShadow: '0 1px 3px rgba(0,0,0,0.08)'
+            }}>
+              <i className="fa fa-info-circle fa-3x text-muted" style={{ marginBottom: 15 }}></i>
+              <h3 style={{ fontSize: 18, color: '#333', marginBottom: 8 }}>No questions found in this filter yet</h3>
+              <p style={{ color: '#666', fontSize: 14, maxWidth: 500, margin: '0 auto 20px auto' }}>
+                Run the extractor script <code>python scripts/extract_question_bank.py --subject &lt;id&gt;</code> to ingest more questions directly from the AyurQuest Question Bank.
+              </p>
+              <button
+                onClick={() => {
+                  setQSearchTerm('');
+                  setPageOffset(0);
+                }}
+                className="btn btn-primary"
+              >
+                Clear Search Filter
+              </button>
+            </div>
+          ) : (
+            <div>
+              {/* Pagination Top Bar */}
+              <div style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                marginBottom: 16,
+                backgroundColor: '#fff',
+                padding: '12px 18px',
+                borderRadius: 8,
+                boxShadow: '0 1px 3px rgba(0,0,0,0.05)'
+              }}>
+                <span style={{ fontSize: 14, fontWeight: 600, color: '#555' }}>
+                  Showing questions {pageOffset + 1} - {pageOffset + questions.length}
+                </span>
+                <div style={{ display: 'flex', gap: 8 }}>
+                  <button
+                    disabled={pageOffset === 0}
+                    onClick={() => setPageOffset(Math.max(0, pageOffset - pageSize))}
+                    style={{
+                      padding: '6px 14px',
+                      borderRadius: 4,
+                      border: '1px solid #ccc',
+                      backgroundColor: pageOffset === 0 ? '#f5f5f5' : '#fff',
+                      cursor: pageOffset === 0 ? 'not-allowed' : 'pointer'
+                    }}
+                  >
+                    &laquo; Previous
+                  </button>
+                  <button
+                    disabled={questions.length < pageSize}
+                    onClick={() => setPageOffset(pageOffset + pageSize)}
+                    style={{
+                      padding: '6px 14px',
+                      borderRadius: 4,
+                      border: '1px solid #ccc',
+                      backgroundColor: questions.length < pageSize ? '#f5f5f5' : '#fff',
+                      cursor: questions.length < pageSize ? 'not-allowed' : 'pointer'
+                    }}
+                  >
+                    Next &raquo;
+                  </button>
+                </div>
+              </div>
+
+              {/* Questions List */}
+              {questions.map((q, idx) => {
+                const qNum = pageOffset + idx + 1;
+                const options = [
+                  { label: 'A', text: q.O1, num: 1 },
+                  { label: 'B', text: q.O2, num: 2 },
+                  { label: 'C', text: q.O3, num: 3 },
+                  { label: 'D', text: q.O4, num: 4 }
+                ];
+                const correctAns = typeof q.A === 'string' ? parseInt(q.A) : q.A;
+
+                return (
+                  <div
+                    key={q.id || idx}
+                    id={`q-${qNum}`}
+                    style={{
+                      backgroundColor: '#fff',
+                      borderRadius: 8,
+                      marginBottom: 20,
+                      boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
+                      border: '1px solid #e2e8f0',
+                      overflow: 'hidden'
+                    }}
+                  >
+                    {/* Card Header */}
+                    <div style={{
+                      backgroundColor: '#f8fafc',
+                      padding: '12px 18px',
+                      borderBottom: '1px solid #edf2f7',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      flexWrap: 'wrap',
+                      gap: 8
+                    }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                        <span style={{
+                          backgroundColor: '#1b3a57',
+                          color: '#fff',
+                          padding: '3px 10px',
+                          borderRadius: 4,
+                          fontSize: 13,
+                          fontWeight: 700
+                        }}>
+                          Q {qNum}
+                        </span>
+                        <span style={{ fontSize: 12, color: '#718096' }}>
+                          ID: #{q.id}
+                        </span>
+                        {q.sub && (
+                          <span style={{
+                            backgroundColor: '#e6fffa',
+                            color: '#234e52',
+                            padding: '2px 8px',
+                            borderRadius: 4,
+                            fontSize: 11,
+                            fontWeight: 600
+                          }}>
+                            {q.sub}
+                          </span>
+                        )}
+                        {q.sam && q.sam !== 'Charaka Samhita' && (
+                          <span style={{
+                            backgroundColor: '#feebc8',
+                            color: '#7b341e',
+                            padding: '2px 8px',
+                            borderRadius: 4,
+                            fontSize: 11,
+                            fontWeight: 600
+                          }}>
+                            {q.sam}
+                          </span>
+                        )}
+                      </div>
+                      <div style={{ fontSize: 12, color: '#4a5568' }}>
+                        {revealAllAnswers && (
+                          <span style={{
+                            backgroundColor: '#c6f6d5',
+                            color: '#22543d',
+                            padding: '3px 10px',
+                            borderRadius: 12,
+                            fontWeight: 700
+                          }}>
+                            Correct: Option {String.fromCharCode(64 + correctAns)}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Question Stem */}
+                    <div style={{ padding: '18px 20px' }}>
+                      <div
+                        style={{ fontSize: 16, lineHeight: 1.6, color: '#2d3748', fontWeight: 600 }}
+                        dangerouslySetInnerHTML={{ __html: q.Q }}
+                      />
+
+                      {/* 4 Options Grid */}
+                      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 12, marginTop: 16 }}>
+                        {options.map((opt) => {
+                          const isCorrect = opt.num === correctAns;
+                          const showHighlight = revealAllAnswers && isCorrect;
+
+                          return (
+                            <div
+                              key={opt.num}
+                              style={{
+                                padding: '12px 14px',
+                                borderRadius: 6,
+                                border: showHighlight ? '2px solid #38a169' : '1px solid #e2e8f0',
+                                backgroundColor: showHighlight ? '#f0fff4' : '#fff',
+                                display: 'flex',
+                                alignItems: 'flex-start',
+                                gap: 10,
+                                transition: 'all 0.15s ease'
+                              }}
+                            >
+                              <span style={{
+                                width: 24,
+                                height: 24,
+                                borderRadius: '50%',
+                                backgroundColor: showHighlight ? '#38a169' : '#edf2f7',
+                                color: showHighlight ? '#fff' : '#4a5568',
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                fontSize: 12,
+                                fontWeight: 700,
+                                flexShrink: 0
+                              }}>
+                                {showHighlight ? '✓' : opt.label}
+                              </span>
+                              <div
+                                style={{
+                                  fontSize: 14,
+                                  color: showHighlight ? '#22543d' : '#4a5568',
+                                  fontWeight: showHighlight ? 600 : 400
+                                }}
+                                dangerouslySetInnerHTML={{ __html: opt.text }}
+                              />
+                            </div>
+                          );
+                        })}
+                      </div>
+
+                      {/* Explanation & Classical Reference Source */}
+                      {revealAllAnswers && q.com && (
+                        <div style={{
+                          marginTop: 18,
+                          padding: '12px 16px',
+                          borderRadius: 6,
+                          backgroundColor: '#ebf8ff',
+                          borderLeft: '4px solid #3182ce',
+                          fontSize: 13,
+                          color: '#2b6cb0'
+                        }}>
+                          <div style={{ fontWeight: 700, marginBottom: 4, display: 'flex', alignItems: 'center', gap: 6 }}>
+                            <i className="fa fa-info-circle"></i> Classical Commentary & Verified Reference:
+                          </div>
+                          <div dangerouslySetInnerHTML={{ __html: q.com }} />
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+
+              {/* Bottom Pagination */}
+              <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                gap: 12,
+                marginTop: 24,
+                marginBottom: 30
+              }}>
+                <button
+                  disabled={pageOffset === 0}
+                  onClick={() => setPageOffset(Math.max(0, pageOffset - pageSize))}
+                  className="btn btn-default"
+                  style={{ minWidth: 120 }}
+                >
+                  &laquo; Previous 50
+                </button>
+                <button
+                  disabled={questions.length < pageSize}
+                  onClick={() => setPageOffset(pageOffset + pageSize)}
+                  className="btn btn-primary"
+                  style={{ minWidth: 120 }}
+                >
+                  Next 50 &raquo;
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // ==========================================
   // VIEW 1: Samhitawise Questions List (?action=samhitas)
+  // ==========================================
   if (action === 'samhitas') {
-    const samhitasList = [
-      { id: 1, name: "Charaka Samhita (चरक संहिता)", questions: 11175 },
-      { id: 2, name: "Sushruta Samhita (सुश्रुत संहिता)", questions: 8709 },
-      { id: 3, name: "Ashtanga Hridaya (अष्टांग हृदय)", questions: 6229 },
-      { id: 4, name: "Ashtanga Samgrah (अष्टांग संग्रह)", questions: 2164 },
-      { id: 5, name: "Chakradatt Samhita (चक्रदत्त संहिता)", questions: 25 },
-      { id: 6, name: "Madhava Nidana (माधव निदान)", questions: 1480 },
-      { id: 7, name: "Sharngadhara Samhita (शार्ङ्गधर संहिता)", questions: 1240 },
-      { id: 8, name: "Bhavaprakasha (भावप्रकाश)", questions: 1860 },
-      { id: 9, name: "Kashyapa Samhita (काश्यप संहिता)", questions: 980 },
-      { id: 10, name: "Bhela Samhita (भेल संहिता)", questions: 450 },
-      { id: 11, name: "Harita Samhita (हारीत संहिता)", questions: 380 },
-      { id: 12, name: "Rasa Tarangini (रसतरंगिणी)", questions: 890 }
-    ];
+    const filteredSamhitas = QBANK_SAMHITAS.filter(s =>
+      !filterQuery.trim() ||
+      s.name.toLowerCase().includes(filterQuery.toLowerCase()) ||
+      (s.hindiName && s.hindiName.includes(filterQuery))
+    );
 
     return (
       <div style={{ backgroundColor: '#fff', minHeight: 'calc(100vh - 50px)', paddingBottom: 40 }}>
         <PageHeroIllustration type="samhitas" />
         <div style={{ textAlign: 'center', padding: '16px 0 12px 0', borderBottom: '1px solid #eee' }}>
           <h3 style={{ margin: 0, fontSize: 18, fontWeight: 700, color: '#2c3e50', letterSpacing: 0.5 }}>
-            SAMHITA WISE QUESTIONS
+            SAMHITA WISE QUESTIONS ({QBANK_SAMHITAS.length} Classical Texts)
           </h3>
         </div>
+
+        {/* Search */}
+        <div style={{ maxWidth: 1100, margin: '16px auto', padding: '0 15px' }}>
+          <input
+            type="text"
+            placeholder="Search Samhita (e.g. Charaka, Sushruta, Ashtanga, Madhava)..."
+            value={filterQuery}
+            onChange={(e) => setFilterQuery(e.target.value)}
+            style={{
+              width: '100%',
+              padding: '10px 14px',
+              borderRadius: 6,
+              border: '1px solid #ddd',
+              fontSize: 14
+            }}
+          />
+        </div>
+
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          {samhitasList.map(item => (
-            <div
-              key={item.id}
-              onClick={() => navigate(`/quiz/practice?sam_id=${item.id}`)}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                padding: '16px 20px',
-                borderBottom: '1px solid #eee',
-                cursor: 'pointer',
-                gap: 20,
-                transition: 'background-color 0.15s ease'
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#fafcfe')}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
-            >
-              <div style={{ textAlign: 'center', width: 60, flexShrink: 0 }}>
-                <div style={{
-                  width: 28,
-                  height: 28,
-                  borderRadius: '50%',
-                  backgroundColor: '#d81b60',
-                  color: '#fff',
-                  display: 'inline-flex',
+          {filteredSamhitas.map(item => {
+            const dbCount = samhitaDbStats[item.name.toLowerCase()] || 0;
+            return (
+              <div
+                key={item.id}
+                onClick={() => navigate(`/app1.5/category.php?action=questions&samhita=${encodeURIComponent(item.name)}`)}
+                style={{
+                  display: 'flex',
                   alignItems: 'center',
-                  justifyContent: 'center',
-                  fontWeight: 700,
-                  fontSize: 14
-                }}>
-                  ?
+                  padding: '16px 20px',
+                  borderBottom: '1px solid #eee',
+                  cursor: 'pointer',
+                  gap: 20,
+                  transition: 'background-color 0.15s ease'
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#fafcfe')}
+                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
+              >
+                <div style={{ textAlign: 'center', width: 65, flexShrink: 0 }}>
+                  <div style={{
+                    width: 32,
+                    height: 32,
+                    borderRadius: '50%',
+                    backgroundColor: '#d81b60',
+                    color: '#fff',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontWeight: 700,
+                    fontSize: 14
+                  }}>
+                    ?
+                  </div>
+                  <div style={{ fontSize: 12, fontWeight: 700, color: '#333', marginTop: 4 }}>
+                    {item.count}
+                  </div>
                 </div>
-                <div style={{ fontSize: 12, fontWeight: 700, color: '#333', marginTop: 4 }}>
-                  {item.questions}
+
+                <div style={{ flex: 1 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 15, fontWeight: 700, color: '#2c3e50' }}>
+                    <i className="fa fa-book text-aqua"></i>
+                    <span>{item.name} {item.hindiName ? `(${item.hindiName})` : ''}</span>
+                  </div>
+                  <div style={{ fontSize: 12, color: '#777', marginTop: 4, display: 'flex', gap: 12 }}>
+                    <span>
+                      <i className="fa fa-question-circle" style={{ color: '#d81b60', marginRight: 4 }}></i>
+                      Catalog Total: <strong>{item.count} MCQs</strong>
+                    </span>
+                    {dbCount > 0 && (
+                      <span style={{ color: '#00a65a', fontWeight: 600 }}>
+                        <i className="fa fa-check-circle" style={{ marginRight: 4 }}></i>
+                        {dbCount} In Local SQLite
+                      </span>
+                    )}
+                  </div>
+                </div>
+
+                <div style={{ textAlign: 'right' }}>
+                  <button
+                    className="btn btn-sm btn-primary"
+                    style={{ fontSize: 12, fontWeight: 600 }}
+                  >
+                    Explore MCQs &raquo;
+                  </button>
                 </div>
               </div>
-              <div style={{ flex: 1 }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 15, fontWeight: 700, color: '#2c3e50' }}>
-                  <i className="fa fa-book text-aqua"></i>
-                  <span>{item.name}</span>
-                </div>
-                <div style={{ fontSize: 12, color: '#777', marginTop: 4 }}>
-                  <i className="fa fa-question-circle" style={{ color: '#d81b60', marginRight: 4 }}></i>
-                  Total Questions: {item.questions}
-                </div>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     );
   }
 
+  // ==========================================
   // VIEW 2: Subjectwise Questions List (?action=subjects)
+  // ==========================================
   if (action === 'subjects') {
-    const subjectsList = [
-      { id: 1, name: "Kayachikitsa", count: 6759 },
-      { id: 2, name: "Rog Nidana", count: 6263 },
-      { id: 3, name: "Dravyaguna Vigyan", count: 5974 },
-      { id: 4, name: "Shalya Tantra", count: 4292 },
-      { id: 5, name: "Shalakya Tantra", count: 3331 },
-      { id: 6, name: "Miscellaneous", count: 3126 },
-      { id: 7, name: "Panchkarma", count: 2976 },
-      { id: 8, name: "Swasthvrita", count: 2166 },
-      { id: 9, name: "Sharir Rachna", count: 2138 }
-    ];
+    const filteredSubjects = QBANK_SUBJECTS.filter(s =>
+      !filterQuery.trim() ||
+      s.name.toLowerCase().includes(filterQuery.toLowerCase())
+    );
 
     return (
       <div style={{ backgroundColor: '#fff', minHeight: 'calc(100vh - 50px)', paddingBottom: 40 }}>
         <PageHeroIllustration type="subjects" />
         <div style={{ textAlign: 'center', padding: '16px 0 12px 0', borderBottom: '1px solid #eee' }}>
           <h3 style={{ margin: 0, fontSize: 18, fontWeight: 700, color: '#2c3e50', letterSpacing: 0.5 }}>
-            SUBJECTWISE WISE QUESTIONS
+            SUBJECTWISE QUESTIONS ({QBANK_SUBJECTS.length} Subjects, {TOTAL_QBANK_COUNT.toLocaleString()} MCQs)
           </h3>
         </div>
+
+        {/* Search */}
+        <div style={{ maxWidth: 1100, margin: '16px auto', padding: '0 15px' }}>
+          <input
+            type="text"
+            placeholder="Search Subject (e.g. Kayachikitsa, Rog Nidana, Dravyaguna, Shalya Tantra)..."
+            value={filterQuery}
+            onChange={(e) => setFilterQuery(e.target.value)}
+            style={{
+              width: '100%',
+              padding: '10px 14px',
+              borderRadius: 6,
+              border: '1px solid #ddd',
+              fontSize: 14
+            }}
+          />
+        </div>
+
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          {subjectsList.map(item => (
-            <div
-              key={item.id}
-              onClick={() => navigate(`/quiz/practice?sub_id=${item.id}`)}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                padding: '16px 20px',
-                borderBottom: '1px solid #eee',
-                cursor: 'pointer',
-                transition: 'background-color 0.15s ease'
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#fafcfe')}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
-            >
-              <div style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 14, fontWeight: 600, color: '#2c3e50' }}>
-                <i className="fa fa-book text-aqua"></i>
-                <span>{item.name}</span>
+          {filteredSubjects.map(item => {
+            const dbCount = subjectDbStats[item.name.toLowerCase()] || 0;
+            return (
+              <div
+                key={item.id}
+                onClick={() => navigate(`/app1.5/category.php?action=questions&subject=${encodeURIComponent(item.name)}`)}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  padding: '16px 20px',
+                  borderBottom: '1px solid #eee',
+                  cursor: 'pointer',
+                  transition: 'background-color 0.15s ease'
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#fafcfe')}
+                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                  <span style={{
+                    width: 28,
+                    height: 28,
+                    borderRadius: 4,
+                    backgroundColor: '#eaf4fd',
+                    color: '#2980b9',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontWeight: 700,
+                    fontSize: 12
+                  }}>
+                    {item.id}
+                  </span>
+                  <div>
+                    <div style={{ fontSize: 15, fontWeight: 700, color: '#2c3e50' }}>
+                      {item.name}
+                    </div>
+                    {dbCount > 0 && (
+                      <div style={{ fontSize: 11, color: '#00a65a', fontWeight: 600, marginTop: 2 }}>
+                        <i className="fa fa-database" style={{ marginRight: 4 }}></i>
+                        {dbCount} Extracted in Local SQLite
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                  <span style={{
+                    backgroundColor: '#1b3a57',
+                    color: '#fff',
+                    padding: '4px 14px',
+                    borderRadius: 12,
+                    fontSize: 12,
+                    fontWeight: 700
+                  }}>
+                    {item.count.toLocaleString()} MCQs
+                  </span>
+                  <i className="fa fa-chevron-right text-muted" style={{ fontSize: 12 }}></i>
+                </div>
               </div>
-              <span style={{
-                backgroundColor: '#1b3a57',
-                color: '#fff',
-                padding: '4px 14px',
-                borderRadius: 12,
-                fontSize: 12,
-                fontWeight: 700
-              }}>
-                {item.count}
-              </span>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     );
   }
 
+  // ==========================================
   // VIEW 3: Tagwise Questions List (?action=tags)
+  // ==========================================
   if (action === 'tags') {
     const tagsList = [
       { id: 'statement', name: "Statement MCQs", count: 5070 },
@@ -202,28 +713,24 @@ export const CategoryPage: React.FC = () => {
     );
   }
 
+  // ==========================================
   // VIEW 4: Default Question Bank Home (/app1.5/category.php)
+  // ==========================================
   return (
     <div style={{ backgroundColor: '#fff', minHeight: 'calc(100vh - 50px)', paddingBottom: 40 }}>
       {/* Top Graphic */}
       <div style={{
         backgroundColor: '#eef9fb',
-        padding: '20px 15px',
+        padding: '24px 15px',
         textAlign: 'center',
         borderBottom: '1px solid #d8edf3'
       }}>
-        <svg viewBox="0 0 400 80" style={{ maxHeight: 70, width: 'auto' }}>
-          <rect x="150" y="55" width="100" height="15" rx="3" fill="#2980b9" />
-          <rect x="155" y="38" width="90" height="15" rx="3" fill="#e67e22" />
-          <rect x="160" y="22" width="80" height="15" rx="3" fill="#c0392b" />
-        </svg>
-      </div>
-
-      {/* Title */}
-      <div style={{ textAlign: 'center', padding: '16px 0 10px 0', borderBottom: '1px solid #eee' }}>
-        <h3 style={{ margin: 0, fontSize: 18, fontWeight: 700, color: '#2c3e50', letterSpacing: 0.5 }}>
-          SAMHITA WISE QUESTIONS
-        </h3>
+        <h2 style={{ margin: '0 0 6px 0', color: '#1b3a57', fontWeight: 700 }}>
+          AYURQUEST MCQ QUESTION BANK
+        </h2>
+        <p style={{ margin: 0, color: '#555', fontSize: 14 }}>
+          Comprehensive Repository of 57,375 Bilingual Ayurvedic MCQs with Official Citations
+        </p>
       </div>
 
       {/* 3 Stats Columns */}
@@ -232,233 +739,126 @@ export const CategoryPage: React.FC = () => {
         margin: '0 auto',
         display: 'flex',
         borderBottom: '1px solid #eee',
-        padding: '14px 0',
+        padding: '16px 0',
         textAlign: 'center'
       }}>
         <div style={{ flex: 1, borderRight: '1px solid #eee' }}>
-          <div style={{ fontSize: 11, color: '#888' }}>Total Questions</div>
-          <div style={{ fontSize: 16, fontWeight: 700, color: '#2c3e50' }}>57375</div>
+          <div style={{ fontSize: 12, color: '#888' }}>Total Question Bank</div>
+          <div style={{ fontSize: 20, fontWeight: 700, color: '#1b3a57' }}>{TOTAL_QBANK_COUNT.toLocaleString()}</div>
         </div>
         <div style={{ flex: 1, borderRight: '1px solid #eee' }}>
-          <div style={{ fontSize: 11, color: '#888' }}>Total Solved</div>
-          <div style={{ fontSize: 16, fontWeight: 700, color: '#2c3e50' }}>0</div>
+          <div style={{ fontSize: 12, color: '#888' }}>Available in Local SQLite</div>
+          <div style={{ fontSize: 20, fontWeight: 700, color: '#00a65a' }}>
+            {Object.values(subjectDbStats).reduce((a, b) => a + b, 0).toLocaleString()}
+          </div>
         </div>
         <div style={{ flex: 1 }}>
-          <div style={{ fontSize: 11, color: '#888' }}>Unique Solved</div>
-          <div style={{ fontSize: 16, fontWeight: 700, color: '#2c3e50' }}>0</div>
+          <div style={{ fontSize: 12, color: '#888' }}>Total Subjects</div>
+          <div style={{ fontSize: 20, fontWeight: 700, color: '#2980b9' }}>{QBANK_SUBJECTS.length}</div>
         </div>
       </div>
 
-      {/* 2 Blue Buttons: Subscription Plans & Support Helpline */}
+      {/* 2 Main Action Cards: Subjects & Samhitas */}
       <div style={{
         maxWidth: 1100,
-        margin: '18px auto',
+        margin: '24px auto',
         padding: '0 15px',
-        display: 'flex',
-        gap: 15
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+        gap: 20
       }}>
-        <Link
-          to="/app1.5/membership.php"
+        {/* Subjectwise Questions Card */}
+        <div
+          onClick={() => navigate('/app1.5/category.php?action=subjects')}
           style={{
-            flex: 1,
-            backgroundColor: '#2aacdd',
-            color: '#fff',
-            padding: '10px 15px',
-            borderRadius: 4,
-            fontSize: 13,
-            fontWeight: 600,
-            textAlign: 'center',
-            textDecoration: 'none',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: 6
+            backgroundColor: '#fff',
+            borderRadius: 8,
+            border: '2px solid #2980b9',
+            padding: 24,
+            cursor: 'pointer',
+            boxShadow: '0 4px 12px rgba(41, 128, 185, 0.1)',
+            transition: 'transform 0.15s ease'
           }}
+          onMouseEnter={(e) => (e.currentTarget.style.transform = 'translateY(-3px)')}
+          onMouseLeave={(e) => (e.currentTarget.style.transform = 'translateY(0)')}
         >
-          <i className="fa fa-life-ring"></i>
-          <span>Subscription Plans</span>
-        </Link>
-
-        <a
-          href="https://wa.me/919876543210"
-          target="_blank"
-          rel="noreferrer"
-          style={{
-            flex: 1,
-            backgroundColor: '#2aacdd',
-            color: '#fff',
-            padding: '10px 15px',
-            borderRadius: 4,
-            fontSize: 13,
-            fontWeight: 600,
-            textAlign: 'center',
-            textDecoration: 'none',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: 6
-          }}
-        >
-          <i className="fa fa-life-ring"></i>
-          <span>Support Helpline</span>
-        </a>
-      </div>
-
-      {/* Solved vs Unsolved Split */}
-      <div style={{
-        maxWidth: 1100,
-        margin: '20px auto',
-        padding: '0 15px',
-        display: 'flex',
-        border: '1px solid #eee',
-        borderRadius: 4,
-        overflow: 'hidden'
-      }}>
-        <div style={{
-          flex: 1,
-          padding: '24px 15px',
-          textAlign: 'center',
-          borderRight: '1px solid #eee'
-        }}>
-          <div style={{
-            width: 32,
-            height: 32,
-            borderRadius: '50%',
-            backgroundColor: '#27ae60',
-            color: '#fff',
-            display: 'inline-flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            marginBottom: 8
-          }}>
-            <i className="fa fa-check"></i>
-          </div>
-          <div style={{ fontSize: 18, fontWeight: 700, color: '#333' }}>0</div>
-          <div style={{ fontSize: 13, color: '#555', fontWeight: 600 }}>Solved Question</div>
-        </div>
-
-        <div style={{
-          flex: 1,
-          padding: '24px 15px',
-          textAlign: 'center'
-        }}>
-          <div style={{
-            width: 32,
-            height: 32,
-            borderRadius: '50%',
-            backgroundColor: '#e74c3c',
-            color: '#fff',
-            display: 'inline-flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            marginBottom: 8
-          }}>
-            <i className="fa fa-times"></i>
-          </div>
-          <div style={{ fontSize: 18, fontWeight: 700, color: '#333' }}>57375</div>
-          <div style={{ fontSize: 13, color: '#555', fontWeight: 600 }}>Unsolved Question</div>
-        </div>
-      </div>
-
-      {/* Two Pale-Cyan Cards: Samhitawise & Subjectwise */}
-      <div style={{ maxWidth: 1100, margin: '20px auto', padding: '0 15px' }}>
-        <div className="row">
-          {/* Card 1: Samhitawise */}
-          <div className="col-md-6" style={{ marginBottom: 20 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 12 }}>
             <div style={{
-              backgroundColor: '#eef9fb',
-              borderRadius: 6,
-              border: '1px solid #d8edf3',
-              padding: '25px 20px',
-              textAlign: 'center'
+              width: 50,
+              height: 50,
+              borderRadius: 8,
+              backgroundColor: '#eaf4fd',
+              color: '#2980b9',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontSize: 24
             }}>
-              <div style={{ marginBottom: 12 }}>
-                <i className="fa fa-book" style={{ fontSize: 36, color: '#d81b60' }}></i>
+              <i className="fa fa-folder-open"></i>
+            </div>
+            <div>
+              <h3 style={{ margin: 0, fontSize: 18, fontWeight: 700, color: '#1b3a57' }}>
+                Subjectwise MCQs
+              </h3>
+              <div style={{ fontSize: 13, color: '#777' }}>
+                38 Ayurvedic & Modern Subjects
               </div>
-              <h4 style={{ margin: '0 0 10px 0', fontSize: 18, fontWeight: 700, color: '#d81b60' }}>
-                Samhitawise
-              </h4>
-              <p style={{ fontSize: 13, color: '#555', marginBottom: 20 }}>
-                Practice 57375 questions from different Samhitas.
-              </p>
-              <Link
-                to="/app1.5/category.php?action=samhitas"
-                style={{
-                  display: 'block',
-                  backgroundColor: '#fff',
-                  border: '1px solid #d8edf3',
-                  padding: '10px',
-                  borderRadius: 4,
-                  color: '#2c3e50',
-                  fontWeight: 600,
-                  fontSize: 13,
-                  textDecoration: 'none'
-                }}
-              >
-                <i className="fa fa-chevron-circle-right text-muted" style={{ marginRight: 6 }}></i>
-                Practice Now
-              </Link>
             </div>
           </div>
-
-          {/* Card 2: Subjectwise */}
-          <div className="col-md-6" style={{ marginBottom: 20 }}>
-            <div style={{
-              backgroundColor: '#eef9fb',
-              borderRadius: 6,
-              border: '1px solid #d8edf3',
-              padding: '25px 20px',
-              textAlign: 'center'
-            }}>
-              <div style={{ marginBottom: 12 }}>
-                <i className="fa fa-book" style={{ fontSize: 36, color: '#2aacdd' }}></i>
-              </div>
-              <h4 style={{ margin: '0 0 10px 0', fontSize: 18, fontWeight: 700, color: '#2aacdd' }}>
-                Subjectwise
-              </h4>
-              <p style={{ fontSize: 13, color: '#555', marginBottom: 20 }}>
-                Practice 57375 questions from different Subjects.
-              </p>
-              <Link
-                to="/app1.5/category.php?action=subjects"
-                style={{
-                  display: 'block',
-                  backgroundColor: '#fff',
-                  border: '1px solid #d8edf3',
-                  padding: '10px',
-                  borderRadius: 4,
-                  color: '#2c3e50',
-                  fontWeight: 600,
-                  fontSize: 13,
-                  textDecoration: 'none'
-                }}
-              >
-                <i className="fa fa-chevron-circle-right text-muted" style={{ marginRight: 6 }}></i>
-                Practice Now
-              </Link>
-            </div>
+          <p style={{ color: '#555', fontSize: 13, lineHeight: 1.5 }}>
+            Browse 57,375 questions organized by Kayachikitsa, Rog Nidana, Dravyaguna Vigyan, Shalya, Shalakya, Panchkarma, and 32 more subjects.
+          </p>
+          <div style={{ marginTop: 16, fontWeight: 700, color: '#2980b9', fontSize: 14 }}>
+            Explore 38 Subjects &raquo;
           </div>
         </div>
-      </div>
 
-      {/* Footer */}
-      <div style={{
-        textAlign: 'center',
-        padding: '20px 0 10px 0',
-        color: '#666',
-        fontSize: 12,
-        borderTop: '1px solid #eee',
-        display: 'flex',
-        justifyContent: 'space-between',
-        maxWidth: 1100,
-        margin: '20px auto 0 auto',
-        paddingLeft: 15,
-        paddingRight: 15
-      }}>
-        <div>&copy; 2026 AyurQuest Education. All rights reserved.</div>
-        <div>Version 1.6</div>
+        {/* Samhitawise Questions Card */}
+        <div
+          onClick={() => navigate('/app1.5/category.php?action=samhitas')}
+          style={{
+            backgroundColor: '#fff',
+            borderRadius: 8,
+            border: '2px solid #d81b60',
+            padding: 24,
+            cursor: 'pointer',
+            boxShadow: '0 4px 12px rgba(216, 27, 96, 0.1)',
+            transition: 'transform 0.15s ease'
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.transform = 'translateY(-3px)')}
+          onMouseLeave={(e) => (e.currentTarget.style.transform = 'translateY(0)')}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 12 }}>
+            <div style={{
+              width: 50,
+              height: 50,
+              borderRadius: 8,
+              backgroundColor: '#fde8ef',
+              color: '#d81b60',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontSize: 24
+            }}>
+              <i className="fa fa-book"></i>
+            </div>
+            <div>
+              <h3 style={{ margin: 0, fontSize: 18, fontWeight: 700, color: '#1b3a57' }}>
+                Samhitawise MCQs
+              </h3>
+              <div style={{ fontSize: 13, color: '#777' }}>
+                16 Classical Ayurvedic Texts
+              </div>
+            </div>
+          </div>
+          <p style={{ color: '#555', fontSize: 13, lineHeight: 1.5 }}>
+            Practice questions chapter-by-chapter from Charaka (11,175 Qs), Sushruta (8,709 Qs), Ashtanga Hridaya (6,229 Qs), Madhava Nidana, and other Brihatrayi/Laghutrayi texts.
+          </p>
+          <div style={{ marginTop: 16, fontWeight: 700, color: '#d81b60', fontSize: 14 }}>
+            Explore 16 Samhitas &raquo;
+          </div>
+        </div>
       </div>
     </div>
   );
 };
-

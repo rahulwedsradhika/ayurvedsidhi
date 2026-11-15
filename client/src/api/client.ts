@@ -49,22 +49,40 @@ export const api = {
 
   async getQuestions(params?: {
     sam_id?: number;
+    samhita_name?: string;
     sth_id?: number;
     sub_id?: number;
+    subject_name?: string;
     tag?: string;
     search?: string;
     limit?: number;
+    offset?: number;
   }): Promise<Question[]> {
     const query = new URLSearchParams();
     if (params?.sam_id) query.set('sam_id', params.sam_id.toString());
+    if (params?.samhita_name) query.set('samhita_name', params.samhita_name);
     if (params?.sth_id) query.set('sth_id', params.sth_id.toString());
     if (params?.sub_id) query.set('sub_id', params.sub_id.toString());
+    if (params?.subject_name) query.set('subject_name', params.subject_name);
     if (params?.tag) query.set('tag', params.tag);
     if (params?.search) query.set('search', params.search);
     if (params?.limit) query.set('limit', params.limit.toString());
+    if (params?.offset) query.set('offset', params.offset.toString());
 
     const res = await fetch(`${API_BASE}/questions?${query.toString()}`);
     if (!res.ok) throw new Error('Failed to load questions');
+    return res.json();
+  },
+
+  async getSubjectStats(): Promise<{ subject_name: string; count: number; subject_id: number }[]> {
+    const res = await fetch(`${API_BASE}/stats/subjects`);
+    if (!res.ok) throw new Error('Failed to load subject stats');
+    return res.json();
+  },
+
+  async getSamhitaStats(): Promise<{ samhita_name: string; count: number; samhita_id: number }[]> {
+    const res = await fetch(`${API_BASE}/stats/samhitas`);
+    if (!res.ok) throw new Error('Failed to load samhita stats');
     return res.json();
   },
 

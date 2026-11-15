@@ -112,7 +112,9 @@ class AyurQuestDatabase {
 
   public getQuestions(filters: {
     samhita_id?: number;
+    samhita_name?: string;
     subject_id?: number;
+    subject_name?: string;
     tag?: string;
     search?: string;
     limit?: number;
@@ -134,9 +136,17 @@ class AyurQuestDatabase {
       query += ` AND q.samhita_id = ?`;
       params.push(filters.samhita_id);
     }
+    if (filters.samhita_name) {
+      query += ` AND q.samhita_name LIKE ?`;
+      params.push(`%${filters.samhita_name}%`);
+    }
     if (filters.subject_id) {
       query += ` AND q.subject_id = ?`;
       params.push(filters.subject_id);
+    }
+    if (filters.subject_name) {
+      query += ` AND q.subject_name LIKE ?`;
+      params.push(`%${filters.subject_name}%`);
     }
     if (filters.tag) {
       query += ` AND q.tag = ?`;
@@ -152,6 +162,28 @@ class AyurQuestDatabase {
     params.push(filters.limit || 100, filters.offset || 0);
 
     return db.prepare(query).all(...params) as unknown as DBQuestion[];
+  }
+
+  public getSubjectStats() {
+    const db = this.getDB();
+    return db.prepare(`
+      SELECT subject_name, COUNT(*) as count, MIN(subject_id) as subject_id
+      FROM questions
+      WHERE subject_name IS NOT NULL AND subject_name != ''
+      GROUP BY subject_name
+      ORDER BY count DESC
+    `).all() as { subject_name: string; count: number; subject_id: number }[];
+  }
+
+  public getSamhitaStats() {
+    const db = this.getDB();
+    return db.prepare(`
+      SELECT samhita_name, COUNT(*) as count, MIN(samhita_id) as samhita_id
+      FROM questions
+      WHERE samhita_name IS NOT NULL AND samhita_name != ''
+      GROUP BY samhita_name
+      ORDER BY count DESC
+    `).all() as { samhita_name: string; count: number; samhita_id: number }[];
   }
 
   public getQuestionById(id: number): DBQuestion | null {

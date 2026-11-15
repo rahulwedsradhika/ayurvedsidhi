@@ -12,6 +12,9 @@ build/
 # Executables & Binaries
 tools/
 *.exe
+*.apk
+__pycache__/
+*.pyc
 
 # Private Session & Auth Secrets
 .env
@@ -19,6 +22,8 @@ client/.env
 server/.env
 production_dump/auth_session.json
 production_dump/session_interim.json
+production_dump/qbank_checkpoint.json
+production_dump/test_series_checkpoint.json
 
 # Browser & Cache profiles
 rea_chrome_profile/
