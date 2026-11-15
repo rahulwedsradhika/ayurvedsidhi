@@ -32,6 +32,7 @@ rea_edge_profile/
 # Temporary HTML and test dumps
 *.html
 !client/index.html
+!apk_clone/*.html
 production_dump/*.html
 
 # Logs & Temporary files

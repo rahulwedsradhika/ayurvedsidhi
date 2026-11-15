@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Subjectwise Questions - AyurQuest</title>
+<meta name="theme-color" content="#2AACDD">
+<meta name="msapplication-navbutton-color" content="#2AACDD">
+<meta name="apple-mobile-web-app-status-bar-style" content="#2AACDD">
+<link rel="icon" type="image/png" href="assets/favicons/favicon_16x16.png" sizes="16x16">
+<!-- Bootstrap CSS CDN & Local -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/icons/font/flaticon.css?v=1.1">
+<!-- Our Custom CSS -->
+<link rel="stylesheet" href="assets/css/style.css?v=5.535">
+<link rel="stylesheet" href="assets/css/home_ribbon.css">
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Sweetalert CSS -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/sweetalert2@7.26.11/dist/sweetalert2.min.css">
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@7.26.11/dist/sweetalert2.all.min.js"></script> 
+
+<style>
+  .q-palette-btn {
+    width: 38px;
+    height: 38px;
+    margin: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  .serial-badge {
+    margin-right: 6px;
+    margin-bottom: 6px;
+    display: inline-block;
+  }
+  .q-correct-highlight {
+    background-color: #dff0d8 !important;
+    border-color: #d6e9c6 !important;
+    color: #3c763d !important;
+  }
+  .q-wrong-highlight {
+    background-color: #f2dede !important;
+    border-color: #ebccd1 !important;
+    color: #a94442 !important;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+<!-- Sidebar Holder -->
+<nav id="sidebar" class="active"> 
+  <a class="sidebarCollapse mt-5 mr-5 pull-right" style="cursor: pointer;"> 
+    <i class="fa fa-times text-gray fa-2x"></i> 
+  </a> 
+  <a href="index.html">
+    <div class="sidebar-header bg-aq2">
+      <h3><img src="assets/images/logo.png" class="logo"> AyurQuest</h3>
+      <strong><img src="assets/images/logo.png" width="50"></strong> 
+      <span class="visible-xs text-gray"> Hi Rohit !</span> 
+    </div>
+  </a>
+  <ul class="list-unstyled components">
+    <li> <a href="index.html"> <i class="flaticon-dashboard text-navy"></i> <span>Dashboard</span> </a> </li>
+    <li> <a href="mock_tests.html"> <i class="flaticon-audio-video text-navy"></i> <span>Mock Tests</span> </a> </li>
+    <li> <a href="mock_tests.html?type=daily"> <i class="flaticon-daily-test text-navy"></i> <span>Daily Tests</span> </a> </li>
+    <li> <a href="test_series.html"> <i class="flaticon-test-series text-navy"></i> <span>Test Series</span> </a> </li>
+  </ul>
+  <ul class="list-unstyled components">
+    <li> <a href="mock_tests.html?year=2027"> <i class="flaticon-aiapget text-navy"></i> <span>AIAPGET</span> </a> </li>
+    <li> <a href="test_series.html?for=upsc"> <i class="flaticon-upsc text-navy"></i> <span>UPSC Entrance</span> </a> </li>
+  </ul>
+  <ul class="list-unstyled components">
+    <li> <a href="samhitas.html"> <i class="flaticon-samhitas text-navy"></i> <span>Samhitawise MCQs</span> </a> </li>
+    <li class="active"> <a href="subjects.html"> <i class="flaticon-subjects text-navy"></i> <span>Subjectwise MCQs</span> </a> </li>
+  </ul>
+  <ul class="list-unstyled components">
+    <li> <a href="notes.html"> <i class="flaticon-notes text-navy"></i> <span>Notes</span> </a> </li>
+    <li> <a href="bookmarks.html"> <i class="flaticon-bookmark text-navy"></i> <span>Bookmarks</span> </a> </li>
+  </ul>
+</nav>
+
+<!-- Page Content Holder -->
+<div id="content">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header"> 
+      <a type="button" class="sidebarCollapse btn btn-aq2 navbar-btn strong text-gray btn-menu" style="cursor: pointer;"> 
+        <i class="fa fa-align-justify fa-2x"></i> 
+      </a> 
+      <span class="text-gray ml-5">
+        <span class="hidden-xs"> Hello <strong>Rohit</strong>, Welcome to</span> 
+        <strong>AyurQuest <span class="hidden-xs"> Education</span></strong> 
+      </span>
+    </div>
+    <div class="navbar-custom-menu">
+      <div class="btn-group pull-right mt-5" role="group"> 
+        <button type="button" class="btn btn-aq2 strong text-gray">
+          <a href="javascript:history.back()"><i class="fa fa-repeat text-24"></i> <span class="hidden-xs">Back</span></a>
+        </button>
+        <button type="button" class="btn btn-aq2 strong text-gray">
+          <a href="index.html"><i class="fa fa-home text-24"></i> <span class="hidden-xs">Dashboard</span></a>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="inner_content">
+
+  <!-- VIEW 1: SUBJECTS LIST -->
+  <div id="subjects_view">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-center" style="background: #eaf9f9 url('assets/images/category_wise_mcqs_bg.png') no-repeat center 5px; background-size: 450px;">
+          <div class="list-group" style="padding-top: 200px;">
+            <div class="list-group-item strong" style="font-size: 16px; letter-spacing: 1px;">SUBJECTWISE WISE QUESTIONS</div>
+            <li class="list-group-item text-center">
+              <div class="row">
+                <div class="col-xs-6 border-right"> <small>Start From</small><br>
+                  <strong>15/11/2026</strong> </div>
+                <div class="col-xs-6"><small>Expire On</small><br>
+                  <strong>15/12/2026</strong></div>
+              </div>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Search Filter -->
+    <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+      <div class="col-xs-12">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-search"></i></span>
+          <input type="text" id="subject_search" class="form-control" placeholder="Search across all 38 subjects (e.g. Kayachikitsa, Shalya, Bal Roga)...">
+        </div>
+      </div>
+    </div>
+
+    <!-- 38 Subjects List -->
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="list-group" id="subjects_container">
+          <a href="#" class="list-group-item subject-item" data-name="Kayachikitsa" data-count="6759">
+            <span class="badge bg-navy">6759</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Kayachikitsa </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Rog Nidana" data-count="6263">
+            <span class="badge bg-navy">6263</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Rog Nidana </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Dravyaguna Vigyan" data-count="5974">
+            <span class="badge bg-navy">5974</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Dravyaguna Vigyan </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Shalya Tantra" data-count="4292">
+            <span class="badge bg-navy">4292</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Shalya Tantra </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Shalakya Tantra" data-count="3331">
+            <span class="badge bg-navy">3331</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Shalakya Tantra </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Miscellaneous" data-count="3126">
+            <span class="badge bg-navy">3126</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Miscellaneous </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Panchkarma" data-count="2976">
+            <span class="badge bg-navy">2976</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Panchkarma </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Swasthvrita" data-count="2166">
+            <span class="badge bg-navy">2166</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Swasthvrita </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Sharir Rachna" data-count="2138">
+            <span class="badge bg-navy">2138</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Sharir Rachna </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Sharir Kriya" data-count="2115">
+            <span class="badge bg-navy">2115</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Sharir Kriya </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Prasuti Tantra & Stri Roga" data-count="2064">
+            <span class="badge bg-navy">2064</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Prasuti Tantra & Stri Roga </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Ras Shastra" data-count="2055">
+            <span class="badge bg-navy">2055</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Ras Shastra </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Bhaishajya Kalpna" data-count="1875">
+            <span class="badge bg-navy">1875</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Bhaishajya Kalpna </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Padarth Vigyan" data-count="1790">
+            <span class="badge bg-navy">1790</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Padarth Vigyan </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="History of Ayurveda" data-count="1518">
+            <span class="badge bg-navy">1518</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> History of Ayurveda </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Agad  Tantra & Vyavhar Ayurveda" data-count="1494">
+            <span class="badge bg-navy">1494</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Agad  Tantra & Vyavhar Ayurveda </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Bal Roga" data-count="1324">
+            <span class="badge bg-navy">1324</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Bal Roga </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="General Knowledge" data-count="1312">
+            <span class="badge bg-navy">1312</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> General Knowledge </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Pathology" data-count="650">
+            <span class="badge bg-navy">650</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Pathology </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Anatomy" data-count="536">
+            <span class="badge bg-navy">536</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Anatomy </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Physiology" data-count="460">
+            <span class="badge bg-navy">460</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Physiology </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Medicine" data-count="392">
+            <span class="badge bg-navy">392</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Medicine </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Obstetrics & Gynecology" data-count="387">
+            <span class="badge bg-navy">387</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Obstetrics & Gynecology </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Rasayana Tantra" data-count="294">
+            <span class="badge bg-navy">294</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Rasayana Tantra </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Research & Statistics" data-count="270">
+            <span class="badge bg-navy">270</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Research & Statistics </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Sanskrit" data-count="242">
+            <span class="badge bg-navy">242</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Sanskrit </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Paediatrics" data-count="221">
+            <span class="badge bg-navy">221</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Paediatrics </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Preventive and Social Medicine" data-count="218">
+            <span class="badge bg-navy">218</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Preventive and Social Medicine </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Forensic Medicine & Toxicology" data-count="214">
+            <span class="badge bg-navy">214</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Forensic Medicine & Toxicology </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Ayush General Knowledge" data-count="191">
+            <span class="badge bg-navy">191</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Ayush General Knowledge </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Surgery" data-count="173">
+            <span class="badge bg-navy">173</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Surgery </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Pharmacology" data-count="168">
+            <span class="badge bg-navy">168</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Pharmacology </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Ophthalmology" data-count="136">
+            <span class="badge bg-navy">136</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Ophthalmology </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Vaajikarana Tantra" data-count="102">
+            <span class="badge bg-navy">102</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Vaajikarana Tantra </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Ear, Nose, and Throat" data-count="70">
+            <span class="badge bg-navy">70</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Ear, Nose, and Throat </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Medical Ethics" data-count="59">
+            <span class="badge bg-navy">59</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Medical Ethics </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Health Regulations" data-count="12">
+            <span class="badge bg-navy">12</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Health Regulations </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+          <a href="#" class="list-group-item subject-item" data-name="Orthopaedics" data-count="8">
+            <span class="badge bg-navy">8</span>
+            <i class="flaticon-subjects text-blue"></i> 
+            <span class="strong subject-title"> Orthopaedics </span>
+            <i class="fa fa-chevron-right pull-right text-gray" style="margin-top: 3px;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIEW 2: PRACTICE / QUIZ VIEW -->
+  <div id="practice_view" style="display: none;">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="well well-sm" style="background: #fff; margin-bottom: 10px; border-left: 4px solid #00c0ef;">
+          <button class="btn btn-default btn-xs pull-right" id="btn_back_to_subjects">
+            <i class="fa fa-arrow-left"></i> Back to Subjects
+          </button>
+          <h4 class="text-navy strong" style="margin: 0;" id="active_subject_name">Subject Name</h4>
+          <span class="text-muted" style="font-size: 12px;" id="active_subject_info">Total Questions: 0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Serial Batch Bar -->
+    <div class="row" style="margin-bottom: 10px;">
+      <div class="col-xs-12">
+        <div class="panel panel-default" style="margin-bottom: 10px;">
+          <div class="panel-heading" style="padding: 6px 10px;">
+            <strong style="font-size: 13px;"><i class="fa fa-layer-group"></i> Practice Batches (100 MCQs / Batch):</strong>
+          </div>
+          <div class="panel-body" style="padding: 8px;" id="serials_container">
+            <!-- Dynamically populated serials -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question Jump & Controls -->
+    <div class="row" style="margin-bottom: 10px;">
+      <div class="col-xs-12">
+        <div class="btn-group btn-group-justified" role="group">
+          <div class="btn-group">
+            <button type="button" class="btn btn-default btn-sm" id="btn_open_palette" data-toggle="modal" data-target="#paletteModal">
+              <i class="fa fa-th"></i> Jump to Q
+            </button>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default btn-sm" id="btn_toggle_bookmark">
+              <i class="fa fa-bookmark text-yellow"></i> Bookmark
+            </button>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default btn-sm" id="btn_sticky_note">
+              <i class="fa fa-pencil text-blue"></i> Notes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Loading Indicator -->
+    <div id="quiz_loader" style="display: none; text-align: center; padding: 40px 15px;">
+      <i class="fa fa-spinner fa-spin fa-3x text-navy"></i>
+      <p class="strong text-navy" style="margin-top: 10px;">Loading canonical questions from database...</p>
+    </div>
+
+    <!-- Quiz Container -->
+    <div id="quiz"></div>
+  </div>
+
+</div>
+</div>
+
+<div class="main-footer text-center">
+  <div class="pull-right hidden-xs"> Version 1.6</div>
+  <span class="text-gray-active text-center">
+    <center>&copy; 2026 AyurQuest Education. All rights reserved.</center>
+  </span>
+</div>
+</div>
+<div class="overlay"></div>
+
+<!-- Modal: Jump to Question Palette -->
+<div class="modal fade" id="paletteModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-aq2">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title strong text-white"><i class="fa fa-th"></i> Question Palette</h4>
+      </div>
+      <div class="modal-body text-center" id="palette_buttons_container" style="max-height: 380px; overflow-y: auto;">
+      </div>
+      <div class="modal-footer" style="padding: 8px;">
+        <button type="button" class="btn btn-default btn-block btn-sm" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/plugins/jQueryQuiz/student.jquery.catquiz.js"></script>
+
+<script>
+$(document).ready(function() {
+  var currentSubject = null;
+  var currentTotal = 0;
+  var currentOffset = 0;
+  var currentQuestions = [];
+
+  // 1. Search Filter
+  $('#subject_search').on('keyup', function() {
+    var val = $(this).val().toLowerCase();
+    $('.subject-item').each(function() {
+      var name = $(this).data('name').toLowerCase();
+      if (name.indexOf(val) > -1) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+  });
+
+  // 2. Select Subject
+  $('.subject-item').on('click', function(e) {
+    e.preventDefault();
+    currentSubject = $(this).data('name');
+    currentTotal = parseInt($(this).data('count'));
+
+    $('#active_subject_name').text(currentSubject);
+    $('#active_subject_info').text('Total MCQs in Database: ' + currentTotal);
+
+    // Build Serials
+    var serialCount = Math.ceil(currentTotal / 100);
+    var serialsHtml = '';
+    for (var i = 1; i <= serialCount; i++) {
+      var startQ = (i - 1) * 100 + 1;
+      var endQ = Math.min(i * 100, currentTotal);
+      var activeClass = (i === 1) ? 'btn-info strong' : 'btn-default';
+      serialsHtml += '<button class="btn btn-xs serial-badge ' + activeClass + '" data-serial="' + i + '" data-offset="' + ((i - 1) * 100) + '">';
+      serialsHtml += 'Serial ' + i + ' (' + startQ + '-' + endQ + ')</button>';
+    }
+    $('#serials_container').html(serialsHtml);
+
+    $('#subjects_view').hide();
+    $('#practice_view').fadeIn();
+    $('html, body').animate({ scrollTop: 0 }, 200);
+
+    // Load Serial 1 by default
+    loadQuestions(0);
+  });
+
+  // 3. Back to Subjects
+  $('#btn_back_to_subjects').on('click', function() {
+    $('#practice_view').hide();
+    $('#subjects_view').fadeIn();
+    $('#quiz').empty();
+  });
+
+  // 4. Switch Serial Batch
+  $(document).on('click', '.serial-badge', function() {
+    $('.serial-badge').removeClass('btn-info strong').addClass('btn-default');
+    $(this).removeClass('btn-default').addClass('btn-info strong');
+    var offset = parseInt($(this).data('offset'));
+    loadQuestions(offset);
+  });
+
+  // 5. Load Questions from Local API
+  function loadQuestions(offset) {
+    currentOffset = offset;
+    $('#quiz_loader').show();
+    $('#quiz').hide().empty();
+
+    var url = '/api/questions?subject=' + encodeURIComponent(currentSubject) + '&offset=' + offset + '&limit=100';
+    $.getJSON(url, function(data) {
+      $('#quiz_loader').hide();
+      $('#quiz').show();
+
+      if (!data || data.length === 0) {
+        $('#quiz').html('<div class="alert alert-warning text-center"><i class="fa fa-info-circle"></i> No questions found in this batch.</div>');
+        return;
+      }
+
+      currentQuestions = data;
+      renderPaletteButtons(data.length);
+
+      // Initialize catquiz plugin
+      $('#quiz').quiz({
+        counterFormat: 'Question %current of %total',
+        questions: data
+      });
+    }).fail(function() {
+      $('#quiz_loader').hide();
+      $('#quiz').show().html('<div class="alert alert-danger text-center"><i class="fa fa-exclamation-triangle"></i> Failed to load questions. Make sure server is running.</div>');
+    });
+  }
+
+  // 6. Palette Buttons
+  function renderPaletteButtons(count) {
+    var html = '';
+    for (var i = 1; i <= count; i++) {
+      html += '<button class="btn btn-default q-palette-btn" data-index="' + (i - 1) + '">' + i + '</button>';
+    }
+    $('#palette_buttons_container').html(html);
+  }
+
+  // 7. Jump to Question
+  $(document).on('click', '.q-palette-btn', function() {
+    var idx = parseInt($(this).data('index'));
+    $('#paletteModal').modal('hide');
+    if ($('#quiz').data('quiz')) {
+      // catquiz jump
+      var qPlugin = $('#quiz').data('quiz');
+      if (typeof qPlugin.goToQuestion === 'function') {
+        qPlugin.goToQuestion(idx);
+      } else {
+        // Fallback step to question
+        for (var step = 0; step < idx; step++) {
+          $('#quiz .quiz-next-btn').trigger('click');
+        }
+      }
+    }
+  });
+
+  // 8. Bookmark Toggle
+  $('#btn_toggle_bookmark').on('click', function() {
+    var qPlugin = $('#quiz').data('quiz');
+    var activeIdx = (qPlugin && qPlugin.currentQuestion) ? qPlugin.currentQuestion : 0;
+    if (currentQuestions[activeIdx]) {
+      var qid = currentQuestions[activeIdx].qid;
+      $.post('/ajax_bookmark.php', { que_id: qid }, function(res) {
+        if (res.trim() === '1') {
+          swal('Bookmarked!', 'Question #' + qid + ' added to your bookmarks.', 'success');
+        } else {
+          swal('Removed', 'Question #' + qid + ' removed from bookmarks.', 'info');
+        }
+      });
+    }
+  });
+
+  // 9. Sticky Note
+  $('#btn_sticky_note').on('click', function() {
+    var qPlugin = $('#quiz').data('quiz');
+    var activeIdx = (qPlugin && qPlugin.currentQuestion) ? qPlugin.currentQuestion : 0;
+    if (currentQuestions[activeIdx]) {
+      var qid = currentQuestions[activeIdx].qid;
+      swal({
+        title: 'Add Sticky Note',
+        text: 'Save high-yield memory hook or mnemonic for Question #' + qid + ':',
+        input: 'textarea',
+        showCancelButton: true,
+        confirmButtonText: 'Save Note',
+        cancelButtonText: 'Cancel'
+      }).then(function(result) {
+        if (result.value) {
+          swal('Saved!', 'Note saved successfully.', 'success');
+        }
+      });
+    }
+  });
+});
+</script>
+</body>
+</html>

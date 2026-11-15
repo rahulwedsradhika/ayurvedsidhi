@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>My Bookmarks - AyurQuest</title>
+<meta name="theme-color" content="#2AACDD">
+<meta name="msapplication-navbutton-color" content="#2AACDD">
+<meta name="apple-mobile-web-app-status-bar-style" content="#2AACDD">
+<link rel="icon" type="image/png" href="assets/favicons/favicon_16x16.png" sizes="16x16">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/icons/font/flaticon.css?v=1.1">
+<link rel="stylesheet" href="assets/css/style.css?v=5.535">
+<link rel="stylesheet" href="assets/css/home_ribbon.css">
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/sweetalert2@7.26.11/dist/sweetalert2.min.css">
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@7.26.11/dist/sweetalert2.all.min.js"></script> 
+</head>
+<body>
+
+<div class="wrapper">
+<nav id="sidebar" class="active"> 
+  <a class="sidebarCollapse mt-5 mr-5 pull-right" style="cursor: pointer;"> 
+    <i class="fa fa-times text-gray fa-2x"></i> 
+  </a> 
+  <a href="index.html">
+    <div class="sidebar-header bg-aq2">
+      <h3><img src="assets/images/logo.png" class="logo"> AyurQuest</h3>
+      <strong><img src="assets/images/logo.png" width="50"></strong> 
+      <span class="visible-xs text-gray"> Hi Rohit !</span> 
+    </div>
+  </a>
+  <ul class="list-unstyled components">
+    <li> <a href="index.html"> <i class="flaticon-dashboard text-navy"></i> <span>Dashboard</span> </a> </li>
+    <li> <a href="mock_tests.html"> <i class="flaticon-audio-video text-navy"></i> <span>Mock Tests</span> </a> </li>
+    <li> <a href="mock_tests.html?type=daily"> <i class="flaticon-daily-test text-navy"></i> <span>Daily Tests</span> </a> </li>
+    <li> <a href="test_series.html"> <i class="flaticon-test-series text-navy"></i> <span>Test Series</span> </a> </li>
+  </ul>
+  <ul class="list-unstyled components">
+    <li> <a href="samhitas.html"> <i class="flaticon-samhitas text-navy"></i> <span>Samhitawise MCQs</span> </a> </li>
+    <li> <a href="subjects.html"> <i class="flaticon-subjects text-navy"></i> <span>Subjectwise MCQs</span> </a> </li>
+  </ul>
+  <ul class="list-unstyled components">
+    <li> <a href="notes.html"> <i class="flaticon-notes text-navy"></i> <span>Notes</span> </a> </li>
+    <li class="active"> <a href="bookmarks.html"> <i class="flaticon-bookmark text-navy"></i> <span>Bookmarks</span> </a> </li>
+  </ul>
+</nav>
+
+<div id="content">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header"> 
+      <a type="button" class="sidebarCollapse btn btn-aq2 navbar-btn strong text-gray btn-menu" style="cursor: pointer;"> 
+        <i class="fa fa-align-justify fa-2x"></i> 
+      </a> 
+      <span class="text-gray ml-5">
+        <span class="hidden-xs"> Hello <strong>Rohit</strong>, Welcome to</span> 
+        <strong>AyurQuest <span class="hidden-xs"> Education</span></strong> 
+      </span>
+    </div>
+    <div class="navbar-custom-menu">
+      <div class="btn-group pull-right mt-5" role="group"> 
+        <button type="button" class="btn btn-aq2 strong text-gray">
+          <a href="javascript:history.back()"><i class="fa fa-repeat text-24"></i> <span class="hidden-xs">Back</span></a>
+        </button>
+        <button type="button" class="btn btn-aq2 strong text-gray">
+          <a href="index.html"><i class="fa fa-home text-24"></i> <span class="hidden-xs">Dashboard</span></a>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="inner_content">
+
+  <!-- VIEW 1: BOOKMARKS OVERVIEW -->
+  <div id="bookmarks_overview">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-center" style="background: #eaf9f9 url('assets/images/bookmarks_bg.png') no-repeat center 5px; background-size: 300px;">
+          <div class="list-group" style="padding-top: 180px;">
+            <div class="list-group-item strong" style="font-size: 16px;">BOOKMARKS</div>
+            <li class="list-group-item text-center">
+              <div class="row">
+                <div class="col-xs-6 border-right"> <small>Start From</small><br>
+                  <strong>15/11/2026</strong> </div>
+                <div class="col-xs-6"><small>Expire On</small><br>
+                  <strong>15/12/2026</strong></div>
+              </div>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Card -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="list-group text-center">
+          <div class="list-group-item text-center">
+            <div class="row">
+              <div class="col-xs-4"><small>My Bookmarks</small><br>
+                <strong id="bm_total_count">0</strong>
+              </div>
+              <div class="col-xs-4 border-right border-left"><small>Bookmark Limit</small><br>
+                <strong>3000</strong>
+              </div>
+              <div class="col-xs-4"><small>Bookmarks Left</small><br>
+                <strong id="bm_left_count">3000</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Practice Cards -->
+    <div class="row">
+      <div class="col-xs-6"> 
+        <a href="samhitas.html">
+          <ul class="list-group text-left">
+            <li class="list-group-item text-center bg-aq text-maroon"> 
+              <i class="flaticon-samhitas text-maroon fl-2x"></i>
+              <h4><span class="strong">Samhita Questions</span></h4>
+            </li>
+            <li class="list-group-item text-center" style="font-size: 12px;">
+              Practice canonical questions across all 16 Samhitas and bookmark key points.
+            </li>
+            <li class="list-group-item text-center">
+              <button class="btn btn-block btn-gray-light"><i class="fa fa-chevron-circle-right"></i> Explore </button>
+            </li>
+          </ul>
+        </a> 
+      </div>
+      <div class="col-xs-6"> 
+        <a href="subjects.html">
+          <ul class="list-group text-left">
+            <li class="list-group-item text-center bg-aq text-navy"> 
+              <i class="flaticon-subjects text-blue fl-2x"></i>
+              <h4><span class="strong">Subject Questions</span></h4>
+            </li>
+            <li class="list-group-item text-center" style="font-size: 12px;">
+              Practice 57,375 questions across 38 Subjects with instant answer reveals.
+            </li>
+            <li class="list-group-item text-center">
+              <button class="btn btn-block btn-gray-light"><i class="fa fa-chevron-circle-right"></i> Explore </button>
+            </li>
+          </ul>
+        </a> 
+      </div>
+    </div>
+
+    <!-- Bookmarked Questions List -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <strong class="text-navy"><i class="fa fa-bookmark text-yellow"></i> Saved Bookmarked Questions:</strong>
+            <button class="btn btn-xs btn-success pull-right" id="btn_practice_all_bookmarks" style="display: none;">
+              <i class="fa fa-play"></i> Practice All Bookmarks
+            </button>
+          </div>
+          <div class="panel-body" id="bookmarks_list_container">
+            <div class="text-center text-muted" style="padding: 20px;">
+              <i class="fa fa-bookmark-o fa-3x text-gray"></i>
+              <p style="margin-top: 10px;">No bookmarked questions yet.<br>Click the <strong>Bookmark</strong> button while practicing any question in Samhitas or Subjects to save it here!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIEW 2: PRACTICE BOOKMARKS -->
+  <div id="practice_bookmarks_view" style="display: none;">
+    <div class="well well-sm" style="background: #fff; margin-bottom: 10px; border-left: 4px solid #00c0ef;">
+      <button class="btn btn-default btn-xs pull-right" id="btn_back_to_bookmarks">
+        <i class="fa fa-arrow-left"></i> Back to Overview
+      </button>
+      <h4 class="text-navy strong" style="margin: 0;">Practicing Bookmarked Questions</h4>
+      <span class="text-muted" style="font-size: 12px;">Reviewing your saved high-yield questions</span>
+    </div>
+    <div id="quiz"></div>
+  </div>
+
+</div>
+</div>
+
+<div class="main-footer text-center">
+  <div class="pull-right hidden-xs"> Version 1.6</div>
+  <span class="text-gray-active text-center">
+    <center>&copy; 2026 AyurQuest Education. All rights reserved.</center>
+  </span>
+</div>
+</div>
+<div class="overlay"></div>
+
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/plugins/jQueryQuiz/student.jquery.catquiz.js"></script>
+
+<script>
+$(document).ready(function() {
+  var bookmarkedQuestions = [];
+
+  function loadBookmarks() {
+    $.getJSON('/api/bookmarks', function(data) {
+      bookmarkedQuestions = data || [];
+      var count = bookmarkedQuestions.length;
+      $('#bm_total_count').text(count);
+      $('#bm_left_count').text(3000 - count);
+
+      if (count > 0) {
+        $('#btn_practice_all_bookmarks').show();
+        var html = '<div class="list-group">';
+        for (var i = 0; i < count; i++) {
+          var q = bookmarkedQuestions[i];
+          html += '<div class="list-group-item">';
+          html += '<button class="btn btn-xs btn-danger pull-right btn-unbookmark" data-qid="' + q.qid + '"><i class="fa fa-trash"></i> Remove</button>';
+          html += '<strong class="text-navy">#' + (i + 1) + '. </strong> ' + q.q.substring(0, 140) + '...';
+          html += '<div style="margin-top: 6px; font-size: 11px;">';
+          html += '<span class="label label-info">' + (q.subject || 'Ayurveda') + '</span> ';
+          html += '<span class="label label-primary">' + (q.samhita || '') + '</span> ';
+          html += '</div>';
+          html += '</div>';
+        }
+        html += '</div>';
+        $('#bookmarks_list_container').html(html);
+      }
+    });
+  }
+
+  // Remove Bookmark
+  $(document).on('click', '.btn-unbookmark', function() {
+    var qid = $(this).data('qid');
+    $.post('/ajax_bookmark.php', { que_id: qid }, function() {
+      loadBookmarks();
+    });
+  });
+
+  // Practice All
+  $('#btn_practice_all_bookmarks').on('click', function() {
+    $('#bookmarks_overview').hide();
+    $('#practice_bookmarks_view').fadeIn();
+    $('#quiz').show().quiz({
+      counterFormat: 'Question %current of %total',
+      questions: bookmarkedQuestions
+    });
+  });
+
+  $('#btn_back_to_bookmarks').on('click', function() {
+    $('#practice_bookmarks_view').hide();
+    $('#bookmarks_overview').fadeIn();
+    loadBookmarks();
+  });
+
+  loadBookmarks();
+});
+</script>
+</body>
+</html>

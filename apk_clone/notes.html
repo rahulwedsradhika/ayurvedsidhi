@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Notes - AyurQuest</title>
+<meta name="theme-color" content="#2AACDD">
+<meta name="msapplication-navbutton-color" content="#2AACDD">
+<meta name="apple-mobile-web-app-status-bar-style" content="#2AACDD">
+<link rel="icon" type="image/png" href="assets/favicons/favicon_16x16.png" sizes="16x16">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/icons/font/flaticon.css?v=1.1">
+<link rel="stylesheet" href="assets/css/style.css?v=5.535">
+<link rel="stylesheet" href="assets/css/home_ribbon.css">
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/sweetalert2@7.26.11/dist/sweetalert2.min.css">
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@7.26.11/dist/sweetalert2.all.min.js"></script> 
+<style>
+  .note-sticky-card {
+    background: #fffde7;
+    border-left: 4px solid #fbc02d;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+<nav id="sidebar" class="active"> 
+  <a class="sidebarCollapse mt-5 mr-5 pull-right" style="cursor: pointer;"> 
+    <i class="fa fa-times text-gray fa-2x"></i> 
+  </a> 
+  <a href="index.html">
+    <div class="sidebar-header bg-aq2">
+      <h3><img src="assets/images/logo.png" class="logo"> AyurQuest</h3>
+      <strong><img src="assets/images/logo.png" width="50"></strong> 
+      <span class="visible-xs text-gray"> Hi Rohit !</span> 
+    </div>
+  </a>
+  <ul class="list-unstyled components">
+    <li> <a href="index.html"> <i class="flaticon-dashboard text-navy"></i> <span>Dashboard</span> </a> </li>
+    <li> <a href="mock_tests.html"> <i class="flaticon-audio-video text-navy"></i> <span>Mock Tests</span> </a> </li>
+    <li> <a href="mock_tests.html?type=daily"> <i class="flaticon-daily-test text-navy"></i> <span>Daily Tests</span> </a> </li>
+    <li> <a href="test_series.html"> <i class="flaticon-test-series text-navy"></i> <span>Test Series</span> </a> </li>
+  </ul>
+  <ul class="list-unstyled components">
+    <li> <a href="samhitas.html"> <i class="flaticon-samhitas text-navy"></i> <span>Samhitawise MCQs</span> </a> </li>
+    <li> <a href="subjects.html"> <i class="flaticon-subjects text-navy"></i> <span>Subjectwise MCQs</span> </a> </li>
+  </ul>
+  <ul class="list-unstyled components">
+    <li class="active"> <a href="notes.html"> <i class="flaticon-notes text-navy"></i> <span>Notes</span> </a> </li>
+    <li> <a href="bookmarks.html"> <i class="flaticon-bookmark text-navy"></i> <span>Bookmarks</span> </a> </li>
+  </ul>
+</nav>
+
+<div id="content">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header"> 
+      <a type="button" class="sidebarCollapse btn btn-aq2 navbar-btn strong text-gray btn-menu" style="cursor: pointer;"> 
+        <i class="fa fa-align-justify fa-2x"></i> 
+      </a> 
+      <span class="text-gray ml-5">
+        <span class="hidden-xs"> Hello <strong>Rohit</strong>, Welcome to</span> 
+        <strong>AyurQuest <span class="hidden-xs"> Education</span></strong> 
+      </span>
+    </div>
+    <div class="navbar-custom-menu">
+      <div class="btn-group pull-right mt-5" role="group"> 
+        <button type="button" class="btn btn-aq2 strong text-gray">
+          <a href="javascript:history.back()"><i class="fa fa-repeat text-24"></i> <span class="hidden-xs">Back</span></a>
+        </button>
+        <button type="button" class="btn btn-aq2 strong text-gray">
+          <a href="index.html"><i class="fa fa-home text-24"></i> <span class="hidden-xs">Dashboard</span></a>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="inner_content">
+
+  <!-- Header -->
+  <ul class="list-group">
+    <li class="list-group-item text-left bg-gray-light"> 
+      <i class="flaticon-notes"></i> <span class="strong">SHORT NOTES & STICKY NOTES</span> 
+      <button class="btn btn-xs btn-warning pull-right" id="btn_new_note">
+        <i class="fa fa-plus"></i> Add New Sticky Note
+      </button>
+    </li>
+  </ul>
+
+  <!-- Nav Tabs -->
+  <ul class="nav nav-tabs" style="margin-bottom: 12px;">
+    <li class="active"><a href="#sticky_tab" data-toggle="tab"><i class="fa fa-thumb-tack text-yellow"></i> My Sticky Notes</a></li>
+    <li><a href="#short_notes_tab" data-toggle="tab"><i class="fa fa-book text-navy"></i> High-Yield Classical Notes</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <!-- Tab 1: Sticky Notes -->
+    <div class="tab-pane active" id="sticky_tab">
+      <div id="sticky_notes_container">
+        <!-- Dynamically rendered sticky notes -->
+      </div>
+    </div>
+
+    <!-- Tab 2: High Yield Notes -->
+    <div class="tab-pane" id="short_notes_tab">
+      <div class="panel-group" id="short_notes_accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#short_notes_accordion" href="#note1">
+                <strong>1. चरकानुसार सर्प विष की मात्रा (Sarpa Visha Matra)</strong>
+                <i class="fa fa-chevron-down pull-right text-gray"></i>
+              </a>
+            </h4>
+          </div>
+          <div id="note1" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <p>चरक चिकित्सा स्थान 23 (विष चिकित्सा):</p>
+              <ul>
+                <li>दर्वीकर (Cobra) - 8 यव (Yava)</li>
+                <li>मण्डली (Viper) - 4 यव (Yava)</li>
+                <li>राजीमान् (Krait) - 6 यव (Yava)</li>
+              </ul>
+              <small class="text-muted">संदर्भ: चरक चिकित्सा 23/34</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#short_notes_accordion" href="#note2">
+                <strong>2. सुश्रुतानुसार त्रिविध व्रण परीक्षा (Trividha Vrana Pariksha)</strong>
+                <i class="fa fa-chevron-down pull-right text-gray"></i>
+              </a>
+            </h4>
+          </div>
+          <div id="note2" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>सुश्रुत सूत्र स्थान 10 में व्रण परीक्षा हेतु तीन प्रमाण बताए गए हैं:</p>
+              <ol>
+                <li><strong>प्रत्यक्ष (Direct Inspection)</strong> - नेत्र, कर्ण, घ्राण, रसना, स्पर्शन द्वारा</li>
+                <li><strong>अनुमान (Inference)</strong> - अग्निबल, कोष्ठ आदि का अनुमान</li>
+                <li><strong>आप्तोपदेश (Authoritative Scriptural Injunction)</strong></li>
+              </ol>
+              <small class="text-muted">संदर्भ: सुश्रुत सूत्र स्थान 10/3</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#short_notes_accordion" href="#note3">
+                <strong>3. अष्टाङ्गहृदयानुरूप दिनचर्या क्रम (Dinacharya Sequence)</strong>
+                <i class="fa fa-chevron-down pull-right text-gray"></i>
+              </a>
+            </h4>
+          </div>
+          <div id="note3" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>अष्टाङ्गहृदय सूत्र स्थान 2 (दिनचर्या):</p>
+              <p>ब्राह्मे मुहूर्ते उत्तिष्ठेत् स्वस्थो रक्षार्थमायुषः ।</p>
+              <ul>
+                <li>दन्तधावन (Dantadhavana) - कषाय, तिक्त, कटु रस प्रधान द्रव्य</li>
+                <li>अञ्जन (Anjana) - सौवीराञ्जन नित्य, रसाञ्जन पञ्चरात्रे/सप्तरात्रे</li>
+                <li>नस्य (Nasya) - अणु तैल प्रतिमर्श</li>
+                <li>अभ्यङ्ग (Abhyanga) - शिरः, श्रवण, पादेषु विशेषेण</li>
+                <li>व्यायाम (Vyayama) - अर्धशक्ति काल</li>
+              </ul>
+              <small class="text-muted">संदर्भ: अष्टाङ्गहृदय सूत्र 2/1-10</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="main-footer text-center">
+  <div class="pull-right hidden-xs"> Version 1.6</div>
+  <span class="text-gray-active text-center">
+    <center>&copy; 2026 AyurQuest Education. All rights reserved.</center>
+  </span>
+</div>
+</div>
+<div class="overlay"></div>
+
+<script src="assets/js/custom.js"></script>
+
+<script>
+$(document).ready(function() {
+  function loadStickyNotes() {
+    var notes = [];
+    try {
+      notes = JSON.parse(localStorage.getItem('ayur_sticky_notes') || '[]');
+    } catch(e) {}
+
+    if (notes.length === 0) {
+      $('#sticky_notes_container').html('<div class="text-center text-muted" style="padding: 30px;"><i class="fa fa-pencil fa-3x text-gray"></i><p style="margin-top: 10px;">No sticky notes created yet.<br>Click <strong>Add New Sticky Note</strong> above to store key memory hooks or mnemonics!</p></div>');
+      return;
+    }
+
+    var html = '';
+    for (var i = 0; i < notes.length; i++) {
+      var n = notes[i];
+      html += '<div class="note-sticky-card">';
+      html += '<button class="btn btn-xs btn-danger pull-right btn-delete-note" data-idx="' + i + '"><i class="fa fa-trash"></i></button>';
+      html += '<strong class="text-navy" style="font-size: 14px;"><i class="fa fa-thumb-tack text-yellow"></i> ' + n.title + '</strong>';
+      html += '<p style="margin: 8px 0 4px 0; font-size: 13px; color: #333; white-space: pre-line;">' + n.body + '</p>';
+      html += '<small class="text-muted"><i class="fa fa-calendar"></i> ' + n.date + '</small>';
+      html += '</div>';
+    }
+    $('#sticky_notes_container').html(html);
+  }
+
+  $('#btn_new_note').on('click', function() {
+    swal({
+      title: 'New Sticky Note',
+      html: '<input id="swal_note_title" class="swal2-input" placeholder="Topic / Concept (e.g. Charaka Agrya Dravyas)">' +
+            '<textarea id="swal_note_body" class="swal2-textarea" placeholder="Key points, mnemonics, or classical shlokas..."></textarea>',
+      showCancelButton: true,
+      confirmButtonText: 'Save Note',
+      preConfirm: function() {
+        return {
+          title: $('#swal_note_title').val(),
+          body: $('#swal_note_body').val()
+        };
+      }
+    }).then(function(result) {
+      if (result.value && result.value.title && result.value.body) {
+        var notes = [];
+        try {
+          notes = JSON.parse(localStorage.getItem('ayur_sticky_notes') || '[]');
+        } catch(e) {}
+        notes.unshift({
+          title: result.value.title,
+          body: result.value.body,
+          date: new Date().toLocaleDateString()
+        });
+        localStorage.setItem('ayur_sticky_notes', JSON.stringify(notes));
+        loadStickyNotes();
+        swal('Saved!', 'Note added successfully.', 'success');
+      }
+    });
+  });
+
+  $(document).on('click', '.btn-delete-note', function() {
+    var idx = parseInt($(this).data('idx'));
+    var notes = [];
+    try {
+      notes = JSON.parse(localStorage.getItem('ayur_sticky_notes') || '[]');
+    } catch(e) {}
+    notes.splice(idx, 1);
+    localStorage.setItem('ayur_sticky_notes', JSON.stringify(notes));
+    loadStickyNotes();
+  });
+
+  loadStickyNotes();
+});
+</script>
+</body>
+</html>

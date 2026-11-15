@@ -1,0 +1,4482 @@
+[
+  {
+    "id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+    "name": "Charaka Samhita",
+    "hindi": "चरक संहिता",
+    "count": 11175,
+    "qfrom": "chapter",
+    "sthanas": [
+      {
+        "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+        "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+        "name": "Sutra Sthana (सूत्र स्थान)",
+        "count": 4263,
+        "chapters": [
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 45
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 187
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 90
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 24
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 168
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 207
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 145
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 161
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 72
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 61
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "name": "Chapter 10",
+            "count": 59
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "name": "Chapter 11",
+            "count": 180
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "NlFJTkYzK2FycTlLekFrcGJxUnNBZz09",
+            "name": "Chapter 12",
+            "count": 72
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "Vm8zSTR2N0JYWUE4ZC8zQmNnSGFUZz09",
+            "name": "Chapter 13",
+            "count": 229
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "aTJ2eUpIb0lFb1ZCUEs4bWtBWGhxZz09",
+            "name": "Chapter 14",
+            "count": 124
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "MlRpVWM5RHZ4aHpqMlFuT0d4aGpqQT09",
+            "name": "Chapter 15",
+            "count": 71
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "dVIwVU92dTZ3VXRuUTdnTzZySkFvQT09",
+            "name": "Chapter 16",
+            "count": 48
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "dXVSZGtrTHdKV0gxWkNjWWRaeUpzZz09",
+            "name": "Chapter 17",
+            "count": 255
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "NVpLVW54K003dzAzTXRKQ2F5aTJCUT09",
+            "name": "Chapter 18",
+            "count": 125
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "dEt2VDgvcElXR0dxalJWRFQyeVEwZz09",
+            "name": "Chapter 19",
+            "count": 89
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "QWNDR0g5bWM2enFtVk81NlFPT0R3Zz09",
+            "name": "Chapter 20",
+            "count": 117
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "TmpJdFRXeDJTMnRMbFc4WnpWUHNDZz09",
+            "name": "Chapter 21",
+            "count": 121
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "Nm5VZ3MycHhRdFB3ejVJNFEvd1JJQT09",
+            "name": "Chapter 22",
+            "count": 93
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "SStncUxBaDQzUE5oVmhOaEsxQVhOZz09",
+            "name": "Chapter 23",
+            "count": 56
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "OVJXWnNBaGRqazc4NEdvdkVidWt4Zz09",
+            "name": "Chapter 24",
+            "count": 95
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "MGJsbDFtS05uV3dHMXhqb0h4cm1GUT09",
+            "name": "Chapter 25",
+            "count": 345
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "QndKUTVZWTdLdnpqNytKSWVaY2tvQT09",
+            "name": "Chapter 26",
+            "count": 359
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "QWY0dVJnZ2xISXFlMFdJREdncjJTUT09",
+            "name": "Chapter 27",
+            "count": 425
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "aXhJTnZJRXBLaXF2NkowSFR0VlYwQT09",
+            "name": "Chapter 28",
+            "count": 97
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "QUVxeE0wRXRIUHAralc2T0huSUdPQT09",
+            "name": "Chapter 29",
+            "count": 20
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "b21ZdmpyQ0xJRy9jNC9uVEdZQXE0dz09",
+            "name": "Chapter 30",
+            "count": 123
+          }
+        ]
+      },
+      {
+        "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+        "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+        "name": "Nidan Sthana (निदान स्थान)",
+        "count": 502,
+        "chapters": [
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 1
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 134
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 38
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 45
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 79
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 49
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 47
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 51
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 58
+          }
+        ]
+      },
+      {
+        "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+        "sthana_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+        "name": "Vimana Sthana (विमान स्थान)",
+        "count": 755,
+        "chapters": [
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 6
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 60
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 39
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 45
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 43
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 82
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 33
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 84
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 362
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+        "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+        "name": "Shareer Sthana (शारीर स्थान)",
+        "count": 750,
+        "chapters": [
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 2
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 114
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 52
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 48
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 104
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 40
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 61
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 114
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 213
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "dVIwVU92dTZ3VXRuUTdnTzZySkFvQT09",
+            "name": "Chapter 16",
+            "count": 1
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "MGJsbDFtS05uV3dHMXhqb0h4cm1GUT09",
+            "name": "Chapter 25",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+        "sthana_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+        "name": "Indriya Sthana (इन्द्रिय स्थान)",
+        "count": 260,
+        "chapters": [
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 1
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 40
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 15
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 12
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 9
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 39
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 19
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 36
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 14
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 16
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "chapter_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "name": "Chapter 10",
+            "count": 14
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "chapter_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "name": "Chapter 11",
+            "count": 20
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "chapter_id": "NlFJTkYzK2FycTlLekFrcGJxUnNBZz09",
+            "name": "Chapter 12",
+            "count": 25
+          }
+        ]
+      },
+      {
+        "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+        "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+        "name": "Chikitsa Sthana (चिकित्सा स्थान)",
+        "count": 3565,
+        "chapters": [
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 9
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 197
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 75
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 210
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 91
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 155
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 67
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 194
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 118
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 121
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "name": "Chapter 10",
+            "count": 87
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "name": "Chapter 11",
+            "count": 93
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "NlFJTkYzK2FycTlLekFrcGJxUnNBZz09",
+            "name": "Chapter 12",
+            "count": 124
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "Vm8zSTR2N0JYWUE4ZC8zQmNnSGFUZz09",
+            "name": "Chapter 13",
+            "count": 140
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "aTJ2eUpIb0lFb1ZCUEs4bWtBWGhxZz09",
+            "name": "Chapter 14",
+            "count": 91
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "MlRpVWM5RHZ4aHpqMlFuT0d4aGpqQT09",
+            "name": "Chapter 15",
+            "count": 142
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "dVIwVU92dTZ3VXRuUTdnTzZySkFvQT09",
+            "name": "Chapter 16",
+            "count": 106
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "dXVSZGtrTHdKV0gxWkNjWWRaeUpzZz09",
+            "name": "Chapter 17",
+            "count": 72
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "NVpLVW54K003dzAzTXRKQ2F5aTJCUT09",
+            "name": "Chapter 18",
+            "count": 63
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "dEt2VDgvcElXR0dxalJWRFQyeVEwZz09",
+            "name": "Chapter 19",
+            "count": 53
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "QWNDR0g5bWM2enFtVk81NlFPT0R3Zz09",
+            "name": "Chapter 20",
+            "count": 36
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "TmpJdFRXeDJTMnRMbFc4WnpWUHNDZz09",
+            "name": "Chapter 21",
+            "count": 53
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "Nm5VZ3MycHhRdFB3ejVJNFEvd1JJQT09",
+            "name": "Chapter 22",
+            "count": 68
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "SStncUxBaDQzUE5oVmhOaEsxQVhOZz09",
+            "name": "Chapter 23",
+            "count": 282
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "OVJXWnNBaGRqazc4NEdvdkVidWt4Zz09",
+            "name": "Chapter 24",
+            "count": 104
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "MGJsbDFtS05uV3dHMXhqb0h4cm1GUT09",
+            "name": "Chapter 25",
+            "count": 118
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "QndKUTVZWTdLdnpqNytKSWVaY2tvQT09",
+            "name": "Chapter 26",
+            "count": 111
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "QWY0dVJnZ2xISXFlMFdJREdncjJTUT09",
+            "name": "Chapter 27",
+            "count": 25
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "aXhJTnZJRXBLaXF2NkowSFR0VlYwQT09",
+            "name": "Chapter 28",
+            "count": 253
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "QUVxeE0wRXRIUHAralc2T0huSUdPQT09",
+            "name": "Chapter 29",
+            "count": 73
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "b21ZdmpyQ0xJRy9jNC9uVEdZQXE0dz09",
+            "name": "Chapter 30",
+            "count": 234
+          }
+        ]
+      },
+      {
+        "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+        "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+        "name": "Kalpa Sthana (कल्प स्थान)",
+        "count": 331,
+        "chapters": [
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 1
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 70
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 15
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 17
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 14
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 15
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 17
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 46
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 17
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 13
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "name": "Chapter 10",
+            "count": 17
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "name": "Chapter 11",
+            "count": 12
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "NlFJTkYzK2FycTlLekFrcGJxUnNBZz09",
+            "name": "Chapter 12",
+            "count": 77
+          }
+        ]
+      },
+      {
+        "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+        "sthana_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+        "name": "Siddhi Sthana (सिद्धि स्थान)",
+        "count": 703,
+        "chapters": [
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 7
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 145
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 69
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 92
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 24
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 28
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 54
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 13
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 25
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 122
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "chapter_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "name": "Chapter 10",
+            "count": 21
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "chapter_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "name": "Chapter 11",
+            "count": 44
+          },
+          {
+            "samhita_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "sthana_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "chapter_id": "NlFJTkYzK2FycTlLekFrcGJxUnNBZz09",
+            "name": "Chapter 12",
+            "count": 59
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+    "name": "Sushruta Samhita",
+    "hindi": "सुश्रुत संहिता",
+    "count": 8709,
+    "qfrom": "chapter",
+    "sthanas": [
+      {
+        "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+        "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+        "name": "Sutra Sthana (सूत्र स्थान)",
+        "count": 2439,
+        "chapters": [
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 20
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 72
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 9
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 29
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 4
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 60
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 61
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 89
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 81
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 22
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "name": "Chapter 10",
+            "count": 11
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "name": "Chapter 11",
+            "count": 60
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "NlFJTkYzK2FycTlLekFrcGJxUnNBZz09",
+            "name": "Chapter 12",
+            "count": 76
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "Vm8zSTR2N0JYWUE4ZC8zQmNnSGFUZz09",
+            "name": "Chapter 13",
+            "count": 60
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "aTJ2eUpIb0lFb1ZCUEs4bWtBWGhxZz09",
+            "name": "Chapter 14",
+            "count": 69
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "MlRpVWM5RHZ4aHpqMlFuT0d4aGpqQT09",
+            "name": "Chapter 15",
+            "count": 139
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "dVIwVU92dTZ3VXRuUTdnTzZySkFvQT09",
+            "name": "Chapter 16",
+            "count": 64
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "dXVSZGtrTHdKV0gxWkNjWWRaeUpzZz09",
+            "name": "Chapter 17",
+            "count": 43
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "NVpLVW54K003dzAzTXRKQ2F5aTJCUT09",
+            "name": "Chapter 18",
+            "count": 77
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "dEt2VDgvcElXR0dxalJWRFQyeVEwZz09",
+            "name": "Chapter 19",
+            "count": 18
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "QWNDR0g5bWM2enFtVk81NlFPT0R3Zz09",
+            "name": "Chapter 20",
+            "count": 40
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "TmpJdFRXeDJTMnRMbFc4WnpWUHNDZz09",
+            "name": "Chapter 21",
+            "count": 55
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "Nm5VZ3MycHhRdFB3ejVJNFEvd1JJQT09",
+            "name": "Chapter 22",
+            "count": 45
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "SStncUxBaDQzUE5oVmhOaEsxQVhOZz09",
+            "name": "Chapter 23",
+            "count": 29
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "OVJXWnNBaGRqazc4NEdvdkVidWt4Zz09",
+            "name": "Chapter 24",
+            "count": 29
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "MGJsbDFtS05uV3dHMXhqb0h4cm1GUT09",
+            "name": "Chapter 25",
+            "count": 61
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "QndKUTVZWTdLdnpqNytKSWVaY2tvQT09",
+            "name": "Chapter 26",
+            "count": 24
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "QWY0dVJnZ2xISXFlMFdJREdncjJTUT09",
+            "name": "Chapter 27",
+            "count": 25
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "aXhJTnZJRXBLaXF2NkowSFR0VlYwQT09",
+            "name": "Chapter 28",
+            "count": 32
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "QUVxeE0wRXRIUHAralc2T0huSUdPQT09",
+            "name": "Chapter 29",
+            "count": 19
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "b21ZdmpyQ0xJRy9jNC9uVEdZQXE0dz09",
+            "name": "Chapter 30",
+            "count": 1
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "SFp2ZHJIYTZrVGlpemtMRXBxcW1Vdz09",
+            "name": "Chapter 31",
+            "count": 37
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "dlE1OUgyK0JKd2w3RFUrdy96WEVLUT09",
+            "name": "Chapter 32",
+            "count": 43
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "VUlFeVNTeHBkOXR2bzdrcXJHN1A1dz09",
+            "name": "Chapter 33",
+            "count": 25
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "eXBtVk1HSkVaRDdZT2xhUHFnL0dqQT09",
+            "name": "Chapter 34",
+            "count": 21
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "eGczWkVvZFVxZExxVjk2alpZK3k1QT09",
+            "name": "Chapter 35",
+            "count": 99
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "THNqdVZJQUJ1Z0o4aThCRkdTeVNpdz09",
+            "name": "Chapter 36",
+            "count": 21
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "RXVYRmxLWWZWYUJPcTFLSi8vTi9rQT09",
+            "name": "Chapter 37",
+            "count": 25
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "aHl2NUR4eUMvOGZRWVpWMFpDVld1QT09",
+            "name": "Chapter 38",
+            "count": 103
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "enJLSUZ0Y3FaTDd5QjR6QzNjNjB5Zz09",
+            "name": "Chapter 39",
+            "count": 49
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "eHNOY2hJVVhuTmFVcEhIakd4NWN1Zz09",
+            "name": "Chapter 40",
+            "count": 30
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "YlhNZlJCWDBZaTlVRU44bEp6QzYydz09",
+            "name": "Chapter 41",
+            "count": 41
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "ZlJ5bE0ySmtrdHZHU29ubkkxMTFWdz09",
+            "name": "Chapter 42",
+            "count": 77
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "WTZPa1RoR3NxS0dyT1VHQmJwNjY4UT09",
+            "name": "Chapter 43",
+            "count": 20
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "azY3N1ZnL0Z1MzBSdFcvKy9LRG12QT09",
+            "name": "Chapter 44",
+            "count": 37
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "Nkw3TkRxTW5BbGdwOUdMYVUvbk42Zz09",
+            "name": "Chapter 45",
+            "count": 238
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "U3ZRK2t3ZjhTRXlBWVEwWEpGU3FOUT09",
+            "name": "Chapter 46",
+            "count": 149
+          }
+        ]
+      },
+      {
+        "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+        "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+        "name": "Nidan Sthana (निदान स्थान)",
+        "count": 946,
+        "chapters": [
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 4
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 108
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 53
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 33
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 27
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 82
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 49
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 34
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 34
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 35
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "name": "Chapter 10",
+            "count": 35
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "name": "Chapter 11",
+            "count": 51
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "NlFJTkYzK2FycTlLekFrcGJxUnNBZz09",
+            "name": "Chapter 12",
+            "count": 32
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "Vm8zSTR2N0JYWUE4ZC8zQmNnSGFUZz09",
+            "name": "Chapter 13",
+            "count": 106
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "aTJ2eUpIb0lFb1ZCUEs4bWtBWGhxZz09",
+            "name": "Chapter 14",
+            "count": 35
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "MlRpVWM5RHZ4aHpqMlFuT0d4aGpqQT09",
+            "name": "Chapter 15",
+            "count": 59
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "dVIwVU92dTZ3VXRuUTdnTzZySkFvQT09",
+            "name": "Chapter 16",
+            "count": 169
+          }
+        ]
+      },
+      {
+        "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+        "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+        "name": "Shareer Sthana (शारीर स्थान)",
+        "count": 1110,
+        "chapters": [
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 8
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 81
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 103
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 78
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 179
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 246
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 181
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 31
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 70
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 26
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "name": "Chapter 10",
+            "count": 107
+          }
+        ]
+      },
+      {
+        "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+        "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+        "name": "Chikitsa Sthana (चिकित्सा स्थान)",
+        "count": 1341,
+        "chapters": [
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 2
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 90
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 59
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 53
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 24
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 45
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 31
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 19
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 37
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 39
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "name": "Chapter 10",
+            "count": 12
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "name": "Chapter 11",
+            "count": 29
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "NlFJTkYzK2FycTlLekFrcGJxUnNBZz09",
+            "name": "Chapter 12",
+            "count": 25
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "Vm8zSTR2N0JYWUE4ZC8zQmNnSGFUZz09",
+            "name": "Chapter 13",
+            "count": 26
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "aTJ2eUpIb0lFb1ZCUEs4bWtBWGhxZz09",
+            "name": "Chapter 14",
+            "count": 35
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "MlRpVWM5RHZ4aHpqMlFuT0d4aGpqQT09",
+            "name": "Chapter 15",
+            "count": 19
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "dVIwVU92dTZ3VXRuUTdnTzZySkFvQT09",
+            "name": "Chapter 16",
+            "count": 11
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "dXVSZGtrTHdKV0gxWkNjWWRaeUpzZz09",
+            "name": "Chapter 17",
+            "count": 25
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "NVpLVW54K003dzAzTXRKQ2F5aTJCUT09",
+            "name": "Chapter 18",
+            "count": 32
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "dEt2VDgvcElXR0dxalJWRFQyeVEwZz09",
+            "name": "Chapter 19",
+            "count": 37
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "QWNDR0g5bWM2enFtVk81NlFPT0R3Zz09",
+            "name": "Chapter 20",
+            "count": 46
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "TmpJdFRXeDJTMnRMbFc4WnpWUHNDZz09",
+            "name": "Chapter 21",
+            "count": 17
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "Nm5VZ3MycHhRdFB3ejVJNFEvd1JJQT09",
+            "name": "Chapter 22",
+            "count": 51
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "SStncUxBaDQzUE5oVmhOaEsxQVhOZz09",
+            "name": "Chapter 23",
+            "count": 18
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "OVJXWnNBaGRqazc4NEdvdkVidWt4Zz09",
+            "name": "Chapter 24",
+            "count": 76
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "MGJsbDFtS05uV3dHMXhqb0h4cm1GUT09",
+            "name": "Chapter 25",
+            "count": 21
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "QndKUTVZWTdLdnpqNytKSWVaY2tvQT09",
+            "name": "Chapter 26",
+            "count": 11
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "QWY0dVJnZ2xISXFlMFdJREdncjJTUT09",
+            "name": "Chapter 27",
+            "count": 14
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "aXhJTnZJRXBLaXF2NkowSFR0VlYwQT09",
+            "name": "Chapter 28",
+            "count": 13
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "QUVxeE0wRXRIUHAralc2T0huSUdPQT09",
+            "name": "Chapter 29",
+            "count": 19
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "b21ZdmpyQ0xJRy9jNC9uVEdZQXE0dz09",
+            "name": "Chapter 30",
+            "count": 12
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "SFp2ZHJIYTZrVGlpemtMRXBxcW1Vdz09",
+            "name": "Chapter 31",
+            "count": 69
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "dlE1OUgyK0JKd2w3RFUrdy96WEVLUT09",
+            "name": "Chapter 32",
+            "count": 17
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "VUlFeVNTeHBkOXR2bzdrcXJHN1A1dz09",
+            "name": "Chapter 33",
+            "count": 46
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "eXBtVk1HSkVaRDdZT2xhUHFnL0dqQT09",
+            "name": "Chapter 34",
+            "count": 12
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "eGczWkVvZFVxZExxVjk2alpZK3k1QT09",
+            "name": "Chapter 35",
+            "count": 54
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "THNqdVZJQUJ1Z0o4aThCRkdTeVNpdz09",
+            "name": "Chapter 36",
+            "count": 14
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "RXVYRmxLWWZWYUJPcTFLSi8vTi9rQT09",
+            "name": "Chapter 37",
+            "count": 50
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "aHl2NUR4eUMvOGZRWVpWMFpDVld1QT09",
+            "name": "Chapter 38",
+            "count": 50
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "enJLSUZ0Y3FaTDd5QjR6QzNjNjB5Zz09",
+            "name": "Chapter 39",
+            "count": 12
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "eHNOY2hJVVhuTmFVcEhIakd4NWN1Zz09",
+            "name": "Chapter 40",
+            "count": 66
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "ZG80eTV5a3ZnZGlXVTQ5OVA5SVMzdz09",
+            "name": "Chapter 51",
+            "count": 1
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "NEdqdW1UVkcyUi9hNzZBWDdpZW0yUT09",
+            "name": "Chapter 54",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+        "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+        "name": "Kalpa Sthana (कल्प स्थान)",
+        "count": 458,
+        "chapters": [
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 6
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 30
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 116
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 28
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 91
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 20
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 7
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 41
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 119
+          }
+        ]
+      },
+      {
+        "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+        "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+        "name": "Uttar Tantra (उत्तरतंत्र)",
+        "count": 2373,
+        "chapters": [
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 45
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 57
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 14
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 34
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 16
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 8
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 39
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 33
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 62
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 36
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "name": "Chapter 10",
+            "count": 32
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "name": "Chapter 11",
+            "count": 38
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "NlFJTkYzK2FycTlLekFrcGJxUnNBZz09",
+            "name": "Chapter 12",
+            "count": 21
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "Vm8zSTR2N0JYWUE4ZC8zQmNnSGFUZz09",
+            "name": "Chapter 13",
+            "count": 47
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "aTJ2eUpIb0lFb1ZCUEs4bWtBWGhxZz09",
+            "name": "Chapter 14",
+            "count": 44
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "MlRpVWM5RHZ4aHpqMlFuT0d4aGpqQT09",
+            "name": "Chapter 15",
+            "count": 54
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "dVIwVU92dTZ3VXRuUTdnTzZySkFvQT09",
+            "name": "Chapter 16",
+            "count": 6
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "dXVSZGtrTHdKV0gxWkNjWWRaeUpzZz09",
+            "name": "Chapter 17",
+            "count": 67
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "NVpLVW54K003dzAzTXRKQ2F5aTJCUT09",
+            "name": "Chapter 18",
+            "count": 67
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "dEt2VDgvcElXR0dxalJWRFQyeVEwZz09",
+            "name": "Chapter 19",
+            "count": 20
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "QWNDR0g5bWM2enFtVk81NlFPT0R3Zz09",
+            "name": "Chapter 20",
+            "count": 68
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "TmpJdFRXeDJTMnRMbFc4WnpWUHNDZz09",
+            "name": "Chapter 21",
+            "count": 53
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "Nm5VZ3MycHhRdFB3ejVJNFEvd1JJQT09",
+            "name": "Chapter 22",
+            "count": 64
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "SStncUxBaDQzUE5oVmhOaEsxQVhOZz09",
+            "name": "Chapter 23",
+            "count": 13
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "OVJXWnNBaGRqazc4NEdvdkVidWt4Zz09",
+            "name": "Chapter 24",
+            "count": 58
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "MGJsbDFtS05uV3dHMXhqb0h4cm1GUT09",
+            "name": "Chapter 25",
+            "count": 58
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "QndKUTVZWTdLdnpqNytKSWVaY2tvQT09",
+            "name": "Chapter 26",
+            "count": 35
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "QWY0dVJnZ2xISXFlMFdJREdncjJTUT09",
+            "name": "Chapter 27",
+            "count": 45
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "aXhJTnZJRXBLaXF2NkowSFR0VlYwQT09",
+            "name": "Chapter 28",
+            "count": 25
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "QUVxeE0wRXRIUHAralc2T0huSUdPQT09",
+            "name": "Chapter 29",
+            "count": 7
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "b21ZdmpyQ0xJRy9jNC9uVEdZQXE0dz09",
+            "name": "Chapter 30",
+            "count": 10
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "SFp2ZHJIYTZrVGlpemtMRXBxcW1Vdz09",
+            "name": "Chapter 31",
+            "count": 11
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "dlE1OUgyK0JKd2w3RFUrdy96WEVLUT09",
+            "name": "Chapter 32",
+            "count": 12
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "VUlFeVNTeHBkOXR2bzdrcXJHN1A1dz09",
+            "name": "Chapter 33",
+            "count": 13
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "eXBtVk1HSkVaRDdZT2xhUHFnL0dqQT09",
+            "name": "Chapter 34",
+            "count": 7
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "eGczWkVvZFVxZExxVjk2alpZK3k1QT09",
+            "name": "Chapter 35",
+            "count": 8
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "THNqdVZJQUJ1Z0o4aThCRkdTeVNpdz09",
+            "name": "Chapter 36",
+            "count": 6
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "RXVYRmxLWWZWYUJPcTFLSi8vTi9rQT09",
+            "name": "Chapter 37",
+            "count": 18
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "aHl2NUR4eUMvOGZRWVpWMFpDVld1QT09",
+            "name": "Chapter 38",
+            "count": 71
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "enJLSUZ0Y3FaTDd5QjR6QzNjNjB5Zz09",
+            "name": "Chapter 39",
+            "count": 130
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "eHNOY2hJVVhuTmFVcEhIakd4NWN1Zz09",
+            "name": "Chapter 40",
+            "count": 66
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "YlhNZlJCWDBZaTlVRU44bEp6QzYydz09",
+            "name": "Chapter 41",
+            "count": 38
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "ZlJ5bE0ySmtrdHZHU29ubkkxMTFWdz09",
+            "name": "Chapter 42",
+            "count": 68
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "WTZPa1RoR3NxS0dyT1VHQmJwNjY4UT09",
+            "name": "Chapter 43",
+            "count": 21
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "azY3N1ZnL0Z1MzBSdFcvKy9LRG12QT09",
+            "name": "Chapter 44",
+            "count": 30
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "Nkw3TkRxTW5BbGdwOUdMYVUvbk42Zz09",
+            "name": "Chapter 45",
+            "count": 34
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "U3ZRK2t3ZjhTRXlBWVEwWEpGU3FOUT09",
+            "name": "Chapter 46",
+            "count": 13
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "TnBZRkhsU1QwOUQvbk4rQ1lDWTZ4UT09",
+            "name": "Chapter 47",
+            "count": 45
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "L054RGtoTVRMRHlGWmpVSXNwZWE3QT09",
+            "name": "Chapter 48",
+            "count": 26
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "T3FkMG1CdVZWY0NYRTVuWDE0T3cwZz09",
+            "name": "Chapter 49",
+            "count": 22
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "NXFHMjM0Q0pRNEhXMEtMdkg3TUx4dz09",
+            "name": "Chapter 50",
+            "count": 30
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "ZG80eTV5a3ZnZGlXVTQ5OVA5SVMzdz09",
+            "name": "Chapter 51",
+            "count": 30
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "eDR3cGZxRjJWZkF6b1ZGdTZ5REdBQT09",
+            "name": "Chapter 52",
+            "count": 33
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "U084aDYxWXQ3anRQa1dYYkNONWg2UT09",
+            "name": "Chapter 53",
+            "count": 13
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "NEdqdW1UVkcyUi9hNzZBWDdpZW0yUT09",
+            "name": "Chapter 54",
+            "count": 44
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "b29zTWcwVUQyNkpQdE1maUdsV3FTdz09",
+            "name": "Chapter 55",
+            "count": 33
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "WGdHcHFNNEVpamFyM0VLZ09pSFNDZz09",
+            "name": "Chapter 56",
+            "count": 23
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "TWcwS2pDZUVjckcvZXdNUGVFc2NnQT09",
+            "name": "Chapter 57",
+            "count": 10
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "QTRLWS9nV2RNMWJoQUMxdStJajVHZz09",
+            "name": "Chapter 58",
+            "count": 39
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "aGhkbWdadU5IZ1RjcXJmMlJHT2F5QT09",
+            "name": "Chapter 59",
+            "count": 17
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "a245c3hDV3VlNllOYVdoMStTamFFQT09",
+            "name": "Chapter 60",
+            "count": 57
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "c1M1Y1JZRUJLOEdZcmxCYy8yQ05FQT09",
+            "name": "Chapter 61",
+            "count": 31
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "QUFqTjh6em5pVG9KT3VBUEEzNVI4UT09",
+            "name": "Chapter 62",
+            "count": 35
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "Yk1kUm8zNWtQT2s0dDVsNk9hdWtTdz09",
+            "name": "Chapter 63",
+            "count": 21
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "Sk5CQ3N6N09McXU0NUVaNFZFYmJEUT09",
+            "name": "Chapter 64",
+            "count": 70
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "V0kwb3c4STBPN0xkVGhQc3R6VzBXQT09",
+            "name": "Chapter 65",
+            "count": 67
+          },
+          {
+            "samhita_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "MmMyaWxHNldZL3FsTURYdkRsaUJPUT09",
+            "name": "Chapter 66",
+            "count": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+    "name": "Ashtanga Hridaya",
+    "hindi": "अष्टांग हृदय",
+    "count": 6229,
+    "qfrom": "chapter",
+    "sthanas": [
+      {
+        "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+        "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+        "name": "Sutra Sthana (सूत्र स्थान)",
+        "count": 2055,
+        "chapters": [
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 4
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 70
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 52
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 86
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 69
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 176
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 214
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 86
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 105
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 54
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "name": "Chapter 10",
+            "count": 143
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "name": "Chapter 11",
+            "count": 110
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "NlFJTkYzK2FycTlLekFrcGJxUnNBZz09",
+            "name": "Chapter 12",
+            "count": 142
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "Vm8zSTR2N0JYWUE4ZC8zQmNnSGFUZz09",
+            "name": "Chapter 13",
+            "count": 79
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "aTJ2eUpIb0lFb1ZCUEs4bWtBWGhxZz09",
+            "name": "Chapter 14",
+            "count": 73
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "MlRpVWM5RHZ4aHpqMlFuT0d4aGpqQT09",
+            "name": "Chapter 15",
+            "count": 77
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "dVIwVU92dTZ3VXRuUTdnTzZySkFvQT09",
+            "name": "Chapter 16",
+            "count": 118
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "dXVSZGtrTHdKV0gxWkNjWWRaeUpzZz09",
+            "name": "Chapter 17",
+            "count": 58
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "NVpLVW54K003dzAzTXRKQ2F5aTJCUT09",
+            "name": "Chapter 18",
+            "count": 42
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "dEt2VDgvcElXR0dxalJWRFQyeVEwZz09",
+            "name": "Chapter 19",
+            "count": 59
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "QWNDR0g5bWM2enFtVk81NlFPT0R3Zz09",
+            "name": "Chapter 20",
+            "count": 46
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "TmpJdFRXeDJTMnRMbFc4WnpWUHNDZz09",
+            "name": "Chapter 21",
+            "count": 17
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "Nm5VZ3MycHhRdFB3ejVJNFEvd1JJQT09",
+            "name": "Chapter 22",
+            "count": 25
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "SStncUxBaDQzUE5oVmhOaEsxQVhOZz09",
+            "name": "Chapter 23",
+            "count": 20
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "OVJXWnNBaGRqazc4NEdvdkVidWt4Zz09",
+            "name": "Chapter 24",
+            "count": 11
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "MGJsbDFtS05uV3dHMXhqb0h4cm1GUT09",
+            "name": "Chapter 25",
+            "count": 25
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "QndKUTVZWTdLdnpqNytKSWVaY2tvQT09",
+            "name": "Chapter 26",
+            "count": 23
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "QWY0dVJnZ2xISXFlMFdJREdncjJTUT09",
+            "name": "Chapter 27",
+            "count": 22
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "aXhJTnZJRXBLaXF2NkowSFR0VlYwQT09",
+            "name": "Chapter 28",
+            "count": 20
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "QUVxeE0wRXRIUHAralc2T0huSUdPQT09",
+            "name": "Chapter 29",
+            "count": 25
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "b21ZdmpyQ0xJRy9jNC9uVEdZQXE0dz09",
+            "name": "Chapter 30",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+        "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+        "name": "Nidan Sthana (निदान स्थान)",
+        "count": 1137,
+        "chapters": [
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 43
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 92
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 34
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 46
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 69
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 56
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 38
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 68
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 61
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "name": "Chapter 10",
+            "count": 60
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "name": "Chapter 11",
+            "count": 101
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "NlFJTkYzK2FycTlLekFrcGJxUnNBZz09",
+            "name": "Chapter 12",
+            "count": 54
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "Vm8zSTR2N0JYWUE4ZC8zQmNnSGFUZz09",
+            "name": "Chapter 13",
+            "count": 96
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "aTJ2eUpIb0lFb1ZCUEs4bWtBWGhxZz09",
+            "name": "Chapter 14",
+            "count": 127
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "MlRpVWM5RHZ4aHpqMlFuT0d4aGpqQT09",
+            "name": "Chapter 15",
+            "count": 103
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "dVIwVU92dTZ3VXRuUTdnTzZySkFvQT09",
+            "name": "Chapter 16",
+            "count": 89
+          }
+        ]
+      },
+      {
+        "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+        "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+        "name": "Shareer Sthana (शारीर स्थान)",
+        "count": 330,
+        "chapters": [
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 4
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 81
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 33
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 100
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 86
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 19
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 7
+          }
+        ]
+      },
+      {
+        "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+        "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+        "name": "Chikitsa Sthana (चिकित्सा स्थान)",
+        "count": 944,
+        "chapters": [
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 2
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 77
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 25
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 55
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 18
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 38
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 36
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 44
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 57
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 45
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "name": "Chapter 10",
+            "count": 54
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "name": "Chapter 11",
+            "count": 21
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "NlFJTkYzK2FycTlLekFrcGJxUnNBZz09",
+            "name": "Chapter 12",
+            "count": 33
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "Vm8zSTR2N0JYWUE4ZC8zQmNnSGFUZz09",
+            "name": "Chapter 13",
+            "count": 25
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "aTJ2eUpIb0lFb1ZCUEs4bWtBWGhxZz09",
+            "name": "Chapter 14",
+            "count": 67
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "MlRpVWM5RHZ4aHpqMlFuT0d4aGpqQT09",
+            "name": "Chapter 15",
+            "count": 88
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "dVIwVU92dTZ3VXRuUTdnTzZySkFvQT09",
+            "name": "Chapter 16",
+            "count": 41
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "dXVSZGtrTHdKV0gxWkNjWWRaeUpzZz09",
+            "name": "Chapter 17",
+            "count": 41
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "NVpLVW54K003dzAzTXRKQ2F5aTJCUT09",
+            "name": "Chapter 18",
+            "count": 30
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "dEt2VDgvcElXR0dxalJWRFQyeVEwZz09",
+            "name": "Chapter 19",
+            "count": 74
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "QWNDR0g5bWM2enFtVk81NlFPT0R3Zz09",
+            "name": "Chapter 20",
+            "count": 9
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "TmpJdFRXeDJTMnRMbFc4WnpWUHNDZz09",
+            "name": "Chapter 21",
+            "count": 34
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "Nm5VZ3MycHhRdFB3ejVJNFEvd1JJQT09",
+            "name": "Chapter 22",
+            "count": 30
+          }
+        ]
+      },
+      {
+        "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+        "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+        "name": "Kalpa Sthana (कल्प स्थान)",
+        "count": 95,
+        "chapters": [
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 30
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 18
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 18
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 13
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 16
+          }
+        ]
+      },
+      {
+        "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+        "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+        "name": "Uttar Tantra (उत्तरतंत्र)",
+        "count": 1582,
+        "chapters": [
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 4
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 54
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 71
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 73
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 65
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 24
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 40
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 20
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 62
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 32
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "name": "Chapter 10",
+            "count": 40
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "name": "Chapter 11",
+            "count": 28
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "NlFJTkYzK2FycTlLekFrcGJxUnNBZz09",
+            "name": "Chapter 12",
+            "count": 27
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "Vm8zSTR2N0JYWUE4ZC8zQmNnSGFUZz09",
+            "name": "Chapter 13",
+            "count": 22
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "aTJ2eUpIb0lFb1ZCUEs4bWtBWGhxZz09",
+            "name": "Chapter 14",
+            "count": 22
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "MlRpVWM5RHZ4aHpqMlFuT0d4aGpqQT09",
+            "name": "Chapter 15",
+            "count": 46
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "dVIwVU92dTZ3VXRuUTdnTzZySkFvQT09",
+            "name": "Chapter 16",
+            "count": 33
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "dXVSZGtrTHdKV0gxWkNjWWRaeUpzZz09",
+            "name": "Chapter 17",
+            "count": 47
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "NVpLVW54K003dzAzTXRKQ2F5aTJCUT09",
+            "name": "Chapter 18",
+            "count": 32
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "dEt2VDgvcElXR0dxalJWRFQyeVEwZz09",
+            "name": "Chapter 19",
+            "count": 33
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "QWNDR0g5bWM2enFtVk81NlFPT0R3Zz09",
+            "name": "Chapter 20",
+            "count": 14
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "TmpJdFRXeDJTMnRMbFc4WnpWUHNDZz09",
+            "name": "Chapter 21",
+            "count": 90
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "Nm5VZ3MycHhRdFB3ejVJNFEvd1JJQT09",
+            "name": "Chapter 22",
+            "count": 60
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "SStncUxBaDQzUE5oVmhOaEsxQVhOZz09",
+            "name": "Chapter 23",
+            "count": 44
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "OVJXWnNBaGRqazc4NEdvdkVidWt4Zz09",
+            "name": "Chapter 24",
+            "count": 20
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "MGJsbDFtS05uV3dHMXhqb0h4cm1GUT09",
+            "name": "Chapter 25",
+            "count": 30
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "QndKUTVZWTdLdnpqNytKSWVaY2tvQT09",
+            "name": "Chapter 26",
+            "count": 34
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "QWY0dVJnZ2xISXFlMFdJREdncjJTUT09",
+            "name": "Chapter 27",
+            "count": 16
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "aXhJTnZJRXBLaXF2NkowSFR0VlYwQT09",
+            "name": "Chapter 28",
+            "count": 31
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "QUVxeE0wRXRIUHAralc2T0huSUdPQT09",
+            "name": "Chapter 29",
+            "count": 22
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "b21ZdmpyQ0xJRy9jNC9uVEdZQXE0dz09",
+            "name": "Chapter 30",
+            "count": 9
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "SFp2ZHJIYTZrVGlpemtMRXBxcW1Vdz09",
+            "name": "Chapter 31",
+            "count": 55
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "dlE1OUgyK0JKd2w3RFUrdy96WEVLUT09",
+            "name": "Chapter 32",
+            "count": 13
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "VUlFeVNTeHBkOXR2bzdrcXJHN1A1dz09",
+            "name": "Chapter 33",
+            "count": 76
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "eXBtVk1HSkVaRDdZT2xhUHFnL0dqQT09",
+            "name": "Chapter 34",
+            "count": 37
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "eGczWkVvZFVxZExxVjk2alpZK3k1QT09",
+            "name": "Chapter 35",
+            "count": 47
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "THNqdVZJQUJ1Z0o4aThCRkdTeVNpdz09",
+            "name": "Chapter 36",
+            "count": 60
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "RXVYRmxLWWZWYUJPcTFLSi8vTi9rQT09",
+            "name": "Chapter 37",
+            "count": 59
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "aHl2NUR4eUMvOGZRWVpWMFpDVld1QT09",
+            "name": "Chapter 38",
+            "count": 19
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "enJLSUZ0Y3FaTDd5QjR6QzNjNjB5Zz09",
+            "name": "Chapter 39",
+            "count": 32
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "eHNOY2hJVVhuTmFVcEhIakd4NWN1Zz09",
+            "name": "Chapter 40",
+            "count": 39
+          }
+        ]
+      },
+      {
+        "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+        "sthana_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+        "name": "Khila Sthana (खिल स्थान)",
+        "count": 2,
+        "chapters": [
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "chapter_id": "TmpJdFRXeDJTMnRMbFc4WnpWUHNDZz09",
+            "name": "Chapter 21",
+            "count": 1
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "chapter_id": "enJLSUZ0Y3FaTDd5QjR6QzNjNjB5Zz09",
+            "name": "Chapter 39",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+        "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+        "name": "Uttar Sthana (उत्तर स्थान)",
+        "count": 51,
+        "chapters": [
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 2
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 9
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 5
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 3
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 3
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "name": "Chapter 10",
+            "count": 1
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "name": "Chapter 11",
+            "count": 1
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "MlRpVWM5RHZ4aHpqMlFuT0d4aGpqQT09",
+            "name": "Chapter 15",
+            "count": 1
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "dVIwVU92dTZ3VXRuUTdnTzZySkFvQT09",
+            "name": "Chapter 16",
+            "count": 1
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "TmpJdFRXeDJTMnRMbFc4WnpWUHNDZz09",
+            "name": "Chapter 21",
+            "count": 2
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "Nm5VZ3MycHhRdFB3ejVJNFEvd1JJQT09",
+            "name": "Chapter 22",
+            "count": 1
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "OVJXWnNBaGRqazc4NEdvdkVidWt4Zz09",
+            "name": "Chapter 24",
+            "count": 2
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "VUlFeVNTeHBkOXR2bzdrcXJHN1A1dz09",
+            "name": "Chapter 33",
+            "count": 4
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "eGczWkVvZFVxZExxVjk2alpZK3k1QT09",
+            "name": "Chapter 35",
+            "count": 4
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "THNqdVZJQUJ1Z0o4aThCRkdTeVNpdz09",
+            "name": "Chapter 36",
+            "count": 2
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "RXVYRmxLWWZWYUJPcTFLSi8vTi9rQT09",
+            "name": "Chapter 37",
+            "count": 1
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "enJLSUZ0Y3FaTDd5QjR6QzNjNjB5Zz09",
+            "name": "Chapter 39",
+            "count": 3
+          },
+          {
+            "samhita_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "eHNOY2hJVVhuTmFVcEhIakd4NWN1Zz09",
+            "name": "Chapter 40",
+            "count": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+    "name": "Ashtanga Samgrah",
+    "hindi": "अष्टांग संग्रह",
+    "count": 2164,
+    "qfrom": "chapter",
+    "sthanas": [
+      {
+        "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+        "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+        "name": "Sutra Sthana (सूत्र स्थान)",
+        "count": 229,
+        "chapters": [
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 3
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 10
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 3
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 10
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 7
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 2
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 18
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 14
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 3
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 4
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "name": "Chapter 10",
+            "count": 13
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "name": "Chapter 11",
+            "count": 5
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "NlFJTkYzK2FycTlLekFrcGJxUnNBZz09",
+            "name": "Chapter 12",
+            "count": 7
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "Vm8zSTR2N0JYWUE4ZC8zQmNnSGFUZz09",
+            "name": "Chapter 13",
+            "count": 19
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "aTJ2eUpIb0lFb1ZCUEs4bWtBWGhxZz09",
+            "name": "Chapter 14",
+            "count": 1
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "MlRpVWM5RHZ4aHpqMlFuT0d4aGpqQT09",
+            "name": "Chapter 15",
+            "count": 4
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "dVIwVU92dTZ3VXRuUTdnTzZySkFvQT09",
+            "name": "Chapter 16",
+            "count": 1
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "dXVSZGtrTHdKV0gxWkNjWWRaeUpzZz09",
+            "name": "Chapter 17",
+            "count": 4
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "NVpLVW54K003dzAzTXRKQ2F5aTJCUT09",
+            "name": "Chapter 18",
+            "count": 6
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "dEt2VDgvcElXR0dxalJWRFQyeVEwZz09",
+            "name": "Chapter 19",
+            "count": 4
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "QWNDR0g5bWM2enFtVk81NlFPT0R3Zz09",
+            "name": "Chapter 20",
+            "count": 19
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "Nm5VZ3MycHhRdFB3ejVJNFEvd1JJQT09",
+            "name": "Chapter 22",
+            "count": 2
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "SStncUxBaDQzUE5oVmhOaEsxQVhOZz09",
+            "name": "Chapter 23",
+            "count": 6
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "OVJXWnNBaGRqazc4NEdvdkVidWt4Zz09",
+            "name": "Chapter 24",
+            "count": 1
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "MGJsbDFtS05uV3dHMXhqb0h4cm1GUT09",
+            "name": "Chapter 25",
+            "count": 7
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "QndKUTVZWTdLdnpqNytKSWVaY2tvQT09",
+            "name": "Chapter 26",
+            "count": 6
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "QWY0dVJnZ2xISXFlMFdJREdncjJTUT09",
+            "name": "Chapter 27",
+            "count": 6
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "aXhJTnZJRXBLaXF2NkowSFR0VlYwQT09",
+            "name": "Chapter 28",
+            "count": 8
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "QUVxeE0wRXRIUHAralc2T0huSUdPQT09",
+            "name": "Chapter 29",
+            "count": 7
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "b21ZdmpyQ0xJRy9jNC9uVEdZQXE0dz09",
+            "name": "Chapter 30",
+            "count": 5
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "SFp2ZHJIYTZrVGlpemtMRXBxcW1Vdz09",
+            "name": "Chapter 31",
+            "count": 10
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "dlE1OUgyK0JKd2w3RFUrdy96WEVLUT09",
+            "name": "Chapter 32",
+            "count": 4
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "eXBtVk1HSkVaRDdZT2xhUHFnL0dqQT09",
+            "name": "Chapter 34",
+            "count": 7
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "aHl2NUR4eUMvOGZRWVpWMFpDVld1QT09",
+            "name": "Chapter 38",
+            "count": 2
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "chapter_id": "eHNOY2hJVVhuTmFVcEhIakd4NWN1Zz09",
+            "name": "Chapter 40",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+        "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+        "name": "Nidan Sthana (निदान स्थान)",
+        "count": 467,
+        "chapters": [
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 1
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 20
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 45
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 28
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 28
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 39
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 30
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 28
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 30
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 1
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "name": "Chapter 10",
+            "count": 25
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "name": "Chapter 11",
+            "count": 31
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "NlFJTkYzK2FycTlLekFrcGJxUnNBZz09",
+            "name": "Chapter 12",
+            "count": 21
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "Vm8zSTR2N0JYWUE4ZC8zQmNnSGFUZz09",
+            "name": "Chapter 13",
+            "count": 24
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "aTJ2eUpIb0lFb1ZCUEs4bWtBWGhxZz09",
+            "name": "Chapter 14",
+            "count": 52
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "MlRpVWM5RHZ4aHpqMlFuT0d4aGpqQT09",
+            "name": "Chapter 15",
+            "count": 22
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "chapter_id": "dVIwVU92dTZ3VXRuUTdnTzZySkFvQT09",
+            "name": "Chapter 16",
+            "count": 42
+          }
+        ]
+      },
+      {
+        "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+        "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+        "name": "Shareer Sthana (शारीर स्थान)",
+        "count": 524,
+        "chapters": [
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "TCtMK2d4bXo5VE9vNDE1NVAyR0FLUT09",
+            "name": "Miscellaneous (विविध)",
+            "count": 1
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 37
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 36
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 21
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 26
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 149
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "name": "Chapter 6",
+            "count": 43
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 106
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 60
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 15
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "name": "Chapter 10",
+            "count": 2
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "name": "Chapter 11",
+            "count": 24
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "chapter_id": "NlFJTkYzK2FycTlLekFrcGJxUnNBZz09",
+            "name": "Chapter 12",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+        "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+        "name": "Chikitsa Sthana (चिकित्सा स्थान)",
+        "count": 95,
+        "chapters": [
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 7
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 1
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 16
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "name": "Chapter 4",
+            "count": 13
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 21
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 10
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 13
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 13
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+            "chapter_id": "SStncUxBaDQzUE5oVmhOaEsxQVhOZz09",
+            "name": "Chapter 23",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+        "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+        "name": "Kalpa Sthana (कल्प स्थान)",
+        "count": 2,
+        "chapters": [
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+            "name": "Chapter 8",
+            "count": 1
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "chapter_id": "NlFJTkYzK2FycTlLekFrcGJxUnNBZz09",
+            "name": "Chapter 12",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+        "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+        "name": "Uttar Tantra (उत्तरतंत्र)",
+        "count": 813,
+        "chapters": [
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 5
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 34
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "alR2VnFzd0NlcXhTV3oxWkI0cDJaUT09",
+            "name": "Chapter 3",
+            "count": 53
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+            "name": "Chapter 5",
+            "count": 1
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+            "name": "Chapter 7",
+            "count": 1
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "name": "Chapter 9",
+            "count": 1
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+            "name": "Chapter 10",
+            "count": 13
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "name": "Chapter 11",
+            "count": 31
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "NlFJTkYzK2FycTlLekFrcGJxUnNBZz09",
+            "name": "Chapter 12",
+            "count": 3
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "Vm8zSTR2N0JYWUE4ZC8zQmNnSGFUZz09",
+            "name": "Chapter 13",
+            "count": 31
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "aTJ2eUpIb0lFb1ZCUEs4bWtBWGhxZz09",
+            "name": "Chapter 14",
+            "count": 2
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "MlRpVWM5RHZ4aHpqMlFuT0d4aGpqQT09",
+            "name": "Chapter 15",
+            "count": 25
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "dVIwVU92dTZ3VXRuUTdnTzZySkFvQT09",
+            "name": "Chapter 16",
+            "count": 2
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "dXVSZGtrTHdKV0gxWkNjWWRaeUpzZz09",
+            "name": "Chapter 17",
+            "count": 7
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "NVpLVW54K003dzAzTXRKQ2F5aTJCUT09",
+            "name": "Chapter 18",
+            "count": 28
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "TmpJdFRXeDJTMnRMbFc4WnpWUHNDZz09",
+            "name": "Chapter 21",
+            "count": 22
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "Nm5VZ3MycHhRdFB3ejVJNFEvd1JJQT09",
+            "name": "Chapter 22",
+            "count": 3
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "SStncUxBaDQzUE5oVmhOaEsxQVhOZz09",
+            "name": "Chapter 23",
+            "count": 19
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "OVJXWnNBaGRqazc4NEdvdkVidWt4Zz09",
+            "name": "Chapter 24",
+            "count": 8
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "MGJsbDFtS05uV3dHMXhqb0h4cm1GUT09",
+            "name": "Chapter 25",
+            "count": 86
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "QndKUTVZWTdLdnpqNytKSWVaY2tvQT09",
+            "name": "Chapter 26",
+            "count": 28
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "QWY0dVJnZ2xISXFlMFdJREdncjJTUT09",
+            "name": "Chapter 27",
+            "count": 22
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "aXhJTnZJRXBLaXF2NkowSFR0VlYwQT09",
+            "name": "Chapter 28",
+            "count": 7
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "QUVxeE0wRXRIUHAralc2T0huSUdPQT09",
+            "name": "Chapter 29",
+            "count": 20
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "SFp2ZHJIYTZrVGlpemtMRXBxcW1Vdz09",
+            "name": "Chapter 31",
+            "count": 1
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "dlE1OUgyK0JKd2w3RFUrdy96WEVLUT09",
+            "name": "Chapter 32",
+            "count": 34
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "VUlFeVNTeHBkOXR2bzdrcXJHN1A1dz09",
+            "name": "Chapter 33",
+            "count": 9
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "eXBtVk1HSkVaRDdZT2xhUHFnL0dqQT09",
+            "name": "Chapter 34",
+            "count": 10
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "eGczWkVvZFVxZExxVjk2alpZK3k1QT09",
+            "name": "Chapter 35",
+            "count": 5
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "THNqdVZJQUJ1Z0o4aThCRkdTeVNpdz09",
+            "name": "Chapter 36",
+            "count": 40
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "RXVYRmxLWWZWYUJPcTFLSi8vTi9rQT09",
+            "name": "Chapter 37",
+            "count": 12
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "aHl2NUR4eUMvOGZRWVpWMFpDVld1QT09",
+            "name": "Chapter 38",
+            "count": 50
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "enJLSUZ0Y3FaTDd5QjR6QzNjNjB5Zz09",
+            "name": "Chapter 39",
+            "count": 15
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "eHNOY2hJVVhuTmFVcEhIakd4NWN1Zz09",
+            "name": "Chapter 40",
+            "count": 49
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "YlhNZlJCWDBZaTlVRU44bEp6QzYydz09",
+            "name": "Chapter 41",
+            "count": 51
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "WTZPa1RoR3NxS0dyT1VHQmJwNjY4UT09",
+            "name": "Chapter 43",
+            "count": 26
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "azY3N1ZnL0Z1MzBSdFcvKy9LRG12QT09",
+            "name": "Chapter 44",
+            "count": 28
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "U3ZRK2t3ZjhTRXlBWVEwWEpGU3FOUT09",
+            "name": "Chapter 46",
+            "count": 27
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+            "chapter_id": "T3FkMG1CdVZWY0NYRTVuWDE0T3cwZz09",
+            "name": "Chapter 49",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+        "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+        "name": "Uttar Sthana (उत्तर स्थान)",
+        "count": 8,
+        "chapters": [
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "YVlOYnBYV05IcjFsL0UxeDFHZDZwQT09",
+            "name": "Chapter 1",
+            "count": 1
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "Q0NtL3hNVlcwVDVyNExWWnJ3bGxsZz09",
+            "name": "Chapter 2",
+            "count": 4
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "Nm5VZ3MycHhRdFB3ejVJNFEvd1JJQT09",
+            "name": "Chapter 22",
+            "count": 1
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "SStncUxBaDQzUE5oVmhOaEsxQVhOZz09",
+            "name": "Chapter 23",
+            "count": 1
+          },
+          {
+            "samhita_id": "TkllSmR4elZDRmJyWng1am5ubmFKQT09",
+            "sthana_id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+            "chapter_id": "eGczWkVvZFVxZExxVjk2alpZK3k1QT09",
+            "name": "Chapter 35",
+            "count": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cVF2TnRwSVBoVXAyM3N3RUxPV3QwZz09",
+    "name": "Chakradatt Samhita",
+    "hindi": "चक्रदत्त संहिता",
+    "count": 25,
+    "qfrom": "direct",
+    "sthanas": []
+  },
+  {
+    "id": "UlRaQTQ0VjZzZENzOWZ2YlJUckxKdz09",
+    "name": "Madhava Nidana",
+    "hindi": "माधव निदान",
+    "count": 1057,
+    "qfrom": "direct",
+    "sthanas": []
+  },
+  {
+    "id": "Y2lPVkJUUlVZWUdqdXcrYmlGNFZTZz09",
+    "name": "Yog Ratnakar",
+    "hindi": "योग रत्नाकर",
+    "count": 207,
+    "qfrom": "direct",
+    "sthanas": []
+  },
+  {
+    "id": "VzMvc0FSMysyZHJtUGtJOUV6bmxEUT09",
+    "name": "Sharangadhara Samhita",
+    "hindi": "शारंगधर संहिता",
+    "count": 1197,
+    "qfrom": "direct",
+    "sthanas": []
+  },
+  {
+    "id": "ZUMxNGpJR0pQbThvMWZjTGFnSEEwZz09",
+    "name": "Bhavaprakash Samhita",
+    "hindi": "भावप्रकाश संहिता",
+    "count": 471,
+    "qfrom": "direct",
+    "sthanas": []
+  },
+  {
+    "id": "OFo4d1lRcTRMT1FrZlM1blEwSmVyQT09",
+    "name": "Kashyapa Samhita",
+    "hindi": "काश्यप संहिता",
+    "count": 980,
+    "qfrom": "direct",
+    "sthanas": []
+  },
+  {
+    "id": "eDl6cjlpbHJLc3ludW0xZklKTDlBdz09",
+    "name": "Harita Samhita",
+    "hindi": "हारीत संहिता",
+    "count": 79,
+    "qfrom": "direct",
+    "sthanas": []
+  },
+  {
+    "id": "NlFJTkYzK2FycTlLekFrcGJxUnNBZz09",
+    "name": "Bhel Samhita",
+    "hindi": "भेल संहिता",
+    "count": 50,
+    "qfrom": "direct",
+    "sthanas": []
+  },
+  {
+    "id": "Vm8zSTR2N0JYWUE4ZC8zQmNnSGFUZz09",
+    "name": "Bhaishjya Ratnavali",
+    "hindi": "भैषज्य रत्नावली",
+    "count": 319,
+    "qfrom": "direct",
+    "sthanas": []
+  },
+  {
+    "id": "aTJ2eUpIb0lFb1ZCUEs4bWtBWGhxZz09",
+    "name": "Ras Ratan Sammuchaya",
+    "hindi": "रस रत्न समुच्चय",
+    "count": 423,
+    "qfrom": "direct",
+    "sthanas": []
+  },
+  {
+    "id": "MlRpVWM5RHZ4aHpqMlFuT0d4aGpqQT09",
+    "name": "Ras Tarangini",
+    "hindi": "रस तरंगिणी",
+    "count": 120,
+    "qfrom": "direct",
+    "sthanas": []
+  },
+  {
+    "id": "dVIwVU92dTZ3VXRuUTdnTzZySkFvQT09",
+    "name": "Ras Saar Samgraha",
+    "hindi": "रस सार संग्रह",
+    "count": 3,
+    "qfrom": "direct",
+    "sthanas": []
+  }
+]

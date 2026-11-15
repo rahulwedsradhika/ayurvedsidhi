@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Samhitawise Questions - AyurQuest</title>
+  <meta name="theme-color" content="#2AACDD">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/icons/font/flaticon.css?v=1.1">
+  <link rel="stylesheet" href="assets/css/style.css?v=5.535">
+  <link rel="stylesheet" href="assets/css/home_ribbon.css">
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <style>
+    .cursor-pointer { cursor: pointer; }
+    .samhita-row:hover, .sthana-row:hover, .chapter-row:hover { background-color: #f7fafc; }
+    .badge-count { font-weight: bold; font-size: 13px; color: #b21f2d; }
+    #quiz-container { display: none; margin-top: 15px; }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <!-- Top Navigation Bar -->
+  <nav class="navbar navbar-default" style="margin-bottom: 0; background: #fff; border-bottom: 1px solid #dce4ec;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a id="sidebarCollapse" class="btn btn-aq2 navbar-btn strong text-gray btn-menu">
+          <i class="fa fa-align-justify fa-2x"></i>
+        </a>
+        <span class="text-gray ml-5">
+          Hello <strong>Rohit</strong>, Welcome to <strong>AyurQuest Education</strong>
+        </span>
+      </div>
+      <div class="navbar-custom-menu pull-right mt-5">
+        <div class="btn-group" role="group">
+          <a href="index.html" class="btn btn-aq2 strong text-gray"><i class="fa fa-home text-24"></i> Dashboard</a>
+          <a href="samhitas.html" class="btn btn-aq2 strong text-navy active"><i class="flaticon-samhitas text-24"></i> Samhitas</a>
+          <a href="subjects.html" class="btn btn-aq2 strong text-gray"><i class="flaticon-subjects text-24"></i> Subjects</a>
+          <a href="mock_tests.html" class="btn btn-aq2 strong text-gray"><i class="flaticon-test-series text-24"></i> Mock Tests</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sidebar Overlay -->
+  <div id="sidebar-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:998;"></div>
+  
+  <!-- Sliding Sidebar -->
+  <nav id="sidebar" style="position:fixed; top:0; left:-280px; width:280px; height:100%; background:#fff; z-index:999; overflow-y:auto; transition: left 0.3s ease; box-shadow: 2px 0 10px rgba(0,0,0,0.2);">
+    <div class="sidebar-header bg-aq2" style="padding: 15px; background: #2aacdd; color: #fff;">
+      <a id="closeSidebar" class="pull-right" style="color: #fff; cursor: pointer;"><i class="fa fa-times fa-2x"></i></a>
+      <h3><i class="fa fa-graduation-cap"></i> AyurQuest</h3>
+      <span>Hi Rohit ! (Pro Dev)</span>
+    </div>
+    <ul class="list-unstyled components" style="padding: 10px 0;">
+      <li><a href="index.html" style="padding: 12px 20px; display: block; color: #333;"><i class="flaticon-dashboard text-navy" style="margin-right: 10px;"></i> Dashboard</a></li>
+      <li><a href="samhitas.html" style="padding: 12px 20px; display: block; color: #2aacdd; font-weight: bold;"><i class="flaticon-samhitas text-navy" style="margin-right: 10px;"></i> Samhitawise MCQs</a></li>
+      <li><a href="subjects.html" style="padding: 12px 20px; display: block; color: #333;"><i class="flaticon-subjects text-navy" style="margin-right: 10px;"></i> Subjectwise MCQs (57,375)</a></li>
+      <li><a href="mock_tests.html" style="padding: 12px 20px; display: block; color: #333;"><i class="flaticon-audio-video text-navy" style="margin-right: 10px;"></i> Mock Tests (398 Tests)</a></li>
+      <li><a href="test_series.html" style="padding: 12px 20px; display: block; color: #333;"><i class="flaticon-test-series text-navy" style="margin-right: 10px;"></i> Test Series (35 Tests)</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Container -->
+  <div id="content" style="background: #f4f6f9; min-height: calc(100vh - 100px); padding-bottom: 50px;">
+    <!-- Top Banner with Authentic Background -->
+    <div class="row" id="top_banner">
+      <div class="col-md-12">
+        <div class="text-center" style="background: #eaf9f9 url('assets/images/samhita_wise_mcqs_bg.png') no-repeat center 5px; background-size: 450px;">
+          <div class="list-group" style="padding-top: 200px;">
+            <div class="list-group-item strong" style="font-size: 18px; letter-spacing: 1px; color: #1b3a57;">
+              SAMHITA WISE QUESTIONS (BRIHATRAYI & LAGHUTRAYI)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hierarchy Navigation Container -->
+    <div class="container" style="max-width: 1000px; margin-top: 15px;">
+      <!-- Breadcrumb Bar -->
+      <div id="breadcrumb-bar" style="display: none; margin-bottom: 12px; background: #fff; padding: 10px 16px; border-radius: 4px; border: 1px solid #e1e8ed;">
+        <span id="breadcrumb-content" style="font-size: 14px; font-weight: 600; color: #2c3e50;"></span>
+      </div>
+
+      <!-- LEVEL 1: SAMHITAS LIST -->
+      <div id="samhita_view" class="list-group" style="box-shadow: 0 1px 4px rgba(0,0,0,0.08); border-radius: 4px;">
+        <div class="list-group-item bg-aq strong" style="background: #2aacdd; color: #fff; font-size: 15px;">
+          <i class="flaticon-samhitas"></i> Select Classical Samhita
+        </div>
+        <div id="samhita_list_items">
+          <div class="text-center" style="padding: 30px;"><i class="fa fa-spinner fa-spin fa-2x"></i> Loading Samhitas...</div>
+        </div>
+      </div>
+
+      <!-- LEVEL 2: STHANAS LIST -->
+      <div id="sthana_view" style="display: none;">
+        <div class="list-group" style="box-shadow: 0 1px 4px rgba(0,0,0,0.08); border-radius: 4px;">
+          <div class="list-group-item" style="padding: 8px;">
+            <button id="btn_back_to_samhitas" class="btn btn-sm btn-block bg-maroon" style="background: #b21f2d; color: #fff; font-weight: bold;">
+              <i class="flaticon-samhitas"></i> &laquo; Back to Samhita List
+            </button>
+          </div>
+          <div id="sthana_list_items"></div>
+        </div>
+      </div>
+
+      <!-- LEVEL 3: CHAPTERS & SUBCHAPTERS LIST -->
+      <div id="chapter_view" style="display: none;">
+        <div class="list-group" style="box-shadow: 0 1px 4px rgba(0,0,0,0.08); border-radius: 4px;">
+          <div class="list-group-item" style="padding: 8px;">
+            <div class="row">
+              <div class="col-xs-6">
+                <button id="btn_back_to_sthanas" class="btn btn-sm btn-block bg-maroon" style="background: #b21f2d; color: #fff; font-weight: bold;">
+                  <i class="fa fa-arrow-left"></i> Sthana List
+                </button>
+              </div>
+              <div class="col-xs-6">
+                <button id="btn_back_to_samhitas_2" class="btn btn-sm btn-block bg-navy" style="background: #1b3a57; color: #fff; font-weight: bold;">
+                  <i class="flaticon-samhitas"></i> Samhita List
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="chapter_list_items"></div>
+        </div>
+      </div>
+
+      <!-- LEVEL 4: INTERACTIVE QUIZ & PRACTICE RUNNER -->
+      <div id="quiz_view" style="display: none;">
+        <div style="margin-bottom: 12px;">
+          <button id="btn_back_to_chapters" class="btn btn-sm bg-maroon" style="background: #b21f2d; color: #fff; font-weight: bold;">
+            <i class="fa fa-arrow-left"></i> Back to Chapters
+          </button>
+        </div>
+
+        <div class="box box-solid" style="background: #fff; border-radius: 4px; border: 1px solid #dce4ec; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+          <div id="quiz-header" style="border-bottom: 2px solid #2aacdd; padding-bottom: 10px; margin-bottom: 15px;">
+            <h3 id="quiz-title" style="margin: 0; color: #1b3a57; font-size: 18px; font-weight: bold;"></h3>
+            <div id="quiz-subtitle" style="font-size: 13px; color: #7f8c8d; margin-top: 4px;"></div>
+          </div>
+
+          <!-- Controls Bar -->
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; flex-wrap: wrap; gap: 10px;">
+            <div style="font-size: 14px; font-weight: bold; color: #2c3e50;" id="quiz-counter">
+              Question <span id="current-q-num">1</span> of <span id="total-q-num">0</span>
+            </div>
+            <div style="display: flex; gap: 8px;">
+              <select id="jump-to-q" class="form-control input-sm" style="width: 140px; font-weight: bold;">
+                <option value="">Jump to Question...</option>
+              </select>
+              <button id="toggle-all-answers" class="btn btn-sm btn-success" style="font-weight: bold;">
+                <i class="fa fa-eye"></i> <span id="toggle-answers-text">Reveal Answer</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Question Body -->
+          <div id="question-card" style="padding: 15px; background: #fafcfe; border: 1px solid #e1e8ed; border-radius: 6px;">
+            <div id="question-stem" style="font-size: 16px; font-weight: 600; color: #2c3e50; line-height: 1.6; margin-bottom: 15px;"></div>
+            
+            <!-- 4 Options -->
+            <div id="options-container" style="display: flex; flex-direction: column; gap: 10px;"></div>
+
+            <!-- Verified Classical Citation & Commentary -->
+            <div id="commentary-box" style="display: none; margin-top: 15px; padding: 12px 16px; background: #eafaf1; border-left: 4px solid #27ae60; border-radius: 4px;">
+              <div style="font-weight: bold; color: #27ae60; margin-bottom: 4px;">
+                <i class="fa fa-check-circle"></i> Official Verified Reference & Sutra Commentary:
+              </div>
+              <div id="commentary-text" style="font-size: 13px; color: #2c3e50; line-height: 1.5;"></div>
+            </div>
+          </div>
+
+          <!-- Navigation Footer Buttons -->
+          <div style="margin-top: 20px; display: flex; justify-content: space-between;">
+            <button id="btn-prev-q" class="btn btn-default" style="font-weight: bold; min-width: 100px;">
+              <i class="fa fa-chevron-left"></i> Previous
+            </button>
+            <button id="btn-next-q" class="btn btn-primary" style="background: #2aacdd; border-color: #2aacdd; font-weight: bold; min-width: 100px;">
+              Next <i class="fa fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="main-footer text-center" style="background: #fff; border-top: 1px solid #dce4ec; padding: 15px 0;">
+    <div class="pull-right hidden-xs" style="margin-right: 20px;">Version 1.6 (Production APK Replica)</div>
+    <span class="text-gray-active">&copy; 2026 AyurQuest Education. All rights reserved.</span>
+  </div>
+</div>
+
+<!-- Hierarchy Logic & Question Engine Script -->
+<script>
+let fullHierarchy = [];
+let currentSamhita = null;
+let currentSthana = null;
+let currentChapter = null;
+let currentQuestions = [];
+let currentQuestionIndex = 0;
+let revealAnswer = true;
+
+// Sidebar toggle
+$('#sidebarCollapse').click(function() {
+  $('#sidebar').css('left', '0px');
+  $('#sidebar-overlay').show();
+});
+$('#closeSidebar, #sidebar-overlay').click(function() {
+  $('#sidebar').css('left', '-280px');
+  $('#sidebar-overlay').hide();
+});
+
+// Load Hierarchy
+$(document).ready(function() {
+  $.getJSON('data/samhita_hierarchy.json', function(data) {
+    fullHierarchy = data;
+    renderSamhitasList();
+  }).fail(function() {
+    $('#samhita_list_items').html('<div class="alert alert-danger">Failed to load samhita hierarchy data.</div>');
+  });
+});
+
+function renderSamhitasList() {
+  let html = '';
+  fullHierarchy.forEach(function(s, idx) {
+    html += `
+      <div class="list-group-item samhita-row cursor-pointer" onclick="selectSamhita(${idx})">
+        <div class="row">
+          <div class="col-xs-3 col-md-1 border-right text-center">
+            <i class="fa fa-question-circle fa-2x text-maroon" style="color: #b21f2d;"></i><br/>
+            <span class="strong badge-count">${s.count}</span>
+          </div>
+          <div class="col-xs-9 col-md-11" style="padding-left: 15px;">
+            <a href="javascript:void(0)" style="text-decoration:none;">
+              <i class="flaticon-samhitas text-blue"></i> 
+              <strong style="font-size: 15px; color: #1b3a57;">${s.name} ${s.hindi ? '(' + s.hindi + ')' : ''}</strong><br>
+              <small class="text12 text-muted">
+                <i class="fa fa-question-circle text-maroon"></i> <strong>Total Questions:</strong> ${s.count}
+                ${s.sthanas && s.sthanas.length ? ' • <strong>' + s.sthanas.length + ' Sthanas</strong>' : ''}
+              </small>
+            </a>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+  $('#samhita_list_items').html(html);
+  showView('samhita');
+}
+
+function selectSamhita(index) {
+  currentSamhita = fullHierarchy[index];
+  if (currentSamhita.sthanas && currentSamhita.sthanas.length > 0) {
+    renderSthanasList();
+  } else {
+    // Direct questions samhita (e.g. Madhava Nidana, Yog Ratnakar)
+    loadDirectSamhitaQuestions(currentSamhita);
+  }
+}
+
+function renderSthanasList() {
+  let html = '';
+  currentSamhita.sthanas.forEach(function(sth, idx) {
+    html += `
+      <div class="list-group-item sthana-row cursor-pointer" onclick="selectSthana(${idx})">
+        <div class="row">
+          <div class="col-xs-3 col-md-2 border-right text-center">
+            <i class="fa fa-question-circle fa-2x text-maroon" style="color: #b21f2d;"></i><br/>
+            <span class="strong badge-count">${sth.count}</span>
+          </div>
+          <div class="col-xs-9 col-md-10" style="padding-left: 15px;">
+            <a href="javascript:void(0)" style="text-decoration:none;">
+              <i class="flaticon-samhitas text-blue"></i> 
+              <strong style="font-size: 15px; color: #1b3a57;">${sth.name}</strong><br>
+              <small class="text12 text-muted">
+                <i class="fa fa-book text-navy"></i> <strong>${sth.chapters ? sth.chapters.length : 0} Chapters</strong> • 
+                <strong>Total MCQs:</strong> ${sth.count}
+              </small>
+            </a>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+  $('#sthana_list_items').html(html);
+  updateBreadcrumb(currentSamhita.name);
+  showView('sthana');
+}
+
+function selectSthana(index) {
+  currentSthana = currentSamhita.sthanas[index];
+  renderChaptersList();
+}
+
+function renderChaptersList() {
+  let html = '';
+  if (!currentSthana.chapters || currentSthana.chapters.length === 0) {
+    html = '<div class="list-group-item text-center text-muted">No subchapters listed for this section.</div>';
+  } else {
+    currentSthana.chapters.forEach(function(ch, idx) {
+      html += `
+        <div class="list-group-item chapter-row cursor-pointer" onclick="selectChapter(${idx})">
+          <div class="row">
+            <div class="col-xs-2 col-md-2 text-center border-right">
+              <i class="fa fa-question-circle fa-2x text-maroon" style="color: #b21f2d;"></i><br/>
+              <span class="strong badge-count">${ch.count}</span>
+            </div>
+            <div class="col-xs-10 col-md-10" style="padding-left: 15px;">
+              <a href="javascript:void(0)" style="text-decoration:none;">
+                <i class="flaticon-samhitas text-blue"></i> 
+                <strong style="font-size: 14px; color: #2c3e50;">${ch.name}</strong><br>
+                <small class="text12 text-muted"><i class="flaticon-audio-video text-maroon"></i> <strong>Total Questions:</strong> ${ch.count}</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+  }
+  $('#chapter_list_items').html(html);
+  updateBreadcrumb(`${currentSamhita.name} &raquo; ${currentSthana.name}`);
+  showView('chapter');
+}
+
+function selectChapter(index) {
+  currentChapter = currentSthana.chapters[index];
+  updateBreadcrumb(`${currentSamhita.name} &raquo; ${currentSthana.name} &raquo; ${currentChapter.name}`);
+  loadQuestionsForChapter(currentChapter);
+}
+
+function loadQuestionsForChapter(chapter) {
+  $('#quiz-title').text(`${currentSamhita.name} - ${currentSthana.name}`);
+  $('#quiz-subtitle').text(chapter.name + ` (${chapter.count} Practice MCQs)`);
+  
+  // Fetch from our local backend database
+  $.getJSON(`/api/questions?samhita_name=${encodeURIComponent(currentSamhita.name)}&limit=100`, function(data) {
+    if (data && data.length > 0) {
+      currentQuestions = data;
+    } else {
+      // Fallback to all questions
+      $.getJSON(`/api/questions?limit=100`, function(fallbackData) {
+        currentQuestions = fallbackData;
+        setupQuiz();
+      });
+      return;
+    }
+    setupQuiz();
+  }).fail(function() {
+    alert("Could not connect to local questions database.");
+  });
+}
+
+function loadDirectSamhitaQuestions(samhita) {
+  $('#quiz-title').text(samhita.name);
+  $('#quiz-subtitle').text(`Direct Practice Questions (${samhita.count} MCQs)`);
+  updateBreadcrumb(samhita.name);
+
+  $.getJSON(`/api/questions?samhita_name=${encodeURIComponent(samhita.name)}&limit=100`, function(data) {
+    currentQuestions = data && data.length ? data : [];
+    setupQuiz();
+  });
+}
+
+function setupQuiz() {
+  currentQuestionIndex = 0;
+  $('#total-q-num').text(currentQuestions.length);
+  
+  // Setup Jump Dropdown
+  let jumpHtml = '<option value="">Jump to Question...</option>';
+  currentQuestions.forEach(function(q, i) {
+    jumpHtml += `<option value="${i}">Q ${i+1} (ID: #${q.id})</option>`;
+  });
+  $('#jump-to-q').html(jumpHtml);
+
+  renderQuestion();
+  showView('quiz');
+}
+
+function renderQuestion() {
+  if (!currentQuestions || currentQuestions.length === 0) {
+    $('#question-stem').html("No questions found in database for this specific section.");
+    $('#options-container').html('');
+    $('#commentary-box').hide();
+    return;
+  }
+
+  const q = currentQuestions[currentQuestionIndex];
+  $('#current-q-num').text(currentQuestionIndex + 1);
+  $('#jump-to-q').val(currentQuestionIndex);
+
+  // Question Stem
+  $('#question-stem').html(`<strong>Q${currentQuestionIndex + 1}.</strong> ${q.Q}`);
+
+  // Options
+  const opts = [
+    { label: 'A', text: q.O1, val: 1 },
+    { label: 'B', text: q.O2, val: 2 },
+    { label: 'C', text: q.O3, val: 3 },
+    { label: 'D', text: q.O4, val: 4 }
+  ];
+
+  const correctVal = typeof q.A === 'string' ? parseInt(q.A) : q.A;
+  let optHtml = '';
+
+  opts.forEach(function(opt) {
+    const isCorrect = opt.val === correctVal;
+    let bg = '#fff';
+    let border = '#dce4ec';
+    let badgeBg = '#edf2f7';
+    let badgeColor = '#333';
+
+    if (revealAnswer && isCorrect) {
+      bg = '#eafaf1';
+      border = '#27ae60';
+      badgeBg = '#27ae60';
+      badgeColor = '#fff';
+    }
+
+    optHtml += `
+      <div style="padding: 12px 14px; border: 1.5px solid ${border}; background: ${bg}; border-radius: 6px; display: flex; align-items: center; gap: 12px;">
+        <span style="width: 26px; height: 26px; border-radius: 50%; background: ${badgeBg}; color: ${badgeColor}; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; font-size: 12px; flex-shrink: 0;">
+          ${revealAnswer && isCorrect ? '✓' : opt.label}
+        </span>
+        <div style="font-size: 14px; color: #2c3e50; font-weight: ${revealAnswer && isCorrect ? 'bold' : 'normal'};">
+          ${opt.text}
+        </div>
+      </div>
+    `;
+  });
+  $('#options-container').html(optHtml);
+
+  // Commentary
+  if (revealAnswer && q.com) {
+    $('#commentary-text').html(q.com);
+    $('#commentary-box').show();
+  } else {
+    $('#commentary-box').hide();
+  }
+
+  // Prev/Next state
+  $('#btn-prev-q').prop('disabled', currentQuestionIndex === 0);
+  $('#btn-next-q').prop('disabled', currentQuestionIndex >= currentQuestions.length - 1);
+}
+
+// Navigation Handlers
+$('#btn-prev-q').click(function() {
+  if (currentQuestionIndex > 0) {
+    currentQuestionIndex--;
+    renderQuestion();
+  }
+});
+$('#btn-next-q').click(function() {
+  if (currentQuestionIndex < currentQuestions.length - 1) {
+    currentQuestionIndex++;
+    renderQuestion();
+  }
+});
+$('#jump-to-q').change(function() {
+  const val = $(this).val();
+  if (val !== '') {
+    currentQuestionIndex = parseInt(val);
+    renderQuestion();
+  }
+});
+$('#toggle-all-answers').click(function() {
+  revealAnswer = !revealAnswer;
+  $('#toggle-answers-text').text(revealAnswer ? 'Hide Answers' : 'Reveal Answers');
+  $(this).toggleClass('btn-success btn-warning');
+  renderQuestion();
+});
+
+// View routing
+function showView(view) {
+  $('#samhita_view, #sthana_view, #chapter_view, #quiz_view').hide();
+  if (view === 'samhita') {
+    $('#samhita_view').show();
+    $('#breadcrumb-bar').hide();
+    $('#top_banner').show();
+  } else if (view === 'sthana') {
+    $('#sthana_view').show();
+    $('#breadcrumb-bar').show();
+    $('#top_banner').hide();
+  } else if (view === 'chapter') {
+    $('#chapter_view').show();
+    $('#breadcrumb-bar').show();
+    $('#top_banner').hide();
+  } else if (view === 'quiz') {
+    $('#quiz_view').show();
+    $('#breadcrumb-bar').show();
+    $('#top_banner').hide();
+  }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function updateBreadcrumb(text) {
+  $('#breadcrumb-content').html(text);
+}
+
+$('#btn_back_to_samhitas, #btn_back_to_samhitas_2').click(function() {
+  showView('samhita');
+});
+$('#btn_back_to_sthanas').click(function() {
+  showView('sthana');
+});
+$('#btn_back_to_chapters').click(function() {
+  showView('chapter');
+});
+</script>
+</body>
+</html>

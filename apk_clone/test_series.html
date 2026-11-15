@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>AIAPGET Test Series - AyurQuest</title>
+<meta name="theme-color" content="#2AACDD">
+<meta name="msapplication-navbutton-color" content="#2AACDD">
+<meta name="apple-mobile-web-app-status-bar-style" content="#2AACDD">
+<link rel="icon" type="image/png" href="assets/favicons/favicon_16x16.png" sizes="16x16">
+<!-- Bootstrap CSS & Local Styles -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/icons/font/flaticon.css?v=1.1">
+<link rel="stylesheet" href="assets/css/style.css?v=5.535">
+<link rel="stylesheet" href="assets/css/home_ribbon.css">
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Sweetalert -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/sweetalert2@7.26.11/dist/sweetalert2.min.css">
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@7.26.11/dist/sweetalert2.all.min.js"></script> 
+
+<style>
+  .test-card {
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #e1e8ed;
+    margin-bottom: 12px;
+    padding: 12px 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .test-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  .test-num-badge {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background: #00c0ef;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .exam-palette-btn {
+    width: 34px;
+    height: 34px;
+    margin: 2px;
+    padding: 0;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 3px;
+  }
+  .btn-answered { background-color: #00a65a !important; color: #fff !important; border-color: #008d4c !important; }
+  .btn-unanswered { background-color: #dd4b39 !important; color: #fff !important; border-color: #d73925 !important; }
+  .btn-review { background-color: #f39c12 !important; color: #fff !important; border-color: #e08e0b !important; }
+  .btn-not-visited { background-color: #f4f4f4 !important; color: #444 !important; border-color: #ddd !important; }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+<!-- Sidebar -->
+<nav id="sidebar" class="active"> 
+  <a class="sidebarCollapse mt-5 mr-5 pull-right" style="cursor: pointer;"> 
+    <i class="fa fa-times text-gray fa-2x"></i> 
+  </a> 
+  <a href="index.html">
+    <div class="sidebar-header bg-aq2">
+      <h3><img src="assets/images/logo.png" class="logo"> AyurQuest</h3>
+      <strong><img src="assets/images/logo.png" width="50"></strong> 
+      <span class="visible-xs text-gray"> Hi Rohit !</span> 
+    </div>
+  </a>
+  <ul class="list-unstyled components">
+    <li> <a href="index.html"> <i class="flaticon-dashboard text-navy"></i> <span>Dashboard</span> </a> </li>
+    <li> <a href="mock_tests.html"> <i class="flaticon-audio-video text-navy"></i> <span>Mock Tests</span> </a> </li>
+    <li> <a href="mock_tests.html?type=daily"> <i class="flaticon-daily-test text-navy"></i> <span>Daily Tests</span> </a> </li>
+    <li class="active"> <a href="test_series.html"> <i class="flaticon-test-series text-navy"></i> <span>Test Series</span> </a> </li>
+  </ul>
+  <ul class="list-unstyled components">
+    <li> <a href="samhitas.html"> <i class="flaticon-samhitas text-navy"></i> <span>Samhitawise MCQs</span> </a> </li>
+    <li> <a href="subjects.html"> <i class="flaticon-subjects text-navy"></i> <span>Subjectwise MCQs</span> </a> </li>
+  </ul>
+  <ul class="list-unstyled components">
+    <li> <a href="notes.html"> <i class="flaticon-notes text-navy"></i> <span>Notes</span> </a> </li>
+    <li> <a href="bookmarks.html"> <i class="flaticon-bookmark text-navy"></i> <span>Bookmarks</span> </a> </li>
+  </ul>
+</nav>
+
+<!-- Main Content -->
+<div id="content">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header"> 
+      <a type="button" class="sidebarCollapse btn btn-aq2 navbar-btn strong text-gray btn-menu" style="cursor: pointer;"> 
+        <i class="fa fa-align-justify fa-2x"></i> 
+      </a> 
+      <span class="text-gray ml-5">
+        <span class="hidden-xs"> Hello <strong>Rohit</strong>, Welcome to</span> 
+        <strong>AyurQuest <span class="hidden-xs"> Education</span></strong> 
+      </span>
+    </div>
+    <div class="navbar-custom-menu">
+      <div class="btn-group pull-right mt-5" role="group"> 
+        <button type="button" class="btn btn-aq2 strong text-gray">
+          <a href="javascript:history.back()"><i class="fa fa-repeat text-24"></i> <span class="hidden-xs">Back</span></a>
+        </button>
+        <button type="button" class="btn btn-aq2 strong text-gray">
+          <a href="index.html"><i class="fa fa-home text-24"></i> <span class="hidden-xs">Dashboard</span></a>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="inner_content">
+
+  <!-- VIEW 1: TEST SERIES LIST -->
+  <div id="ts_list_view">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-center" style="background: #eaf9f9 url('assets/images/daily_quiz_bg.png') no-repeat center 5px; background-size: 240px;">
+          <div class="list-group" style="padding-top: 200px;">
+            <div class="list-group-item strong" style="font-size: 16px;">
+              EXAM-SPECIFIC TEST SERIES<br>
+              <small class="text-maroon">(Session 2026-2027)</small>
+            </div>
+            <div class="list-group-item text-center">
+              <div class="row">
+                <div class="col-xs-4"><a href="#" class="text-maroon strong"><small class="text-uppercase">SESSION</small><br>2026-2027</a></div>
+                <div class="col-xs-4 border-left border-right"><a href="#" class="text-navy"><small class="text-uppercase">SESSION</small><br>2025-2026</a></div>
+                <div class="col-xs-4"><a href="#" class="text-navy"><small class="text-uppercase">SESSION</small><br>2024-2025</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Free AIAPGET 2027 Overview Card -->
+    <div class="row" style="margin-top: 10px;">
+      <div class="col-md-12">
+        <div class="panel panel-default" style="border-top: 3px solid #00a65a;">
+          <div class="panel-heading bg-green text-center strong text-white text-uppercase" style="background: #00a65a; color: #fff;">
+            FREE AIAPGET 2027 Test Series (35 Comprehensive Mock Tests)
+          </div>
+          <div class="panel-body text-center" style="padding: 10px;">
+            <div class="row" style="margin-bottom: 8px;">
+              <div class="col-xs-6 border-right">
+                <small class="text-navy strong">Starts From</small><br>
+                <small class="text-maroon strong">10/08/2025</small>
+              </div>
+              <div class="col-xs-6">
+                <small class="text-navy strong">Total Tests</small><br>
+                <small class="text-maroon strong">35 Mock Tests (4,200 MCQs)</small>
+              </div>
+            </div>
+            <p class="text-muted" style="font-size: 12px; margin-bottom: 0;">
+              Prepare for AIAPGET with authentic test series covering Charaka Samhita, Sushruta Samhita, Ashtanga Hridaya, Minor Samhitas, Modern Medicine, and full syllabus simulation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search filter -->
+    <div class="row" style="margin-bottom: 12px;">
+      <div class="col-xs-12">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-search"></i></span>
+          <input type="text" id="test_search" class="form-control" placeholder="Search tests (e.g. Charaka Sutra, Sushruta, AIAPGET Mock)...">
+        </div>
+      </div>
+    </div>
+
+    <!-- Tests Cards Container -->
+    <div id="tests_cards_container">
+      <div class="test-card" data-name="Test Series #1: Charaka Sutra (1-10)" data-sub="Charka Samhita Sutra Sthana (Chapter 1-10)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">1</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #1: Charaka Sutra (1-10)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Charka Samhita Sutra Sthana (Chapter 1-10)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 10 Aug 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10001" data-test-name="Test Series #1: Charaka Sutra (1-10)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10001" data-test-name="Test Series #1: Charaka Sutra (1-10)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #2: Charaka Sutra (11-20)" data-sub="Charka Samhita Sutra Sthana (Chapter 11-20)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">2</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #2: Charaka Sutra (11-20)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Charka Samhita Sutra Sthana (Chapter 11-20)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 17 Aug 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10002" data-test-name="Test Series #2: Charaka Sutra (11-20)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10002" data-test-name="Test Series #2: Charaka Sutra (11-20)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #3: Charaka Sutra (21-30)" data-sub="Charka Samhita Sutra Sthana (Chapter 21-30)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">3</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #3: Charaka Sutra (21-30)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Charka Samhita Sutra Sthana (Chapter 21-30)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 24 Aug 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10003" data-test-name="Test Series #3: Charaka Sutra (21-30)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10003" data-test-name="Test Series #3: Charaka Sutra (21-30)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #4: Charaka Nidana (1-8)" data-sub="Charka Samhita Nidana Sthana (Chapter 1-8)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">4</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #4: Charaka Nidana (1-8)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Charka Samhita Nidana Sthana (Chapter 1-8)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 31 Aug 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10004" data-test-name="Test Series #4: Charaka Nidana (1-8)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10004" data-test-name="Test Series #4: Charaka Nidana (1-8)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #5: Charaka Vimana (1-8)" data-sub="Charka Samhita Vimana Sthana (Chapter 1-8)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">5</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #5: Charaka Vimana (1-8)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Charka Samhita Vimana Sthana (Chapter 1-8)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 07 Sep 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10005" data-test-name="Test Series #5: Charaka Vimana (1-8)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10005" data-test-name="Test Series #5: Charaka Vimana (1-8)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #6: Charaka Shareer (1-8)" data-sub="Charka Samhita Shareer Sthana (Chapter 1-8)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">6</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #6: Charaka Shareer (1-8)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Charka Samhita Shareer Sthana (Chapter 1-8)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 14 Sep 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10006" data-test-name="Test Series #6: Charaka Shareer (1-8)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10006" data-test-name="Test Series #6: Charaka Shareer (1-8)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #7: Charaka Indriya (1-12)" data-sub="Charka Samhita Indriya Sthana (Chapter 1-12)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">7</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #7: Charaka Indriya (1-12)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Charka Samhita Indriya Sthana (Chapter 1-12)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 21 Sep 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10007" data-test-name="Test Series #7: Charaka Indriya (1-12)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10007" data-test-name="Test Series #7: Charaka Indriya (1-12)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #8: Charaka Siddhi (1-12)" data-sub="Charka Samhita Siddhi Sthana (Chapter 1-12)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">8</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #8: Charaka Siddhi (1-12)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Charka Samhita Siddhi Sthana (Chapter 1-12)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 28 Sep 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10008" data-test-name="Test Series #8: Charaka Siddhi (1-12)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10008" data-test-name="Test Series #8: Charaka Siddhi (1-12)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #9: Charaka Kalpa (1-12)" data-sub="Charka Samhita Kalpa Sthana (Chapter 1-12)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">9</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #9: Charaka Kalpa (1-12)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Charka Samhita Kalpa Sthana (Chapter 1-12)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 05 Oct 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10009" data-test-name="Test Series #9: Charaka Kalpa (1-12)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10009" data-test-name="Test Series #9: Charaka Kalpa (1-12)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #10: Charaka Chikitsa (1-10)" data-sub="Charka Samhita Chikitsa Sthana (Chapter 1-10)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">10</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #10: Charaka Chikitsa (1-10)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Charka Samhita Chikitsa Sthana (Chapter 1-10)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 12 Oct 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10010" data-test-name="Test Series #10: Charaka Chikitsa (1-10)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10010" data-test-name="Test Series #10: Charaka Chikitsa (1-10)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #11: Charaka Chikitsa (11-20)" data-sub="Charka Samhita Chikitsa Sthana (Chapter 11-20)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">11</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #11: Charaka Chikitsa (11-20)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Charka Samhita Chikitsa Sthana (Chapter 11-20)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 19 Oct 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10011" data-test-name="Test Series #11: Charaka Chikitsa (11-20)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10011" data-test-name="Test Series #11: Charaka Chikitsa (11-20)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #12: Charaka Chikitsa (21-30)" data-sub="Charka Samhita Chikitsa Sthana (Chapter 21-30)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">12</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #12: Charaka Chikitsa (21-30)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Charka Samhita Chikitsa Sthana (Chapter 21-30)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 26 Oct 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10012" data-test-name="Test Series #12: Charaka Chikitsa (21-30)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10012" data-test-name="Test Series #12: Charaka Chikitsa (21-30)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #13: Sushruta Sutra (1-15)" data-sub="Sushruta Samhita Sutra Sthana (Chapter 1-15)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">13</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #13: Sushruta Sutra (1-15)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Sushruta Samhita Sutra Sthana (Chapter 1-15)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 02 Nov 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10013" data-test-name="Test Series #13: Sushruta Sutra (1-15)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10013" data-test-name="Test Series #13: Sushruta Sutra (1-15)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #14: Sushruta Sutra (16-30)" data-sub="Sushruta Samhita Sutra Sthana (Chapter 16-30)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">14</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #14: Sushruta Sutra (16-30)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Sushruta Samhita Sutra Sthana (Chapter 16-30)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 09 Nov 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10014" data-test-name="Test Series #14: Sushruta Sutra (16-30)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10014" data-test-name="Test Series #14: Sushruta Sutra (16-30)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #15: Sushruta Sutra (31-46)" data-sub="Sushruta Samhita Sutra Sthana (Chapter 31-46)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">15</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #15: Sushruta Sutra (31-46)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Sushruta Samhita Sutra Sthana (Chapter 31-46)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 16 Nov 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10015" data-test-name="Test Series #15: Sushruta Sutra (31-46)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10015" data-test-name="Test Series #15: Sushruta Sutra (31-46)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #16: Sushruta Nidana (1-16)" data-sub="Sushruta Nidana Sthana (Chapter 1-16)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">16</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #16: Sushruta Nidana (1-16)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Sushruta Nidana Sthana (Chapter 1-16)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 23 Nov 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10016" data-test-name="Test Series #16: Sushruta Nidana (1-16)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10016" data-test-name="Test Series #16: Sushruta Nidana (1-16)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #17: Sushruta Shareer (1-10)" data-sub="Sushruta Shareer Sthana (Chapter 1-10)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">17</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #17: Sushruta Shareer (1-10)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Sushruta Shareer Sthana (Chapter 1-10)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 30 Nov 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10017" data-test-name="Test Series #17: Sushruta Shareer (1-10)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10017" data-test-name="Test Series #17: Sushruta Shareer (1-10)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #18: Sushruta Kalpa (1-8)" data-sub="Sushruta Kalpa Sthana (Chapter 1-8)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">18</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #18: Sushruta Kalpa (1-8)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Sushruta Kalpa Sthana (Chapter 1-8)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 07 Dec 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10018" data-test-name="Test Series #18: Sushruta Kalpa (1-8)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10018" data-test-name="Test Series #18: Sushruta Kalpa (1-8)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #19: Sushruta Chikitsa (1-40)" data-sub="Sushruta Chikitsa Sthana (Chapter 1-40)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">19</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #19: Sushruta Chikitsa (1-40)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Sushruta Chikitsa Sthana (Chapter 1-40)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 14 Dec 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10019" data-test-name="Test Series #19: Sushruta Chikitsa (1-40)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10019" data-test-name="Test Series #19: Sushruta Chikitsa (1-40)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #20: Sushruta Uttra (1-20)" data-sub="Sushruta Uttra Tantra (Chapter 1-20)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">20</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #20: Sushruta Uttra (1-20)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Sushruta Uttra Tantra (Chapter 1-20)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 21 Dec 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10020" data-test-name="Test Series #20: Sushruta Uttra (1-20)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10020" data-test-name="Test Series #20: Sushruta Uttra (1-20)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #21: Sushruta Uttra (21-40)" data-sub="Sushruta Uttra Tantra (Chapter 21-40)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">21</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #21: Sushruta Uttra (21-40)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Sushruta Uttra Tantra (Chapter 21-40)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 28 Dec 2025</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10021" data-test-name="Test Series #21: Sushruta Uttra (21-40)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10021" data-test-name="Test Series #21: Sushruta Uttra (21-40)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #22: Sushruta Uttra (41-66)" data-sub="Sushruta Uttra Tantra (Chapter 41-66)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">22</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #22: Sushruta Uttra (41-66)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Sushruta Uttra Tantra (Chapter 41-66)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 04 Jan 2026</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10022" data-test-name="Test Series #22: Sushruta Uttra (41-66)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10022" data-test-name="Test Series #22: Sushruta Uttra (41-66)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #23: A. Hridya - Sutra (1-30)" data-sub="Ashtang Hridya - Sutra Sthana (Chapter 1-30)">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">23</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #23: A. Hridya - Sutra (1-30)</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Ashtang Hridya - Sutra Sthana (Chapter 1-30)
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 11 Jan 2026</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10023" data-test-name="Test Series #23: A. Hridya - Sutra (1-30)">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10023" data-test-name="Test Series #23: A. Hridya - Sutra (1-30)">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #24: A. Hridya - Nidana & Shareer" data-sub="Ashtang Hridya - Nidana Sthana & Shareer Sthana">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">24</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #24: A. Hridya - Nidana & Shareer</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Ashtang Hridya - Nidana Sthana & Shareer Sthana
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 18 Jan 2026</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10024" data-test-name="Test Series #24: A. Hridya - Nidana & Shareer">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10024" data-test-name="Test Series #24: A. Hridya - Nidana & Shareer">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #25: A. Hridya - Chikitsa, Kalpa & Uttra" data-sub="Ashtang Hridya - Chikitsa Sthana, Kalpa Sthana & Uttra Sthana">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">25</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #25: A. Hridya - Chikitsa, Kalpa & Uttra</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Ashtang Hridya - Chikitsa Sthana, Kalpa Sthana & Uttra Sthana
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 25 Jan 2026</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10025" data-test-name="Test Series #25: A. Hridya - Chikitsa, Kalpa & Uttra">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10025" data-test-name="Test Series #25: A. Hridya - Chikitsa, Kalpa & Uttra">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #26: Ashtang Samgraha" data-sub="Ashtang Samgraha All Sthanas">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">26</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #26: Ashtang Samgraha</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Ashtang Samgraha All Sthanas
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 01 Feb 2026</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10026" data-test-name="Test Series #26: Ashtang Samgraha">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10026" data-test-name="Test Series #26: Ashtang Samgraha">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #27: Other Samhitas - 1" data-sub="Kashyap Samhita, Madhava Nidana">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">27</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #27: Other Samhitas - 1</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Kashyap Samhita, Madhava Nidana
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 08 Feb 2026</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10027" data-test-name="Test Series #27: Other Samhitas - 1">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10027" data-test-name="Test Series #27: Other Samhitas - 1">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #28: Other Samhitas - 2" data-sub="Sharangdhar Samhita, Bhavaprakash Samhita">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">28</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #28: Other Samhitas - 2</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Sharangdhar Samhita, Bhavaprakash Samhita
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 15 Feb 2026</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10028" data-test-name="Test Series #28: Other Samhitas - 2">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10028" data-test-name="Test Series #28: Other Samhitas - 2">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #29: Other Samhitas - 3" data-sub="Chakradutta Samhita, Bhel Samhita, Harita Samhita, Yog Ratnakar, Bhaishjya Ratnavali, Ras Ratna Samuchya, Ras Saar Samgraha, Ras Trangini">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">29</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #29: Other Samhitas - 3</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> Chakradutta Samhita, Bhel Samhita, Harita Samhita, Yog Ratnakar, Bhaishjya Ratnavali, Ras Ratna Samuchya, Ras Saar Samgraha, Ras Trangini
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 22 Feb 2026</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10029" data-test-name="Test Series #29: Other Samhitas - 3">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10029" data-test-name="Test Series #29: Other Samhitas - 3">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #30: Modern Subjects" data-sub="All Modern Subjects">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">30</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #30: Modern Subjects</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> All Modern Subjects
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 01 Mar 2026</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10030" data-test-name="Test Series #30: Modern Subjects">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10030" data-test-name="Test Series #30: Modern Subjects">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #31: AIAPGET Mock Test - 1" data-sub="All Syllabus of AIAPGET">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">31</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #31: AIAPGET Mock Test - 1</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> All Syllabus of AIAPGET
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 08 Mar 2026</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10031" data-test-name="Test Series #31: AIAPGET Mock Test - 1">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10031" data-test-name="Test Series #31: AIAPGET Mock Test - 1">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #32: AIAPGET Mock Test - 2" data-sub="All Syllabus of AIAPGET">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">32</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #32: AIAPGET Mock Test - 2</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> All Syllabus of AIAPGET
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 15 Mar 2026</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10032" data-test-name="Test Series #32: AIAPGET Mock Test - 2">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10032" data-test-name="Test Series #32: AIAPGET Mock Test - 2">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #33: AIAPGET Mock Test - 3" data-sub="All Syllabus of AIAPGET">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">33</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #33: AIAPGET Mock Test - 3</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> All Syllabus of AIAPGET
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 22 Mar 2026</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10033" data-test-name="Test Series #33: AIAPGET Mock Test - 3">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10033" data-test-name="Test Series #33: AIAPGET Mock Test - 3">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #34: AIAPGET Mock Test - 4" data-sub="All Syllabus of AIAPGET">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">34</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #34: AIAPGET Mock Test - 4</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> All Syllabus of AIAPGET
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 29 Mar 2026</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10034" data-test-name="Test Series #34: AIAPGET Mock Test - 4">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10034" data-test-name="Test Series #34: AIAPGET Mock Test - 4">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="test-card" data-name="Test Series #35: AIAPGET Mock Test - 5" data-sub="All Syllabus of AIAPGET">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <span class="test-num-badge">35</span>
+            <strong class="text-navy" style="font-size: 15px;">Test Series #35: AIAPGET Mock Test - 5</strong>
+            <p class="text-muted" style="margin: 4px 0 6px 42px; font-size: 12px;">
+              <i class="fa fa-book text-gray"></i> All Syllabus of AIAPGET
+            </p>
+            <div style="margin-left: 42px; font-size: 11px;">
+              <span class="label label-info"><i class="fa fa-question-circle"></i> 120 MCQs</span>
+              <span class="label label-primary"><i class="fa fa-clock-o"></i> 120 Mins</span>
+              <span class="label label-success"><i class="fa fa-trophy"></i> 480 Marks</span>
+              <span class="label label-warning"><i class="fa fa-calendar"></i> 05 Apr 2026</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-right" style="margin-top: 10px;">
+            <button class="btn btn-aq2 btn-sm strong btn-start-practice" data-test-id="10035" data-test-name="Test Series #35: AIAPGET Mock Test - 5">
+              <i class="fa fa-bolt"></i> Practice
+            </button>
+            <button class="btn btn-success btn-sm strong btn-start-exam" data-test-id="10035" data-test-name="Test Series #35: AIAPGET Mock Test - 5">
+              <i class="fa fa-desktop"></i> Exam Mode
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIEW 2: PRACTICE MODE (catquiz.js) -->
+  <div id="practice_mode_view" style="display: none;">
+    <div class="well well-sm" style="background: #fff; margin-bottom: 10px; border-left: 4px solid #00c0ef;">
+      <button class="btn btn-default btn-xs pull-right" id="btn_back_from_practice">
+        <i class="fa fa-arrow-left"></i> Back to Test Series
+      </button>
+      <h4 class="text-navy strong" style="margin: 0;" id="practice_test_title">Test Title</h4>
+      <span class="text-muted" style="font-size: 12px;">Instant feedback, answer reveals, and classical references</span>
+    </div>
+
+    <!-- Active Loading -->
+    <div id="practice_loader" style="display: none; text-align: center; padding: 40px 15px;">
+      <i class="fa fa-spinner fa-spin fa-3x text-navy"></i>
+      <p class="strong text-navy" style="margin-top: 10px;">Loading canonical questions...</p>
+    </div>
+
+    <div id="quiz"></div>
+  </div>
+
+  <!-- VIEW 3: FULL AIAPGET EXAM SIMULATION MODE -->
+  <div id="exam_mode_view" style="display: none;">
+    <!-- Top Exam Status Bar -->
+    <div class="row" style="background: #2AACDD; color: #fff; padding: 10px 15px; margin: -15px -15px 15px -15px;">
+      <div class="col-xs-6">
+        <strong id="exam_test_title" style="font-size: 15px;">AIAPGET Exam Simulation</strong><br>
+        <small id="exam_test_info">120 MCQs | +4 / -1 Marking</small>
+      </div>
+      <div class="col-xs-6 text-right">
+        <span style="font-size: 12px;">Time Remaining:</span><br>
+        <strong id="exam_timer" style="font-size: 20px; font-family: monospace;">120:00</strong>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Question Area (Left/Main) -->
+      <div class="col-md-8 col-sm-7 col-xs-12">
+        <div class="panel panel-default" style="box-shadow: 0 1px 4px rgba(0,0,0,0.1);">
+          <div class="panel-heading" style="background: #f7f9fa;">
+            <strong class="text-navy" id="exam_q_counter">Question 1 of 120</strong>
+            <span class="pull-right text-muted" style="font-size: 12px;">Marks: +4 | -1</span>
+          </div>
+          <div class="panel-body" style="min-height: 280px;">
+            <div id="exam_stem" style="font-size: 15px; line-height: 1.6; font-weight: 500; margin-bottom: 20px;">
+              Question text goes here...
+            </div>
+            <div class="list-group" id="exam_options">
+              <!-- Dynamic Options -->
+            </div>
+          </div>
+          <div class="panel-footer clearfix" style="background: #fff;">
+            <button type="button" class="btn btn-default" id="exam_btn_prev"><i class="fa fa-arrow-left"></i> Previous</button>
+            <button type="button" class="btn btn-warning" id="exam_btn_review"><i class="fa fa-flag"></i> Mark for Review</button>
+            <button type="button" class="btn btn-default" id="exam_btn_clear"><i class="fa fa-eraser"></i> Clear</button>
+            <button type="button" class="btn btn-info pull-right" id="exam_btn_save_next">Save & Next <i class="fa fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Palette & Overview (Right) -->
+      <div class="col-md-4 col-sm-5 col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-heading" style="padding: 8px 10px;">
+            <strong style="font-size: 12px;"><i class="fa fa-th"></i> Question Palette</strong>
+          </div>
+          <div class="panel-body text-center" id="exam_palette_container" style="max-height: 320px; overflow-y: auto; padding: 6px;">
+            <!-- 120 Palette Buttons -->
+          </div>
+          <div class="panel-footer" style="padding: 10px;">
+            <div style="font-size: 11px; margin-bottom: 10px; line-height: 1.8;">
+              <span class="label btn-answered">&nbsp;&nbsp;</span> Answered &nbsp;
+              <span class="label btn-unanswered">&nbsp;&nbsp;</span> Not Answered &nbsp;
+              <span class="label btn-review">&nbsp;&nbsp;</span> Marked Review &nbsp;
+              <span class="label btn-not-visited" style="border: 1px solid #ccc;">&nbsp;&nbsp;</span> Not Visited
+            </div>
+            <button type="button" class="btn btn-danger btn-block strong" id="exam_btn_submit">
+              <i class="fa fa-paper-plane"></i> Submit Test
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIEW 4: TEST SCORECARD / RESULT -->
+  <div id="result_view" style="display: none;">
+    <div class="well well-sm text-center" style="background: #fff; border-top: 4px solid #00a65a; padding: 25px 15px;">
+      <i class="fa fa-trophy fa-4x text-yellow"></i>
+      <h2 class="text-navy strong" style="margin-top: 10px;">Test Completed!</h2>
+      <p class="text-muted" id="res_test_name">Test Series Name</p>
+
+      <div class="row" style="margin: 25px 0;">
+        <div class="col-xs-3 border-right">
+          <h3 class="text-green strong" id="res_correct">0</h3>
+          <small class="text-uppercase text-muted">Correct (+4)</small>
+        </div>
+        <div class="col-xs-3 border-right">
+          <h3 class="text-red strong" id="res_wrong">0</h3>
+          <small class="text-uppercase text-muted">Wrong (-1)</small>
+        </div>
+        <div class="col-xs-3 border-right">
+          <h3 class="text-gray strong" id="res_unattempted">0</h3>
+          <small class="text-uppercase text-muted">Unattempted</small>
+        </div>
+        <div class="col-xs-3">
+          <h3 class="text-navy strong" id="res_score">0 / 480</h3>
+          <small class="text-uppercase text-muted">Final Score</small>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-default btn-sm" id="btn_back_to_all_tests">
+        <i class="fa fa-list"></i> Back to All Tests
+      </button>
+      <button type="button" class="btn btn-info btn-sm" id="btn_review_solutions">
+        <i class="fa fa-eye"></i> Review Solutions
+      </button>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="main-footer text-center">
+  <div class="pull-right hidden-xs"> Version 1.6</div>
+  <span class="text-gray-active text-center">
+    <center>&copy; 2026 AyurQuest Education. All rights reserved.</center>
+  </span>
+</div>
+</div>
+<div class="overlay"></div>
+
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/plugins/jQueryQuiz/student.jquery.catquiz.js"></script>
+
+<script>
+$(document).ready(function() {
+  // Search filter
+  $('#test_search').on('keyup', function() {
+    var val = $(this).val().toLowerCase();
+    $('.test-card').each(function() {
+      var name = $(this).data('name').toLowerCase();
+      var sub = $(this).data('sub').toLowerCase();
+      if (name.indexOf(val) > -1 || sub.indexOf(val) > -1) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+  });
+
+  // State
+  var examState = {
+    testId: null,
+    testName: '',
+    questions: [],
+    currentIndex: 0,
+    answers: {},       // qIdx -> selected 0..3
+    status: {},        // qIdx -> 'answered' | 'unanswered' | 'review' | 'not-visited'
+    timerSeconds: 120 * 60,
+    timerInterval: null
+  };
+
+  // 1. PRACTICE MODE
+  $('.btn-start-practice').on('click', function() {
+    var testId = $(this).data('test-id');
+    var testName = $(this).data('test-name');
+
+    $('#practice_test_title').text(testName);
+    $('#ts_list_view').hide();
+    $('#practice_mode_view').fadeIn();
+    $('#practice_loader').show();
+    $('#quiz').hide().empty();
+
+    $.getJSON('/api/tests/' + testId, function(res) {
+      $('#practice_loader').hide();
+      $('#quiz').show();
+      if (res && res.questions && res.questions.length > 0) {
+        $('#quiz').quiz({
+          counterFormat: 'Question %current of %total',
+          questions: res.questions
+        });
+      } else {
+        $('#quiz').html('<div class="alert alert-warning text-center">Questions loading...</div>');
+      }
+    }).fail(function() {
+      $('#practice_loader').hide();
+      $('#quiz').show().html('<div class="alert alert-danger text-center">Could not load test questions from local database.</div>');
+    });
+  });
+
+  $('#btn_back_from_practice').on('click', function() {
+    $('#practice_mode_view').hide();
+    $('#ts_list_view').fadeIn();
+    $('#quiz').empty();
+  });
+
+  // 2. EXAM SIMULATION MODE
+  $('.btn-start-exam').on('click', function() {
+    var testId = $(this).data('test-id');
+    var testName = $(this).data('test-name');
+
+    $('#exam_test_title').text(testName);
+    $('#ts_list_view').hide();
+    $('#exam_mode_view').fadeIn();
+
+    $.getJSON('/api/tests/' + testId, function(res) {
+      if (!res || !res.questions || res.questions.length === 0) {
+        swal('Notice', 'No questions found for this test in local database.', 'warning');
+        $('#exam_mode_view').hide();
+        $('#ts_list_view').fadeIn();
+        return;
+      }
+
+      examState.testId = testId;
+      examState.testName = testName;
+      examState.questions = res.questions;
+      examState.currentIndex = 0;
+      examState.answers = {};
+      examState.status = {};
+      examState.timerSeconds = 120 * 60;
+
+      for (var i = 0; i < res.questions.length; i++) {
+        examState.status[i] = 'not-visited';
+      }
+      examState.status[0] = 'unanswered';
+
+      renderPalette();
+      renderExamQuestion(0);
+      startTimer();
+    });
+  });
+
+  function startTimer() {
+    if (examState.timerInterval) clearInterval(examState.timerInterval);
+    examState.timerInterval = setInterval(function() {
+      examState.timerSeconds--;
+      if (examState.timerSeconds <= 0) {
+        clearInterval(examState.timerInterval);
+        submitExam();
+        return;
+      }
+      var mins = Math.floor(examState.timerSeconds / 60);
+      var secs = examState.timerSeconds % 60;
+      $('#exam_timer').text((mins < 10 ? '0' : '') + mins + ':' + (secs < 10 ? '0' : '') + secs);
+    }, 1000);
+  }
+
+  function renderPalette() {
+    var html = '';
+    for (var i = 0; i < examState.questions.length; i++) {
+      var st = examState.status[i] || 'not-visited';
+      var cls = 'btn-not-visited';
+      if (st === 'answered') cls = 'btn-answered';
+      else if (st === 'unanswered') cls = 'btn-unanswered';
+      else if (st === 'review') cls = 'btn-review';
+
+      html += '<button type="button" class="btn exam-palette-btn ' + cls + '" data-idx="' + i + '">' + (i + 1) + '</button>';
+    }
+    $('#exam_palette_container').html(html);
+  }
+
+  function renderExamQuestion(idx) {
+    examState.currentIndex = idx;
+    var q = examState.questions[idx];
+
+    $('#exam_q_counter').text('Question ' + (idx + 1) + ' of ' + examState.questions.length);
+    $('#exam_stem').html(q.q);
+
+    var letters = ['A', 'B', 'C', 'D'];
+    var optionsHtml = '';
+    var currentSelected = examState.answers[idx];
+
+    for (var i = 0; i < q.options.length; i++) {
+      var checked = (currentSelected === i) ? 'checked' : '';
+      var activeClass = (currentSelected === i) ? 'list-group-item-info' : '';
+      optionsHtml += '<label class="list-group-item ' + activeClass + '" style="cursor: pointer;">';
+      optionsHtml += '<input type="radio" name="exam_opt" value="' + i + '" ' + checked + ' style="margin-right: 10px;">';
+      optionsHtml += '<strong>(' + letters[i] + ')</strong> ' + q.options[i];
+      optionsHtml += '</label>';
+    }
+    $('#exam_options').html(optionsHtml);
+
+    // Update palette active status
+    if (examState.status[idx] === 'not-visited') {
+      examState.status[idx] = 'unanswered';
+      renderPalette();
+    }
+  }
+
+  // Option select
+  $(document).on('change', 'input[name="exam_opt"]', function() {
+    var val = parseInt($(this).val());
+    examState.answers[examState.currentIndex] = val;
+    examState.status[examState.currentIndex] = 'answered';
+    renderPalette();
+    $('#exam_options label').removeClass('list-group-item-info');
+    $(this).closest('label').addClass('list-group-item-info');
+  });
+
+  // Save & Next
+  $('#exam_btn_save_next').on('click', function() {
+    if (examState.currentIndex < examState.questions.length - 1) {
+      renderExamQuestion(examState.currentIndex + 1);
+    } else {
+      swal('Reached Last Question', 'You are at the end of the question set. Click Submit Test when finished.', 'info');
+    }
+  });
+
+  // Previous
+  $('#exam_btn_prev').on('click', function() {
+    if (examState.currentIndex > 0) {
+      renderExamQuestion(examState.currentIndex - 1);
+    }
+  });
+
+  // Clear
+  $('#exam_btn_clear').on('click', function() {
+    delete examState.answers[examState.currentIndex];
+    examState.status[examState.currentIndex] = 'unanswered';
+    $('input[name="exam_opt"]').prop('checked', false);
+    $('#exam_options label').removeClass('list-group-item-info');
+    renderPalette();
+  });
+
+  // Mark for review
+  $('#exam_btn_review').on('click', function() {
+    examState.status[examState.currentIndex] = 'review';
+    renderPalette();
+    if (examState.currentIndex < examState.questions.length - 1) {
+      renderExamQuestion(examState.currentIndex + 1);
+    }
+  });
+
+  // Jump via palette
+  $(document).on('click', '.exam-palette-btn', function() {
+    var idx = parseInt($(this).data('idx'));
+    renderExamQuestion(idx);
+  });
+
+  // Submit test
+  $('#exam_btn_submit').on('click', function() {
+    swal({
+      title: 'Submit Examination?',
+      text: 'Are you sure you want to finalize and submit your test?',
+      type: 'question',
+      showCancelButton: true,
+      confirmButtonText: 'Yes, Submit Now',
+      cancelButtonText: 'Continue Exam'
+    }).then(function(result) {
+      if (result.value) {
+        submitExam();
+      }
+    });
+  });
+
+  function submitExam() {
+    if (examState.timerInterval) clearInterval(examState.timerInterval);
+
+    var correct = 0;
+    var wrong = 0;
+    var unattempted = 0;
+
+    for (var i = 0; i < examState.questions.length; i++) {
+      var ans = examState.answers[i];
+      var correctAns = examState.questions[i].correctIndex;
+      if (ans === undefined || ans === null) {
+        unattempted++;
+      } else if (ans === correctAns) {
+        correct++;
+      } else {
+        wrong++;
+      }
+    }
+
+    var totalScore = (correct * 4) - (wrong * 1);
+    $('#res_test_name').text(examState.testName);
+    $('#res_correct').text(correct);
+    $('#res_wrong').text(wrong);
+    $('#res_unattempted').text(unattempted);
+    $('#res_score').text(totalScore + ' / 480');
+
+    $('#exam_mode_view').hide();
+    $('#result_view').fadeIn();
+    $('html, body').animate({ scrollTop: 0 }, 200);
+  }
+
+  $('#btn_back_to_all_tests').on('click', function() {
+    $('#result_view').hide();
+    $('#ts_list_view').fadeIn();
+  });
+
+  $('#btn_review_solutions').on('click', function() {
+    $('#result_view').hide();
+    $('#practice_test_title').text(examState.testName + ' - Solutions Review');
+    $('#practice_mode_view').fadeIn();
+    $('#quiz').show().quiz({
+      counterFormat: 'Question %current of %total',
+      questions: examState.questions
+    });
+  });
+});
+</script>
+</body>
+</html>
