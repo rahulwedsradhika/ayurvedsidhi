@@ -2,9 +2,9 @@ import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { DatabaseSync } from 'node:sqlite';
 
-let connection: DatabaseSync | null = null;
+let connection = null;
 
-export function previewDb(): DatabaseSync {
+export function previewDb() {
   if (connection) return connection;
   const file = path.join(process.cwd(), 'api', '_data', 'ayurquest.db');
   if (!existsSync(file)) {
@@ -14,7 +14,7 @@ export function previewDb(): DatabaseSync {
   return connection;
 }
 
-export function sendJson(res: any, status: number, data: unknown): void {
+export function sendJson(res, status, data) {
   res.statusCode = status;
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
   res.setHeader('Cache-Control', 'private, no-store');
@@ -22,7 +22,7 @@ export function sendJson(res: any, status: number, data: unknown): void {
   res.end(JSON.stringify(data));
 }
 
-export function previewGet(req: any, res: any, handler: () => unknown): void {
+export function previewGet(req, res, handler) {
   if (req.method !== 'GET') {
     res.setHeader('Allow', 'GET');
     sendJson(res, 405, { error: 'Method not allowed' });
@@ -48,13 +48,13 @@ export function previewGet(req: any, res: any, handler: () => unknown): void {
   }
 }
 
-export function testRows(category?: string): unknown[] {
+export function testRows(category) {
   const db = previewDb();
   const sql = 'SELECT id, name, subject, total_questions, duration_minutes, total_marks, negative_marks, category, created_at FROM tests';
   const rows = category
     ? db.prepare(sql + ' WHERE category = ? ORDER BY id ASC').all(category)
     : db.prepare(sql + ' ORDER BY id ASC').all();
-  return rows.map((t: any) => ({
+  return rows.map((t) => ({
     id: t.id,
     name: t.name,
     sub: t.subject,
@@ -69,7 +69,7 @@ export function testRows(category?: string): unknown[] {
   }));
 }
 
-function frontQuestion(q: any): Record<string, unknown> {
+function frontQuestion(q) {
   return {
     id: q.id,
     Q: q.stem,
@@ -92,12 +92,12 @@ function frontQuestion(q: any): Record<string, unknown> {
   };
 }
 
-export function fullTest(id: number): unknown | null {
+export function fullTest(id) {
   if (!Number.isSafeInteger(id) || id < 1) return null;
   const db = previewDb();
-  const t: any = db.prepare('SELECT * FROM tests WHERE id = ?').get(id);
+  const t = db.prepare('SELECT * FROM tests WHERE id = ?').get(id);
   if (!t) return null;
-  const questions: any[] = db.prepare(
+  const questions = db.prepare(
     'SELECT q.* FROM test_questions AS tq JOIN questions AS q ON q.id = tq.question_id WHERE tq.test_id = ? ORDER BY tq.question_order ASC'
   ).all(id);
   return {
@@ -115,9 +115,9 @@ export function fullTest(id: number): unknown | null {
   };
 }
 
-export function dataCounts(): Record<string, number | string> {
+export function dataCounts() {
   const db = previewDb();
-  const count = (sql: string) => Number((db.prepare(sql).get() as any).n);
+  const count = (sql) => Number(db.prepare(sql).get().n);
   return {
     status: 'ok',
     source: 'bundled-read-only-sqlite',

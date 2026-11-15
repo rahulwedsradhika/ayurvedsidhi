@@ -1,6 +1,6 @@
-import { dataCounts, previewGet } from '../serverless/previewDb';
+import { dataCounts, previewGet } from '../serverless/previewDb.js';
 
-export default function handler(req: any, res: any): void {
+export default function handler(req, res) {
   previewGet(req, res, () => {
     const counts = dataCounts();
     return {

@@ -58,6 +58,7 @@ const SERIES_GROUPS: SeriesGroup[] = [
 export const DeveloperPreviewPage: React.FC = () => {
   const [allTests, setAllTests] = useState<Quiz[]>([]);
   const [loading, setLoading] = useState(true);
+  const [dataError, setDataError] = useState<string | null>(null);
   const [activeGroupIndex, setActiveGroupIndex] = useState<number | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTestId, setSelectedTestId] = useState<number | null>(null);
@@ -65,11 +66,14 @@ export const DeveloperPreviewPage: React.FC = () => {
   const [testLoading, setTestLoading] = useState(false);
   const [jsonModalQuestion, setJsonModalQuestion] = useState<Question | null>(null);
 
-  // Fetch all tests from local backend
+  const totalSeriesQuestions = useMemo(() => allTests.reduce((sum, test) => sum + (Number(test.q) || 0), 0), [allTests]);
+
+  // Fetch actual tests from the same-origin Vercel API
   useEffect(() => {
     setLoading(true);
     api.getQuizzes()
       .then((data) => {
+        setDataError(null);
         // Filter tests from the 35 test series (IDs 10001 to 10035)
         const tsTests = data
           .filter((t) => t.id >= 10001 && t.id <= 10035)
@@ -82,6 +86,7 @@ export const DeveloperPreviewPage: React.FC = () => {
       })
       .catch((err) => {
         console.error('Error fetching tests for preview:', err);
+        setDataError('Could not reach the database-backed test API. Review /api/health and the preview function logs.');
         setLoading(false);
       });
   }, []);
@@ -173,7 +178,7 @@ export const DeveloperPreviewPage: React.FC = () => {
                   borderRadius: '6px',
                 }}
               >
-                35 / 35 Verified Tests Ingested
+                {loading ? 'Loading tests...' : `${allTests.length} / 35 Tests Loaded`}
               </span>
               <span
                 style={{
@@ -185,24 +190,24 @@ export const DeveloperPreviewPage: React.FC = () => {
                   borderRadius: '6px',
                 }}
               >
-                Cloudflare Tunnel Live
+                Vercel Database Preview
               </span>
             </div>
             <h1 style={{ fontSize: '28px', fontWeight: 800, margin: '0 0 8px 0', letterSpacing: '-0.5px' }}>
               AyurQuest 35-Test Series — Developer Preview & Architecture Portal
             </h1>
             <p style={{ margin: 0, fontSize: '15px', color: '#94a3b8', maxWidth: '850px', lineHeight: 1.6 }}>
-              Inspect and verify the 4,200 extracted production test questions. Includes authentic bilingual stems (Sanskrit/Hindi &amp; English), 4 options, verified official answer keys, and classical Samhita citations.
+              Inspect the actual database-backed test questions. Includes authentic bilingual stems (Sanskrit/Hindi &amp; English), 4 options, verified official answer keys, and classical Samhita citations.
             </p>
           </div>
 
           <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
             <div style={{ backgroundColor: 'rgba(255,255,255,0.08)', borderRadius: '12px', padding: '14px 20px', minWidth: '120px', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)' }}>
-              <div style={{ fontSize: '26px', fontWeight: 900, color: '#60a5fa' }}>35</div>
+              <div style={{ fontSize: '26px', fontWeight: 900, color: '#60a5fa' }}>{allTests.length}</div>
               <div style={{ fontSize: '12px', color: '#cbd5e1', fontWeight: 600 }}>Total Tests</div>
             </div>
             <div style={{ backgroundColor: 'rgba(255,255,255,0.08)', borderRadius: '12px', padding: '14px 20px', minWidth: '120px', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)' }}>
-              <div style={{ fontSize: '26px', fontWeight: 900, color: '#34d399' }}>4,200</div>
+              <div style={{ fontSize: '26px', fontWeight: 900, color: '#34d399' }}>{totalSeriesQuestions.toLocaleString()}</div>
               <div style={{ fontSize: '12px', color: '#cbd5e1', fontWeight: 600 }}>Test MCQs</div>
             </div>
             <div style={{ backgroundColor: 'rgba(255,255,255,0.08)', borderRadius: '12px', padding: '14px 20px', minWidth: '120px', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)' }}>
@@ -255,6 +260,11 @@ export const DeveloperPreviewPage: React.FC = () => {
         </div>
       </div>
 
+      {dataError && (
+        <div role="alert" style={{ padding: 16, marginBottom: 20, borderRadius: 8, backgroundColor: '#fef2f2', color: '#991b1b' }}>
+          {dataError} <a href="/api/health" style={{ textDecoration: 'underline' }}>Check database health</a>
+        </div>
+      )}
       {loading ? (
         <div style={{ textAlign: 'center', padding: '60px 0', color: '#64748b' }}>
           <div style={{ fontSize: '18px', fontWeight: 600 }}>Loading 35-Test Series Catalog...</div>
