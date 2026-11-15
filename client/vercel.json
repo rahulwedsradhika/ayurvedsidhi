@@ -4,5 +4,11 @@
     "api/**/*.js": {
       "includeFiles": "api/_data/ayurquest.db"
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
