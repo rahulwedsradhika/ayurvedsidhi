@@ -7,7 +7,63 @@
   },
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/preview",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/preview-test-series",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/testing",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/quizzes",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/quiz/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/app1.5/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/courses",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/courses/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/lecture/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/question-bank",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/notes",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/wallet",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/scorecard",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/bookmarks",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/dev/:path*",
       "destination": "/index.html"
     }
   ]
