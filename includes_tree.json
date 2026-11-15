@@ -1,0 +1,217 @@
+{
+  "about/": [
+    "default.php",
+    "founders.php"
+  ],
+  "aia_pget/": [
+    "default.php",
+    "instructions.php",
+    "mock_test.php",
+    "social_groups.php",
+    "test_series.php"
+  ],
+  "aq-cu-test/": [
+    "default.php",
+    "test_file.php"
+  ],
+  "av_lecture/": [
+    "default-old.php",
+    "default.php",
+    "detail.php"
+  ],
+  "bookmarks/": [
+    "default.php",
+    "questions.php",
+    "samhitas.php",
+    "subjects.php"
+  ],
+  "books/": [
+    "default.php"
+  ],
+  "catwise_mcqs/": [
+    "default.php",
+    "samhitas.php",
+    "subjects.php"
+  ],
+  "catwise_questions/": [
+    "default.php",
+    "default3.php",
+    "new.questions-25-1-25-1.12.php",
+    "new.questions.php",
+    "new.samhitas.php",
+    "questions-23-1-25-19.24.php",
+    "questions.php",
+    "samhitas.php",
+    "subjects.php",
+    "tags.php"
+  ],
+  "colleges/": [
+    "default.php"
+  ],
+  "common/": [
+    "sessions.php",
+    "timer.php"
+  ],
+  "contact/": [
+    "default.php"
+  ],
+  "courses/": [
+    "course_content.php",
+    "course_detail.php",
+    "course_detail2.php",
+    "course_detail3.php",
+    "course_detail4.php",
+    "course_detail5.php",
+    "course_schedule.php",
+    "course_tests.php",
+    "default.php",
+    "test_types.php"
+  ],
+  "daily/": [
+    "default.php"
+  ],
+  "daily_mcqs/": [
+    "daily_mcq.php",
+    "daily_mcq_winners.php",
+    "new_rapid_fire_mcqs.php",
+    "rapid_fire_answers.php",
+    "rapid_fire_mcqs.php",
+    "rapid_fire_winners.php"
+  ],
+  "daily_test/": [
+    "aiapget_mode.php",
+    "certificate.php",
+    "default.php",
+    "default2.php",
+    "evaluation_mode.php",
+    "free_quiz.php",
+    "instructions.php",
+    "practice_mode.php",
+    "solve_like_aiapget.php",
+    "solve_like_aiapget2.php",
+    "solve_test.php",
+    "solve_test_with_answers.php",
+    "test_result.php"
+  ],
+  "dashboard/": [
+    "covid-19.php",
+    "dashboard.php",
+    "default.php",
+    "main-links.php",
+    "maintenance.php",
+    "splash.php",
+    "splash2.php",
+    "test_dashboard.php",
+    "test_dashboard2.php",
+    "test_dashboard3.php"
+  ],
+  "doubts/": [
+    "doubts.php"
+  ],
+  "forum/": [
+    "default.php",
+    "posts.php",
+    "subcats.php",
+    "topics.php"
+  ],
+  "gk/": [
+    "default.php",
+    "questions.php"
+  ],
+  "invites/": [
+    "default.php"
+  ],
+  "live/": [
+    "default.php"
+  ],
+  "membership/": [
+    "ccavenue.php",
+    "common_links.php",
+    "default.php",
+    "detail.php",
+    "ext_subsc.php",
+    "instamojo.php",
+    "lecture_subsc.php",
+    "offline_payment.php",
+    "payment_methods.php",
+    "paytm.php",
+    "paytm_bank.php",
+    "payu.php",
+    "qbank_subsc.php"
+  ],
+  "mnemonics/": [
+    "default.php"
+  ],
+  "notes/": [
+    "default.php",
+    "short_notes.php",
+    "sticky_notes.php"
+  ],
+  "notifications/": [
+    "default.php"
+  ],
+  "online_lectures/": [
+    "books.php",
+    "default-old-2.php",
+    "default-old.php",
+    "default.php",
+    "samhitas.php",
+    "subjects.php"
+  ],
+  "pre_entrance/": [
+    "default.php"
+  ],
+  "prev_year_entrance/": [
+    "default.php",
+    "default2.php",
+    "exams.php"
+  ],
+  "profile/": [
+    "default.php",
+    "upload_img.php",
+    "verify.php"
+  ],
+  "ranking/": [
+    "default.php"
+  ],
+  "reported_mcq/": [
+    "default.php"
+  ],
+  "samhitawise/": [
+    "default-26-1-25-19.14.php",
+    "default.php"
+  ],
+  "score_card/": [
+    "default.php"
+  ],
+  "short_notes/": [
+    "default.php",
+    "samhitas.php",
+    "subjects.php"
+  ],
+  "test_series/": [
+    "default.php",
+    "test_rank.php",
+    "ts_detail.php",
+    "ts_winner.php"
+  ],
+  "tests/": [
+    "default-2-5-22.php",
+    "default-3-5-22.php",
+    "default.php"
+  ],
+  "tips/": [
+    "default.php",
+    "tip_detail.php",
+    "user_tips.php"
+  ],
+  "upsc/": [
+    "default.php",
+    "test_series.php"
+  ],
+  "wallet/": [
+    "default.php",
+    "earn_points.php",
+    "recharge.php"
+  ]
+}

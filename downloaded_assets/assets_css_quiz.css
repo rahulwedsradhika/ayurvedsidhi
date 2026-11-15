@@ -1,0 +1,84 @@
+.sam_quest_heading_bg {
+  float: left;
+  position: relative;
+  height: 36px;
+  width: 100%;
+  background: #606a74;
+  border-radius: 15px 15px 0 0;
+}
+#headings h1 {
+  font: normal 14px Arial, Helvetica, sans-serif;
+  /* padding: 7px 0;*/
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fff;
+  padding-left: 20px !important;
+  padding-top: 10px !important;
+}
+.sam_quest_heading_ft_div {
+  position: absolute;
+  left: 88px;
+  top: 5px;
+  min-width: 100px;
+}
+.btn-fixed {
+  position: fixed !important;
+  bottom: 0;
+  z-index: 99999;
+  float: left;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.no_box {
+  padding: 4px 12px;
+  width: auto;
+  border: 1px solid #fff;
+}
+small {
+  font-size: 10px;
+}
+.green {
+  background: rgba(30, 187, 86, 1.00);
+}
+.jump {
+  cursor: pointer;
+}
+.jump {
+  position: relative;
+  width: 9.37%;
+  /*height: 15px;*/
+  background: #fff;
+  font: normal 11px Arial, Helvetica, sans-serif;
+  display: block;
+  text-align: center;
+  padding: 2px 0 2px 0;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  float: left;
+}
+.solved {
+  background: #5cb85c;
+  color: #FFF;
+  font-weight: bold;
+}
+.taged {
+  background: #febf01;
+  color: #FFF;
+  font-weight: bold;
+}
+.solve_taged {
+  background: #8A64BF;
+  color: #FFF;
+  font-weight: bold;
+}
+.unsolved {
+  background: #FFF;
+  color: #000;
+  font-weight: bold;
+}
+.qpallete .solved .taged, .qpallete .taged .solved {
+  background: #8A64BF;
+  color: #FFF;
+  font-weight: bold;
+}

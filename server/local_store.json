@@ -1,0 +1,280 @@
+{
+  "user": {
+    "id": 10086,
+    "name": "Dr. Ayur Scholar",
+    "email": "scholar@ayurquest.local",
+    "phone": "+91 9876543210",
+    "examTarget": "AIAPGET 2027",
+    "membershipPlan": "AyurQuest Pro All-Access (Local Dev)",
+    "isPremium": true
+  },
+  "bookmarks": [
+    102,
+    109,
+    105
+  ],
+  "notes": {
+    "101": [
+      "Important: 30 chapters divided into 7 chatushkas + 2 samgraha dwaya."
+    ]
+  },
+  "reports": [],
+  "attempts": {
+    "101": {
+      "selectedAnswer": 4,
+      "isCorrect": false,
+      "timeTaken": "00:15",
+      "timestamp": 1794667164773,
+      "guess": false
+    },
+    "102": {
+      "selectedAnswer": 3,
+      "isCorrect": true,
+      "timeTaken": "00:15",
+      "timestamp": 1794667164776,
+      "guess": false
+    },
+    "103": {
+      "selectedAnswer": 2,
+      "isCorrect": true,
+      "timeTaken": "00:15",
+      "timestamp": 1794667164774,
+      "guess": false
+    },
+    "104": {
+      "selectedAnswer": 4,
+      "isCorrect": false,
+      "timeTaken": "00:15",
+      "timestamp": 1794667164786,
+      "guess": false
+    },
+    "105": {
+      "selectedAnswer": 2,
+      "isCorrect": true,
+      "timeTaken": "00:15",
+      "timestamp": 1794667164761,
+      "guess": false
+    },
+    "106": {
+      "selectedAnswer": 2,
+      "isCorrect": true,
+      "timeTaken": "00:15",
+      "timestamp": 1794667164780,
+      "guess": false
+    },
+    "107": {
+      "selectedAnswer": 2,
+      "isCorrect": false,
+      "timeTaken": "00:15",
+      "timestamp": 1794667164769,
+      "guess": false
+    },
+    "108": {
+      "selectedAnswer": 3,
+      "isCorrect": false,
+      "timeTaken": "00:15",
+      "timestamp": 1794667164783,
+      "guess": false
+    },
+    "109": {
+      "selectedAnswer": 3,
+      "isCorrect": true,
+      "timeTaken": "00:15",
+      "timestamp": 1794667164789,
+      "guess": false
+    },
+    "110": {
+      "selectedAnswer": 4,
+      "isCorrect": false,
+      "timeTaken": "00:15",
+      "timestamp": 1794667164788,
+      "guess": false
+    },
+    "12082": {
+      "selectedAnswer": 3,
+      "isCorrect": false,
+      "timeTaken": "00:15",
+      "timestamp": 1794671562570,
+      "guess": false
+    },
+    "34516": {
+      "selectedAnswer": 2,
+      "isCorrect": false,
+      "timeTaken": "00:15",
+      "timestamp": 1794671562565,
+      "guess": false
+    },
+    "34664": {
+      "selectedAnswer": 3,
+      "isCorrect": false,
+      "timeTaken": "00:15",
+      "timestamp": 1794671562567,
+      "guess": false
+    }
+  },
+  "quizResults": [
+    {
+      "uuid": "submission-2737-1794671562573",
+      "quizId": 2737,
+      "quizName": "Ashtang Hridya Nidana + Ashtang Hridya Sharir Test-1 (Revision)",
+      "score": -3,
+      "total": 400,
+      "percentage": 0,
+      "solvedAt": "2026-11-14 15:52",
+      "userAnswers": {
+        "12082": 3,
+        "34516": 2,
+        "34664": 3
+      }
+    },
+    {
+      "uuid": "submission-504-1794667164791",
+      "quizId": 504,
+      "quizName": "UPSC Ayurveda Medical Officer Mock Paper",
+      "score": 3.3499999999999996,
+      "total": 10,
+      "percentage": 34,
+      "solvedAt": "2026-11-14 14:39",
+      "userAnswers": {
+        "101": 4,
+        "102": 3,
+        "103": 2,
+        "104": 4,
+        "105": 2,
+        "106": 2,
+        "107": 2,
+        "108": 3,
+        "109": 3,
+        "110": 4
+      }
+    },
+    {
+      "uuid": "submission-501-1794663956359",
+      "quizId": 501,
+      "quizName": "Daily Test 1 - Charaka Samhita Sutrasthana Ch. 1-10",
+      "score": 1.75,
+      "total": 10,
+      "percentage": 18,
+      "solvedAt": "2026-11-14 13:45",
+      "userAnswers": {
+        "101": 2,
+        "102": 3,
+        "103": 1
+      }
+    },
+    {
+      "uuid": "test-uuid-502-solved",
+      "quizId": 502,
+      "quizName": "Daily Test 2 - Sushruta Samhita & Surgical Fundamentals",
+      "score": 8,
+      "total": 10,
+      "percentage": 80,
+      "solvedAt": "2026-11-13 09:30",
+      "userAnswers": {
+        "103": 2,
+        "106": 2,
+        "108": 2
+      }
+    }
+  ],
+  "wallet": {
+    "points": 1465,
+    "history": [
+      {
+        "date": "2026-11-14",
+        "description": "Completed Quiz: Ashtang Hridya Nidana + Ashtang Hridya Sharir Test-1 (Revision)",
+        "points": 50
+      },
+      {
+        "date": "2026-11-14",
+        "description": "Completed Quiz: UPSC Ayurveda Medical Officer Mock Paper",
+        "points": 50
+      },
+      {
+        "date": "2026-11-14",
+        "description": "Solved MCQ #109 correctly",
+        "points": 5
+      },
+      {
+        "date": "2026-11-14",
+        "description": "Solved MCQ #106 correctly",
+        "points": 5
+      },
+      {
+        "date": "2026-11-14",
+        "description": "Solved MCQ #102 correctly",
+        "points": 5
+      },
+      {
+        "date": "2026-11-14",
+        "description": "Solved MCQ #103 correctly",
+        "points": 5
+      },
+      {
+        "date": "2026-11-14",
+        "description": "Solved MCQ #105 correctly",
+        "points": 5
+      },
+      {
+        "date": "2026-11-14",
+        "description": "Solved MCQ #101 correctly",
+        "points": 5
+      },
+      {
+        "date": "2026-11-14",
+        "description": "Solved MCQ #101 correctly",
+        "points": 5
+      },
+      {
+        "date": "2026-11-14",
+        "description": "Solved MCQ #102 correctly",
+        "points": 5
+      },
+      {
+        "date": "2026-11-14",
+        "description": "Completed Quiz: Daily Test 1 - Charaka Samhita Sutrasthana Ch. 1-10",
+        "points": 50
+      },
+      {
+        "date": "2026-11-14",
+        "description": "Solved MCQ #102 correctly",
+        "points": 5
+      },
+      {
+        "date": "2026-11-14",
+        "description": "Solved MCQ #101 correctly",
+        "points": 5
+      },
+      {
+        "date": "2026-11-14",
+        "description": "Solved MCQ #101 correctly",
+        "points": 5
+      },
+      {
+        "date": "2026-11-14",
+        "description": "Solved MCQ #101 correctly",
+        "points": 5
+      },
+      {
+        "date": "2026-11-14",
+        "description": "Solved MCQ #101 correctly",
+        "points": 5
+      },
+      {
+        "date": "2026-11-14",
+        "description": "Daily login bonus points",
+        "points": 50
+      },
+      {
+        "date": "2026-11-13",
+        "description": "Daily Test 2 completion",
+        "points": 50
+      },
+      {
+        "date": "2026-11-12",
+        "description": "Rapid Fire MCQ Challenge winner",
+        "points": 150
+      }
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 30px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+/* The sidebar links */
+.sidebar a {
+  padding: 5px 5px 5px 15px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  margin: 1px 0px;
+  background: rgba(35, 33, 33, 1.00);
+}
+.sidebar a.solved2 {
+  background: #5cb85c !important;
+  color: #FFF;
+}
+.sidebar a.closebtn {
+  background: #111 !important;
+}
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+.mcq_o_divider{
+	width: 100%;
+	display: block;
+	margin: 2px 0px;
+	border-top: 1px solid #ddd;
+}
+
+
+:root {
+--gutter: 20px;
+}
+.app {
+    padding: 5px 0;
+    display: grid;
+    grid-gap: var(--gutter) 0;
+    grid-template-columns: var(--gutter) 1fr var(--gutter);
+    align-content: flex-start;
+}
+.app > * {
+    grid-column: 2 / -2;
+}
+.app > .full {
+    grid-column: 1 / -1;
+}
+.hs {
+    display: grid;
+    grid-gap: calc(var(--gutter) / 2);
+    grid-template-columns: 1px;
+    grid-template-rows: minmax(100px, 1fr);
+    grid-auto-flow: column;
+grid-auto-columns: calc(50% - var(--gutter) * 2);
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+padding-bottom: calc(.75 * var(--gutter));
+margin-bottom: calc(-.25 * var(--gutter));
+}
+.hs:before, .hs:after {
+    content: '';
+    width: 5px;
+}
+.app {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.app ul {
+    list-style: none;
+    padding: 0;
+}
+.hs .item {
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.no-scrollbar {
+    scrollbar-width: none;
+    margin-bottom: 0;/*  padding-bottom: 0;*/
+}
+.no-scrollbar::-webkit-scrollbar {
+display: none;
+}
+</style>
+<style>
+a[data-toggle="collapse"] {
+    position: inherit !important;
+}
+.media {
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 2px 3px rgb(0 0 0 / 20%);
+    transition: box-shadow 83ms;
+    padding: 15px;
+    position: relative;
+    background: #fff;
+}
+.media:first-child {
+    margin-top: auto;
+}
+.pattern-info {
+    font-size: 7px;
+    font-weight: 400;
+    color: #425b61;
+    padding: 4px 5px;
+    border-radius: 2px;
+    background-color: rgba(252,205,149,.5);
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
